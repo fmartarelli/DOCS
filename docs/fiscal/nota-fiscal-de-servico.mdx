@@ -1,0 +1,176 @@
+---
+title: Nota Fiscal de Serviço
+sidebar_position: 3
+---
+
+# Emitir uma Nota Fiscal de Serviço
+
+## Quando utilizar
+
+Use esta funcionalidade quando a empresa precisar emitir uma nota fiscal referente a um serviço prestado.
+
+Exemplos práticos:
+
+- emitir nota de manutenção
+- emitir nota de instalação
+- emitir nota de visita técnica
+- gerar nota a partir de uma Ordem de Serviço
+- gerar nota a partir de uma Conta a Receber
+
+## Como acessar
+
+1. No menu do sistema, acesse **Documentos fiscais**.
+2. Entre em **Notas fiscais de serviços**.
+3. Clique em **Lançar**.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da lista de notas de serviço com o botão **Lançar** destacado.
+:::
+
+## Passo a passo
+
+1. Na etapa **Cabeçalho**, escolha a **empresa**.
+2. Selecione a **natureza da operação**.
+3. Confira a **data de emissão** e a **hora de emissão**.
+4. Clique em **Avançar**.
+5. Na etapa **Tomador**, selecione a pessoa ou empresa ligada ao serviço.
+6. Confira os dados principais:
+   - CPF/CNPJ
+   - inscrição estadual
+   - tipo de contribuinte
+   - endereço
+   - telefone
+   - e-mail
+7. Se o cenário da empresa permitir trabalhar sem tomador, revise isso com atenção antes de prosseguir.
+8. Clique em **Avançar**.
+9. Na etapa **Serviços**, selecione o **código do serviço**.
+10. Se necessário, informe o **CNAE**.
+11. Escolha o **código de tributação da cidade**.
+12. Informe o **código NBS**.
+13. No campo **Discriminação**, descreva claramente o serviço prestado.
+14. Informe o **valor dos serviços**.
+15. Se houver, preencha:
+   - desconto condicionado
+   - desconto incondicionado
+16. Revise a parte de tributação do serviço, como:
+   - tipo de operação
+   - responsabilidade pela retenção
+   - alíquota
+   - dados nacionais
+   - dados de IBS/CBS, quando usados
+17. Clique em **Avançar**.
+18. Na etapa **Complementos**, preencha as informações adicionais, se necessário.
+19. Clique em **Avançar**.
+20. Na etapa **Preview**, revise a prévia da nota.
+21. Escolha uma das opções:
+   - **Apenas salvar**
+   - **Salvar e transmitir**
+22. Depois do lançamento, acompanhe a situação da nota na lista.
+
+Exemplo real:
+
+- Uma empresa prestou um serviço de instalação. O usuário abre a emissão de NFSe, escolhe a empresa, seleciona o cliente, informa o código do serviço, descreve a instalação realizada, preenche o valor, revisa o preview e usa **Salvar e transmitir**.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de lançamento da NFSe mostrando as etapas de cabeçalho, tomador, serviços e preview.
+:::
+
+## Explicação dos campos principais
+
+- **Empresa**: define qual empresa está emitindo a nota.
+- **Natureza da operação**: informa o tipo da operação fiscal do serviço.
+- **Data de emissão**: dia em que a nota está sendo emitida.
+- **Hora de emissão**: horário da emissão.
+- **Tomador**: pessoa ou empresa ligada ao serviço prestado.
+- **CPF/CNPJ**: documento principal do tomador.
+- **RG/IE**: documento complementar.
+- **Tipo de contribuinte**: classificação fiscal do tomador.
+- **Endereço**: endereço ligado ao tomador.
+- **Telefone**: contato principal.
+- **E-mail**: contato eletrônico do tomador.
+- **Código do serviço**: identifica o tipo de serviço da nota.
+- **CNAE**: ajuda na classificação do serviço.
+- **Código de tributação da cidade**: código municipal usado na emissão.
+- **Código NBS**: código do serviço exigido no fluxo.
+- **Discriminação**: descrição clara do que foi executado.
+- **Valor dos serviços**: valor principal da nota.
+- **Desconto condicionado**: desconto aplicado sob condição.
+- **Desconto incondicionado**: desconto aplicado diretamente.
+- **Tipo de operação**: define a situação tributária do serviço no município.
+- **Responsável pela retenção**: informa quem responde pela retenção quando isso se aplica.
+- **Alíquota**: percentual usado no cálculo do imposto do serviço.
+- **Informações complementares**: observações extras da nota.
+
+## Situações práticas de uso
+
+- **Serviço prestado para cliente já cadastrado**: quando a empresa quer emitir rapidamente uma nota com os dados já existentes.
+- **NFSe a partir de Ordem de Serviço**: quando o serviço já foi registrado na OS e a empresa quer aproveitar essas informações.
+- **NFSe a partir de Conta a Receber**: quando a cobrança já existe no financeiro e a empresa quer usá-la como base.
+- **Emissão com descrição detalhada do atendimento**: quando a empresa precisa explicar bem o serviço executado.
+- **Reemissão por duplicação**: quando o usuário quer usar uma nota anterior como base para ganhar tempo.
+
+## Dicas importantes
+
+- Use uma **discriminação** clara e objetiva do serviço.
+- Revise o **código do serviço** e o **código NBS** antes de avançar.
+- Confira o **valor dos serviços** e os descontos com atenção.
+- Se a empresa trabalhar com retenção, revise esse trecho com cuidado.
+- Sempre use o **preview** antes de transmitir.
+- Se ainda não quiser enviar, use **Apenas salvar**.
+- Depois da transmissão, acompanhe a situação da nota na lista.
+
+## Erros comuns
+
+- **Tentar emitir sem serviço preenchido**: o serviço é obrigatório.
+- **Não informar o código do serviço corretamente**: a tela exige seleção válida.
+- **Não preencher o código NBS**: esse campo faz parte das validações.
+- **Deixar o valor do serviço zerado**: o valor precisa ser maior que zero.
+- **Transmitir sem revisar a tributação**: isso pode gerar rejeições ou necessidade de correção.
+- **Tentar cancelar nota que ainda não foi transmitida**: o sistema bloqueia essa ação.
+- **Tentar baixar XML de nota offline em situação não permitida**: há restrições nesse caso.
+
+## Perguntas frequentes
+
+### Posso salvar a NFSe sem transmitir?
+
+Sim. A tela oferece a opção **Apenas salvar**.
+
+### Posso transmitir depois?
+
+Sim. A transmissão pode ser feita depois pela lista.
+
+### Posso emitir a NFSe a partir de uma Ordem de Serviço?
+
+Sim. Esse fluxo existe no sistema.
+
+### Posso emitir a NFSe a partir de uma Conta a Receber?
+
+Sim. O sistema possui esse carregamento.
+
+### O tomador é sempre obrigatório?
+
+A tela possui cenário para trabalhar sem tomador, dependendo do caso usado no sistema.
+
+### O que preciso revisar antes de transmitir?
+
+Revise principalmente:
+
+- tomador
+- código do serviço
+- código NBS
+- discriminação
+- valor
+- dados de tributação
+
+### Quando posso imprimir o DANFE?
+
+Quando a nota já estiver autorizada. Em algumas situações de modo offline existem restrições.
+
+### Quando posso baixar o XML?
+
+Quando a nota estiver na situação permitida para esse arquivo, normalmente após autorização ou cancelamento.
+
+:::info Espaço para imagem
+Adicione aqui uma captura do preview final da NFSe antes da transmissão.
+:::
+

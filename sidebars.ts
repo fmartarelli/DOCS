@@ -29,7 +29,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Fiscal',
-      items: ['fiscal/notas-fiscais'],
+      items: [
+        'fiscal/notas-fiscais',
+        'fiscal/nota-fiscal-de-produto',
+        'fiscal/nota-fiscal-de-servico',
+      ],
     },
     {
       type: 'category',

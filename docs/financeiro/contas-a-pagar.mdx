@@ -1,23 +1,221 @@
 ---
-title: Contas a pagar
+title: Contas a Pagar
 sidebar_position: 2
 ---
 
-# Contas a pagar
+# Contas a Pagar
 
-## Resumo
+## Quando utilizar
 
-Esta secao apoia o controle das despesas da empresa.
+Use esta funcionalidade quando a empresa precisar registrar despesas, compromissos financeiros ou pagamentos para fornecedores.
 
-## Subcategorias recomendadas
+Exemplos práticos:
 
-- registrar contas
-- definir vencimentos
-- marcar pagamento
-- acompanhar pendencias
+- lançar um boleto de compra de peças
+- registrar uma despesa com vencimento futuro
+- controlar um pagamento parcelado para fornecedor
+- programar uma conta fixa recorrente, como aluguel ou serviço mensal
 
-## FAQ
+## Como acessar
 
-### Como registrar o pagamento de uma conta?
+1. No menu do sistema, acesse **Financeiro**.
+2. Clique em **Contas a Pagar**.
+3. Na lista de contas, clique em **Lançar** para criar uma nova conta.
 
-Crie um tutorial curto com telas e um bloco de erros comuns.
+:::info Espaço para imagem
+Adicione aqui uma captura da lista de **Contas a Pagar** com o botão **Lançar** destacado.
+:::
+
+## Passo a passo
+
+1. Escolha o **tipo da conta**.
+   - **Avulso**
+   - **Boleto**
+   - **PIX**
+2. Selecione a **empresa**.
+3. Escolha o **fornecedor**.
+4. Informe a **data da emissão**.
+5. Preencha a **conta / identificação**.
+6. Informe o **valor da conta**.
+7. Defina se a conta já está **paga** ou se ainda terá **vencimento**.
+8. Se a conta ainda não foi paga, informe a **data do vencimento**.
+9. Se tiver, informe o **número da nota fiscal**.
+10. Escolha o **plano de conta**.
+11. Preencha a **identificação do pagamento**.
+    - para boleto, informe a linha digitável
+    - para PIX, informe o número do PIX ou o código copia e cola
+12. Escolha a forma de pagamento:
+    - **Conta Única**
+    - **Parcelamento**
+    - **Recorrente (Programada)**
+13. Se for parcelado:
+    - informe a quantidade de parcelas
+    - se quiser, defina o primeiro vencimento
+    - clique em **Gerar parcelas**
+    - revise os valores e vencimentos
+14. Se quiser, escreva uma **observação**.
+15. Se necessário, anexe arquivos.
+16. Revise os dados e clique em **Confirmar**.
+
+Exemplo real:
+
+- Uma oficina compra peças com pagamento em 3 boletos. A equipe escolhe o fornecedor, informa o valor total, seleciona **Parcelamento**, gera as parcelas e registra a linha digitável em cada uma antes de salvar.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de lançamento de **Contas a Pagar** com os campos principais preenchidos.
+:::
+
+### Como registrar o pagamento
+
+1. Na lista de contas, localize a conta em aberto.
+2. Clique em **Pagar**.
+3. Confira os dados da conta.
+4. Informe a **data do pagamento**.
+5. Se houver, informe:
+   - **juros**
+   - **desconto**
+6. Confira o **total pago**.
+7. Clique em **Registrar pagamento**.
+
+Exemplo real:
+
+- Um boleto venceu e foi pago com juros. A equipe abre a conta, informa a data do pagamento, lança o valor do juros e confirma a quitação.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de **Pagamento da conta** com os campos de juros, desconto e total pago.
+:::
+
+### Como alterar uma conta
+
+1. Na lista ou nos detalhes da conta, clique em **Alterar**.
+2. Ajuste os campos necessários.
+3. Revise as informações.
+4. Clique em **Confirmar**.
+
+### Como alterar o vencimento
+
+1. Na lista de contas, localize a conta em aberto.
+2. Clique no ícone de **editar vencimento**.
+3. Informe a nova data.
+4. Clique em **Confirmar**.
+
+### Como cancelar uma conta
+
+1. Na lista ou nos detalhes, clique em **Cancelar**.
+2. Informe o **motivo do cancelamento**.
+3. Confirme a ação.
+
+### Como estornar um pagamento
+
+1. Localize a conta já paga.
+2. Clique em **Estornar**.
+3. Confirme a operação.
+
+## Explicação dos campos principais
+
+- **Tipo da conta**: define a forma principal da cobrança, como **Avulso**, **Boleto** ou **PIX**.
+- **Empresa**: loja ou empresa responsável pelo lançamento.
+- **Fornecedor**: pessoa ou empresa que irá receber o pagamento.
+- **Data da emissão**: data em que a conta foi lançada.
+- **Conta / identificação**: número ou texto para localizar a conta depois.
+- **Valor da conta**: valor total previsto para pagamento.
+- **Data do vencimento**: dia em que a conta deve ser paga.
+- **Número NF**: número da nota fiscal relacionada, quando houver.
+- **Plano de conta**: categoria financeira da despesa.
+- **Identificação**: campo usado para guardar a informação principal de cobrança.
+- **Quantidade de parcelas**: número de parcelas que o sistema vai criar.
+- **Primeiro vencimento**: data base para o parcelamento.
+- **Parcela**: número de cada parcela gerada.
+- **Valor da parcela**: valor individual de cada parcela.
+- **Prazo em meses**: duração da recorrência, quando houver prazo definido.
+- **Opção de vencimento**: forma como a recorrência será calculada.
+- **Dia do vencimento**: dia fixo usado na programação.
+- **Intervalo em dias**: quantidade de dias entre um lançamento e outro.
+- **Dia da semana**: usado para recorrência semanal.
+- **Observações**: espaço para registrar informações importantes.
+- **Arquivos anexos**: documentos que ficam vinculados à conta.
+
+## Situações práticas de uso
+
+- **Lançar uma despesa simples**: quando a empresa quer registrar uma única conta com vencimento futuro.
+- **Registrar um boleto de fornecedor**: quando o pagamento será feito por boleto e a linha digitável precisa ficar salva.
+- **Salvar um PIX de cobrança**: quando o fornecedor enviou um código PIX e a empresa quer guardar essa informação junto da conta.
+- **Parcelar uma compra**: quando o valor será pago em várias datas.
+- **Criar uma conta recorrente**: quando existe uma despesa fixa, como aluguel, internet ou serviço mensal.
+- **Guardar comprovantes e documentos**: quando a equipe precisa anexar arquivos ligados ao lançamento.
+
+## Dicas importantes
+
+- Confira se o **fornecedor** e a **empresa** estão corretos antes de salvar.
+- Use uma **identificação fácil de localizar**, principalmente em contas parecidas.
+- Se a conta for por **boleto** ou **PIX**, vale a pena preencher a identificação com atenção para facilitar o pagamento depois.
+- Revise o **vencimento** antes de confirmar o lançamento.
+- Quando usar **parcelamento**, sempre revise as parcelas geradas.
+- Se alterar o valor da conta depois de gerar parcelas, o sistema pode cancelar as parcelas e pedir nova geração.
+- Use a aba de detalhes para consultar:
+  - histórico de operações
+  - notas fiscais vinculadas
+  - instruções de pagamento
+  - anexos
+- Sempre que possível, anexe comprovantes ou documentos importantes na própria conta.
+
+## Erros comuns
+
+- **Tentar salvar sem fornecedor**: o sistema exige o fornecedor.
+- **Tentar salvar sem plano de conta**: esse campo é obrigatório.
+- **Informar valor zerado**: a conta precisa ter valor maior que zero.
+- **Usar data de vencimento anterior à emissão**: o sistema bloqueia esse tipo de lançamento.
+- **Parcelar sem gerar as parcelas**: o sistema exige a geração das parcelas.
+- **Deixar as parcelas com dados inconsistentes**: a tela pode avisar para revisar os dados gerados.
+- **Tentar pagar conta cancelada ou quitada**: o sistema só aceita pagamento em contas abertas.
+- **Tentar alterar conta já quitada**: o sistema não permite alteração nesse caso.
+- **Informar valor final negativo no pagamento**: isso pode acontecer se o desconto for maior do que o valor devido mais os juros.
+
+## Perguntas frequentes
+
+### Posso registrar juros e desconto no pagamento?
+
+Sim. A tela de pagamento permite informar os dois valores e recalcula o total pago.
+
+### Posso alterar a conta depois de salvar?
+
+Sim, desde que a conta ainda esteja em aberto.
+
+### Posso cancelar uma conta já paga?
+
+Não. Contas quitadas não podem ser canceladas diretamente.
+
+### Posso trocar o vencimento depois?
+
+Sim, desde que a conta ainda esteja em aberto.
+
+### Posso anexar documentos?
+
+Sim. A conta pode receber anexos para guardar comprovantes e outros arquivos importantes.
+
+### O sistema aceita parcelamento?
+
+Sim. A tela permite gerar e ajustar parcelas antes de salvar.
+
+### Quais situações a conta pode ter?
+
+As principais situações encontradas são:
+
+- **Aberta**
+- **Quitada**
+- **Cancelada**
+
+### Posso filtrar contas vencidas?
+
+Sim. A lista possui filtros como:
+
+- **Vencidas**
+- **Vencendo Hoje**
+- **Vencendo Este Mês**
+- **Abertas**
+- **Quitadas**
+- **Canceladas**
+
+:::info Espaço para imagem
+Adicione aqui uma captura da lista com filtros, valores e ações principais.
+:::
