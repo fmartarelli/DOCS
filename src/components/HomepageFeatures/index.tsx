@@ -15,19 +15,19 @@ const categoryList: CategoryItem[] = [
   {
     title: 'Comece aqui',
     slug: '/docs/comecar/primeiros-passos',
-    description: 'Onboarding, configuracao inicial e ordem ideal de aprendizado.',
+    description: 'Onboarding, configuração inicial e ordem ideal de aprendizado.',
     icon: 'IN',
   },
   {
     title: 'Cadastros',
     slug: '/docs/cadastros/clientes',
-    description: 'Clientes, produtos e servicos com linguagem simples.',
+    description: 'Clientes, produtos e serviços do sistema.',
     icon: 'CD',
   },
   {
-    title: 'Operacao',
+    title: 'Operação',
     slug: '/docs/operacao/orcamentos',
-    description: 'Orcamentos, ordens de servico e processos do dia a dia.',
+    description: 'Orçamentos, ordens de serviço e processos do dia a dia.',
     icon: 'OP',
   },
   {
@@ -37,25 +37,17 @@ const categoryList: CategoryItem[] = [
     icon: 'FN',
   },
   {
-    title: 'Gestao',
+    title: 'Gestão',
     slug: '/docs/gestao/dashboard',
-    description: 'Dashboard, relatorios e acompanhamento de resultados.',
+    description: 'Dashboard, relatórios e acompanhamento de resultados.',
     icon: 'GS',
   },
   {
     title: 'FAQ e suporte',
     slug: '/docs/faq/faq-principal',
-    description: 'Respostas rapidas, erros comuns e canais de atendimento.',
+    description: 'Respostas rápidas, erros comuns e canais de atendimento.',
     icon: 'FA',
   },
-];
-
-const tutorialSections = [
-  'Resumo objetivo',
-  'Passo a passo numerado',
-  'Dicas praticas',
-  'Erros comuns',
-  'FAQ relacionado',
 ];
 
 function CategoryCard({title, slug, description, icon}: CategoryItem) {
@@ -67,7 +59,7 @@ function CategoryCard({title, slug, description, icon}: CategoryItem) {
           {title}
         </Heading>
         <p className={styles.cardDescription}>{description}</p>
-        <span className={styles.cardLink}>Ver conteudo</span>
+        <span className={styles.cardLink}>Ver conteúdo</span>
       </Link>
     </article>
   );
@@ -79,10 +71,10 @@ export default function HomepageFeatures(): ReactNode {
       <div className="container">
         <div className={styles.sectionHeader}>
           <span className={styles.sectionEyebrow}>Estrutura da central de ajuda</span>
-          <Heading as="h2">Categorias claras para usuarios leigos encontrarem o que precisam</Heading>
+          <Heading as="h2">Categorias claras para encontrar o que você precisa</Heading>
           <p>
-            A navegacao foi organizada para reduzir atrito, facilitar a busca e
-            manter o suporte visivel em todos os momentos.
+            A navegação foi organizada para reduzir atrito, facilitar a busca e
+            manter o suporte visível em todos os momentos.
           </p>
         </div>
 
@@ -93,24 +85,11 @@ export default function HomepageFeatures(): ReactNode {
         </div>
 
         <div className={styles.splitSection}>
-          <div className={styles.tutorialCard}>
-            <span className={styles.sectionEyebrow}>Padrao de tutorial</span>
-            <Heading as="h2">Cada tutorial segue a mesma estrutura</Heading>
-            <div className={styles.tutorialList}>
-              {tutorialSections.map((section, index) => (
-                <div key={section} className={styles.tutorialItem}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <p>{section}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div className={styles.supportCard}>
             <span className={styles.sectionEyebrow}>CTA de suporte</span>
-            <Heading as="h2">Nao encontrou o que precisava?</Heading>
+            <Heading as="h2">Não encontrou o que precisava?</Heading>
             <p>
-              Nossa equipe pode ajudar voce a concluir a tarefa com seguranca e
+              Nossa equipe pode ajudar você a concluir a tarefa com segurança e
               sem perder tempo.
             </p>
             <div className={styles.supportActions}>

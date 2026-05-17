@@ -1,34 +1,135 @@
 ---
-title: Orcamentos
+title: Orçamentos
 sidebar_position: 1
 ---
 
-# Orcamentos
+# Criar e acompanhar orçamentos
 
-## Resumo
+## Quando utilizar
 
-O modulo de orcamentos deve ser ensinado como um fluxo pratico, desde a criacao ate a aprovacao.
+Use esta funcionalidade quando você precisar montar uma proposta para o cliente antes de executar o serviço.
 
-## Passo a passo recomendado
+Exemplos práticos:
+- quando o cliente pede um preço antes de aprovar o atendimento
+- quando a empresa precisa detalhar produtos e serviços que serão cobrados
+- quando você quer registrar uma proposta para acompanhar depois
+- quando o orçamento poderá virar uma Ordem de Serviço após a aprovação
 
-1. escolher o cliente
-2. adicionar produtos e servicos
-3. revisar valores
-4. aplicar desconto, se necessario
-5. salvar e enviar
+## Como acessar
 
-## Dicas
+1. No menu do sistema, acesse **Orçamentos**.
+2. Abra a lista de orçamentos.
+3. Clique em **Lançar** para criar um novo orçamento.
 
-- mantenha exemplos simples
-- explique cada status do orcamento
+:::info Imagem sugerida
+Adicione aqui uma captura da lista de orçamentos com o botão **Lançar** destacado.
+:::
+
+## Passo a passo
+
+1. Escolha a **empresa** que vai emitir o orçamento.
+2. Informe o **vendedor** responsável.
+3. Selecione o **cliente**.
+4. Confira os dados principais do cliente, como **telefone**, **e-mail**, **contato** e **endereço**.
+5. Se precisar, informe a **data do próximo contato**.
+6. Preencha a **validade do orçamento**.
+7. No campo **Detalhamento**, descreva de forma simples o que será feito.
+8. Adicione os **serviços** que farão parte da proposta.
+9. Adicione os **produtos**, se houver.
+10. Se necessário, informe **acréscimo** ou **desconto**.
+11. Se o orçamento não tiver itens, informe o **valor orçado manual**.
+12. Preencha a **condição de pagamento**.
+13. Se precisar, adicione **observação** e **garantia**.
+14. Revise o valor total.
+15. Clique em **Salvar**.
+16. Acompanhe a situação do orçamento: **Aberto**, **Aprovado** ou **Recusado**.
+
+Exemplo real:
+- Uma oficina precisa orçar troca de peças e mão de obra. O atendente escolhe o cliente, adiciona as peças, inclui o serviço, revisa o total e salva o orçamento para o cliente analisar.
+
+:::info Imagem sugerida
+Adicione aqui uma captura da tela de lançamento do orçamento mostrando as áreas de dados gerais, cliente, itens e totais.
+:::
+
+## Explicação dos campos principais
+
+- **Empresa**: define qual empresa está registrando o orçamento.
+- **Vendedor**: informa quem está responsável pela proposta.
+- **Cliente**: identifica para quem o orçamento será criado.
+- **Telefone do cliente**: ajuda no contato com o cliente e é um dado importante no preenchimento.
+- **E-mail**: pode ser usado para comunicação e envio de informações.
+- **Contato**: nome da pessoa com quem a empresa está falando.
+- **Endereço do cliente / visita**: usado quando a proposta depende de um local de atendimento.
+- **Data do próximo contato**: ajuda a lembrar quando a equipe deve falar novamente com o cliente.
+- **Validade do orçamento**: mostra até quando a proposta pode ser considerada válida.
+- **Detalhamento**: campo para explicar o serviço ou a proposta com mais clareza.
+- **Serviços**: registra os serviços que serão cobrados.
+- **Produtos**: registra os produtos que farão parte do orçamento.
+- **Acréscimo**: aumenta o valor final.
+- **Desconto**: reduz o valor final.
+- **Valor orçado manual**: permite informar um valor direto quando não houver produtos nem serviços lançados.
+- **Condição de pagamento**: descreve como o pagamento foi combinado.
+- **Observação**: traz informações extras que podem aparecer no orçamento.
+- **Garantia**: registra a informação de garantia, quando necessário.
+- **Campos personalizados**: servem para dados extras definidos pela empresa.
+
+## Situações práticas de uso
+
+- **Orçamento rápido de visita técnica**: ideal quando a empresa quer passar um valor de atendimento sem montar vários itens.
+- **Orçamento detalhado com peças e serviços**: útil quando o cliente precisa entender exatamente o que será cobrado.
+- **Proposta com acompanhamento comercial**: quando a empresa quer salvar a data do próximo contato para retornar ao cliente.
+- **Orçamento que vira atendimento**: quando o cliente aprova a proposta e a empresa segue para a criação da Ordem de Serviço.
+
+## Dicas importantes
+
+- Revise os valores antes de aprovar o orçamento.
+- Use o campo **Detalhamento** para explicar o que será feito de forma simples.
+- Preencha a **validade do orçamento** para evitar dúvidas com o cliente.
+- Se houver item ainda em digitação, finalize ou cancele esse item antes de salvar.
+- Use **valor manual** somente quando não houver serviços nem produtos lançados.
+- Confira o endereço selecionado quando o atendimento depender de visita.
 
 ## Erros comuns
 
-- esquecer itens obrigatorios
-- aprovar sem revisar valores
+- **Tentar salvar sem cliente**: o orçamento precisa estar ligado a um cliente.
+- **Informar valor manual e também lançar itens**: esse uso não é permitido.
+- **Preencher data passada no próximo contato ou validade**: essas datas precisam ser atuais ou futuras.
+- **Aprovar sem revisar o total**: isso pode gerar cobrança errada.
+- **Tentar alterar um orçamento aprovado ou recusado**: o sistema bloqueia esse tipo de alteração.
 
-## FAQ
+## Perguntas frequentes
 
-### Posso transformar um orcamento em ordem de servico?
+### Posso criar um orçamento sem produtos ou serviços?
 
-Sim. Essa deve ser uma das principais paginas desta secao.
+Sim. Nesse caso, você pode usar o campo **valor orçado manual**.
+
+### Posso usar valor manual junto com produtos e serviços?
+
+Não. O valor manual deve ser usado sozinho, sem itens lançados.
+
+### O que acontece quando o orçamento é aprovado?
+
+O orçamento fica com situação **Aprovado** e pode seguir para o fluxo de criação de uma **Ordem de Serviço**.
+
+### Posso alterar um orçamento depois que ele foi aprovado?
+
+Não. O sistema bloqueia alterações em orçamentos aprovados ou recusados.
+
+### Para que serve a data do próximo contato?
+
+Ela ajuda a equipe a lembrar quando deve falar novamente com o cliente sobre a proposta.
+
+## Imagens sugeridas
+
+- Lista de orçamentos com o botão **Lançar**
+- Tela de lançamento com os blocos principais destacados
+- Exemplo de orçamento com serviços, produtos, desconto e total
+- Tela de alteração de situação para **Aprovado** ou **Recusado**
+
+## Espaço para vídeo
+
+Adicione aqui um vídeo curto mostrando:
+- como criar um orçamento
+- como adicionar itens
+- como revisar o total
+- como aprovar ou recusar a proposta

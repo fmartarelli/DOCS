@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'DOCS',
   tagline:
-    'Central de ajuda do Maxflow para oficinas, prestadores de servico e pequenas empresas',
+    'Central de ajuda do Maxflow para oficinas, prestadores de serviço e empresas de serviços',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -56,18 +56,19 @@ const config: Config = {
       hideOnScroll: true,
       logo: {
         alt: 'Maxflow DOCS',
-        src: 'img/logo.svg',
+        src: 'img/maxflow-logo.png',
+        srcDark: 'img/maxflow-logo-dark.png',
       },
       items: [
-        {to: '/docs/intro', label: 'Comece aqui', position: 'left'},
+        { to: '/docs/intro', label: 'Comece aqui', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'helpCenterSidebar',
           position: 'left',
           label: 'Central de Ajuda',
         },
-        {to: '/docs/faq/faq-principal', label: 'FAQ', position: 'left'},
-        {to: '/docs/suporte/contato', label: 'Suporte', position: 'right'},
+        { to: '/docs/faq/faq-principal', label: 'FAQ', position: 'left' },
+        { to: '/docs/suporte/contato', label: 'Suporte', position: 'right' },
       ],
     },
     footer: {
@@ -76,7 +77,7 @@ const config: Config = {
         {
           title: 'Primeiros passos',
           items: [
-            {label: 'Visao geral', to: '/docs/comecar/visao-geral-do-maxflow'},
+            { label: 'Visao geral', to: '/docs/comecar/visao-geral-do-maxflow' },
             {
               label: 'Configuracao inicial',
               to: '/docs/comecar/configuracao-inicial',
@@ -86,8 +87,8 @@ const config: Config = {
         {
           title: 'Operacao',
           items: [
-            {label: 'Clientes', to: '/docs/cadastros/clientes'},
-            {label: 'Orcamentos', to: '/docs/operacao/orcamentos'},
+            { label: 'Clientes', to: '/docs/cadastros/clientes' },
+            { label: 'Orcamentos', to: '/docs/operacao/orcamentos' },
             {
               label: 'Ordens de servico',
               to: '/docs/operacao/ordens-de-servico',
@@ -97,8 +98,8 @@ const config: Config = {
         {
           title: 'Ajuda',
           items: [
-            {label: 'FAQ principal', to: '/docs/faq/faq-principal'},
-            {label: 'Contato com suporte', to: '/docs/suporte/contato'},
+            { label: 'FAQ principal', to: '/docs/faq/faq-principal' },
+            { label: 'Contato com suporte', to: '/docs/suporte/contato' },
           ],
         },
       ],

@@ -58,6 +58,15 @@ h4 {
   font-weight: 800;
 }
 
+.navbar__brand {
+  gap: 0.75rem;
+}
+
+.navbar__logo img {
+  height: 34px;
+  width: auto;
+}
+
 .button {
   border-radius: 999px;
   font-weight: 700;
