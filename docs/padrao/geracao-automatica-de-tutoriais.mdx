@@ -1,0 +1,204 @@
+---
+title: Geracao automatica de tutoriais
+sidebar_position: 1
+---
+
+# Geracao automatica de tutoriais
+
+Este documento define o padrao oficial para transformar telas do Maxflow, regras de negocio e fluxos do sistema em tutoriais para usuarios finais.
+
+## Objetivo
+
+Converter informacoes tecnicas em conteudo simples, claro e util para quem usa o sistema no dia a dia.
+
+## Regras obrigatorias
+
+- escrever em portugues do Brasil
+- usar linguagem simples
+- pensar em usuario leigo
+- nao usar termos tecnicos complexos sem explicar
+- nao inventar funcionalidades
+- explicar quando usar a funcionalidade
+- explicar os campos importantes
+- sempre incluir exemplos praticos
+- sempre entregar o conteudo em Markdown
+- sempre deixar a saida pronta para Docusaurus
+
+## O que observar antes de escrever
+
+Antes de gerar um tutorial, revise:
+
+1. o nome da tela
+2. o objetivo da funcionalidade
+3. quando essa tela e usada no processo
+4. quais campos sao obrigatorios ou sensiveis
+5. quais acoes o usuario pode fazer
+6. quais erros podem acontecer
+7. quais duvidas um usuario leigo normalmente teria
+
+## Como transformar codigo e regra de negocio em linguagem de usuario
+
+### Em vez de explicar a tecnologia
+
+Nao escreva sobre Angular, componentes, API, eventos internos ou validacoes tecnicas sem necessidade.
+
+### Explique o que o usuario enxerga e faz
+
+Descreva:
+
+- o que aparece na tela
+- para que serve cada parte importante
+- em que momento usar
+- como preencher
+- o que revisar antes de salvar ou concluir
+
+### Traducao recomendada
+
+- "validacao de campo obrigatorio" vira "campo que precisa ser preenchido"
+- "persistir dados" vira "salvar as informacoes"
+- "registro" vira "cadastro", "lancamento" ou "informacao", conforme o contexto
+- "mensagem de erro de integracao" vira "erro ao enviar a informacao"
+
+## Estrutura obrigatoria do tutorial
+
+Todo tutorial deve conter exatamente estas secoes:
+
+```md
+# Titulo
+## Quando usar
+## O que essa tela faz
+## Passo a passo
+## Explicacao dos campos
+## Dicas importantes
+## Erros comuns
+## Perguntas frequentes
+```
+
+## Orientacao por secao
+
+### Titulo
+
+Use um nome direto e facil de localizar.
+
+Exemplo:
+
+- Como cadastrar um cliente
+- Como emitir uma nota fiscal
+- Como abrir uma ordem de servico
+
+### Quando usar
+
+Explique em que situacao a tela deve ser usada.
+
+Exemplo:
+
+"Use esta tela quando precisar cadastrar um novo cliente antes de criar um orcamento ou uma ordem de servico."
+
+### O que essa tela faz
+
+Explique o papel da tela em poucas linhas.
+
+Exemplo:
+
+"Esta tela permite registrar os dados principais do cliente para que ele possa ser usado em atendimentos, orcamentos e financeiro."
+
+### Passo a passo
+
+Use lista numerada e ordem cronologica.
+
+Exemplo:
+
+1. Acesse o menu **Cadastros**.
+2. Clique em **Clientes**.
+3. Clique em **Novo cliente**.
+4. Preencha os campos principais.
+5. Clique em **Salvar**.
+
+### Explicacao dos campos
+
+Explique apenas os campos importantes para o usuario.
+
+Exemplo:
+
+- **Nome do cliente**: nome que sera usado para localizar o cadastro.
+- **Telefone**: ajuda no contato rapido com o cliente.
+- **CPF ou CNPJ**: use o documento correto conforme o tipo de cliente.
+
+### Dicas importantes
+
+Traga orientacoes praticas que evitem retrabalho.
+
+Exemplo:
+
+- revise o documento antes de salvar
+- evite cadastrar o mesmo cliente duas vezes
+- use nomes completos para facilitar a busca
+
+### Erros comuns
+
+Descreva o problema de forma simples, com causa e correcao.
+
+Exemplo:
+
+- **Nao consigo salvar**: verifique se os campos obrigatorios foram preenchidos.
+- **Cliente duplicado**: pesquise pelo nome ou documento antes de criar um novo cadastro.
+
+### Perguntas frequentes
+
+Adicione duvidas reais de usuario.
+
+Exemplo:
+
+- Posso editar o cadastro depois?
+- Como inativar um cliente sem apagar o historico?
+
+## Exemplo pratico
+
+### Entrada tecnica
+
+- tela de cadastro de cliente
+- campos: nome, tipo de pessoa, CPF/CNPJ, telefone, email
+- botao salvar
+- validacao de nome obrigatorio
+
+### Saida esperada para o usuario
+
+```md
+# Como cadastrar um cliente
+
+## Quando usar
+Use esta tela quando precisar registrar um novo cliente antes de criar orcamentos, ordens de servico ou lancamentos ligados a ele.
+
+## O que essa tela faz
+Esta tela permite salvar os dados principais do cliente para que ele possa ser usado nas rotinas do sistema.
+
+## Passo a passo
+1. Acesse o menu **Cadastros**.
+2. Clique em **Clientes**.
+3. Clique em **Novo cliente**.
+4. Informe o nome do cliente.
+5. Escolha se o cliente e pessoa fisica ou juridica.
+6. Preencha o CPF ou CNPJ.
+7. Adicione telefone e email, se necessario.
+8. Clique em **Salvar**.
+
+## Explicacao dos campos
+- **Nome do cliente**: campo principal para identificar o cadastro.
+- **Tipo de pessoa**: define se o cliente e pessoa fisica ou juridica.
+- **CPF ou CNPJ**: documento usado para identificacao.
+- **Telefone**: facilita o contato com o cliente.
+- **Email**: pode ser usado para enviar informacoes e comunicados.
+
+## Dicas importantes
+- confira se o nome foi digitado corretamente
+- pesquise antes para evitar cadastro duplicado
+- use o documento correto de acordo com o tipo de pessoa
+
+## Erros comuns
+- **Campo nome em branco**: preencha o nome do cliente antes de salvar.
+- **Documento incorreto**: verifique se o CPF ou CNPJ foi informado no campo certo.
+
+## Perguntas frequentes
+- Posso editar o cliente depois? Sim, desde que voce tenha permissao.
+- Posso cadastrar sem telefone? Depende das regras da empresa e da tela.
+```

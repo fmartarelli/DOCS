@@ -1,0 +1,220 @@
+.heroBanner {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 4rem;
+  background:
+    radial-gradient(circle at top left, rgba(68, 126, 255, 0.3), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(41, 93, 217, 0.22), transparent 24%),
+    linear-gradient(135deg, #091a34 0%, #102a52 55%, #153b74 100%);
+  color: #f6f9ff;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.95fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.heroCopy {
+  animation: liftIn 600ms ease-out both;
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  margin: 1rem 0 0.75rem;
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  line-height: 0.95;
+}
+
+.heroSubtitle {
+  margin: 0;
+  max-width: 46rem;
+  font-size: 1.2rem;
+  color: rgba(246, 249, 255, 0.9);
+}
+
+.heroDescription {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  line-height: 1.75;
+  color: rgba(246, 249, 255, 0.82);
+}
+
+.searchCard {
+  margin-top: 1.5rem;
+  padding: 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.4rem;
+  background: rgba(5, 18, 36, 0.36);
+  box-shadow: 0 24px 70px rgba(3, 10, 20, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+.searchLabel {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: #bcd2ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 64px;
+  padding: 0.95rem 1rem;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #21314f;
+}
+
+.searchIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 76px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: #eaf2ff;
+  color: #1e5eff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.searchPlaceholder {
+  color: #516179;
+}
+
+.searchChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.searchChips a {
+  display: inline-flex;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f6f9ff;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.heroPanel {
+  animation: liftIn 820ms ease-out both;
+}
+
+.panelCard,
+.panelMeta {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  background: rgba(6, 18, 37, 0.38);
+  box-shadow: 0 24px 70px rgba(3, 10, 20, 0.25);
+  backdrop-filter: blur(18px);
+}
+
+.panelCard {
+  padding: 1.5rem;
+}
+
+.panelLabel {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: #8fb5ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.panelList {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.9;
+}
+
+.panelMeta {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.panelMeta div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.panelMeta strong {
+  color: #ffffff;
+}
+
+.panelMeta span {
+  color: rgba(246, 249, 255, 0.8);
+}
+
+@keyframes liftIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 0 3rem;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroTitle {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .searchBox {
+    border-radius: 1.25rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchChips {
+    flex-direction: column;
+  }
+}
