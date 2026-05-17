@@ -1,0 +1,167 @@
+---
+title: Lançamento de Contas Recorrentes
+sidebar_position: 3
+---
+
+# Lançamento de Contas Recorrentes
+
+## Quando utilizar
+
+Use esta funcionalidade quando a empresa precisa criar contas que se repetem com frequência, sem precisar lançar tudo manualmente todos os meses.
+
+Exemplos práticos:
+
+- mensalidade de cliente com cobrança fixa
+- contrato de manutenção cobrado todo mês
+- aluguel da empresa
+- internet, sistema, telefone ou serviço mensal
+- pagamento recorrente para fornecedor fixo
+
+## Como acessar
+
+Você pode criar uma conta recorrente em dois lugares:
+
+1. Acesse **Financeiro > Contas a Receber** e clique em **Lançar**.
+2. Ou acesse **Financeiro > Contas a Pagar** e clique em **Lançar**.
+3. Na tela de lançamento, escolha a opção **Recorrente (Programada)**.
+
+Para acompanhar as recorrências já criadas:
+
+1. Acesse **Financeiro > Contas a Receber** ou **Financeiro > Contas a Pagar**.
+2. Clique em **Contas recorrentes**.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de lançamento com a opção **Recorrente (Programada)** destacada.
+:::
+
+## Passo a passo
+
+1. Abra a tela de lançamento de conta.
+2. Preencha os dados principais da conta:
+   - empresa
+   - cliente ou fornecedor
+   - identificação da conta
+   - valor
+   - plano de conta
+   - observação, se necessário
+3. Em **tipo de pagamento**, escolha **Recorrente (Programada)**.
+4. Defina o **prazo em meses**.
+   - se a recorrência não tiver prazo final, marque como **indeterminado**
+5. Escolha como o vencimento será repetido:
+   - **Todo dia**
+   - **A cada X dias**
+   - **Toda semana**
+6. Preencha os campos que aparecem conforme a opção escolhida.
+7. Revise a configuração.
+8. Clique em **Confirmar** para salvar.
+
+Exemplo real:
+
+- Uma empresa cobra mensalmente um contrato de manutenção no valor de R$ 350,00. O atendente abre **Contas a Receber**, escolhe o cliente, informa o valor, marca **Recorrente (Programada)** e configura o vencimento para **todo dia 10**.
+
+Outro exemplo:
+
+- A empresa paga aluguel todo mês. O responsável abre **Contas a Pagar**, escolhe o fornecedor, informa o valor, marca **Recorrente (Programada)** e define a cobrança para **todo dia 5**, com prazo indeterminado.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da área de configuração da recorrência mostrando prazo, tipo de vencimento e data base.
+:::
+
+### Como funciona depois de salvar
+
+Depois que a recorrência é criada:
+
+- o sistema passa a usar essa programação para gerar novos lançamentos
+- os lançamentos são criados automaticamente conforme a configuração
+- cada conta gerada depois pode ser tratada normalmente
+  - em contas a receber: receber, estornar ou cancelar
+  - em contas a pagar: pagar, estornar ou cancelar
+
+Importante:
+
+- a recorrência não significa que a conta já foi paga ou recebida
+- ela apenas programa os próximos lançamentos
+
+## Explicação dos campos principais
+
+- **Empresa**: define qual empresa ou loja será responsável pelos lançamentos gerados.
+- **Cliente**: usado nas contas recorrentes a receber.
+- **Fornecedor**: usado nas contas recorrentes a pagar.
+- **Conta / identificação**: nome ou número que ajuda a reconhecer a conta depois.
+- **Valor da conta**: valor que será usado nos lançamentos gerados.
+- **Plano de conta**: categoria financeira usada para organizar a conta.
+- **Observações**: espaço para registrar detalhes importantes sobre a recorrência.
+- **Prazo em meses**: quantidade de meses em que a recorrência ficará ativa.
+- **Prazo indeterminado**: mantém a recorrência sem data final definida.
+- **Vencimento - Todo dia**: gera a conta em um dia fixo do mês, como dia 5 ou dia 10.
+- **Vencimento - A cada X dias**: gera novas contas conforme o intervalo definido.
+- **Vencimento - Toda semana**: usa um dia da semana como base, como segunda-feira ou sexta-feira.
+- **Dia do vencimento**: usado quando a recorrência será em um dia fixo do mês.
+- **Intervalo em dias**: usado quando a recorrência será contada por intervalo.
+- **Dia da semana**: usado quando a recorrência for semanal.
+- **Data do primeiro vencimento**: data inicial usada como base em algumas programações.
+
+## Situações práticas de uso
+
+- **Cobrança mensal fixa**: quando a empresa precisa cobrar o mesmo cliente todos os meses.
+- **Serviço contínuo**: quando há manutenção, suporte ou contrato recorrente.
+- **Despesas administrativas**: quando a empresa paga aluguel, telefone ou internet sempre na mesma lógica.
+- **Pagamentos por intervalo**: quando o vencimento não segue um dia fixo do mês, mas sim um espaço de dias.
+- **Cobranças por dia da semana**: quando a rotina da empresa depende de uma programação semanal.
+
+## Dicas importantes
+
+- Use nomes fáceis de entender na identificação da conta.
+- Revise se está criando a recorrência em **Contas a Receber** ou **Contas a Pagar**.
+- Se a cobrança ou despesa não tem data final, use o **prazo indeterminado** com cuidado.
+- Se a recorrência tiver data certa para terminar, preencha o prazo corretamente.
+- Confira se o tipo de vencimento escolhido faz sentido para a rotina da empresa.
+- Se a conta precisa cair sempre no mesmo dia do mês, prefira a opção **Todo dia**.
+- Se a regra depende de um intervalo, use **A cada X dias**.
+- Depois de criada, acompanhe a área de **Contas recorrentes** para verificar se a programação está ativa.
+
+## Erros comuns
+
+- **Criar recorrência no módulo errado**: por exemplo, lançar em `Contas a Pagar` quando a ideia era cobrar um cliente.
+- **Esquecer de informar cliente ou fornecedor**: a conta precisa ter a pessoa correta vinculada.
+- **Não preencher plano de conta**: esse campo continua sendo obrigatório.
+- **Informar valor zerado**: a recorrência precisa de valor maior que zero.
+- **Configurar o vencimento errado**: escolher um tipo de repetição que não combina com a rotina real.
+- **Definir prazo menor do que o necessário**: a recorrência pode parar antes do esperado.
+- **Confundir recorrência com quitação automática**: o sistema gera a conta, mas o pagamento ou recebimento ainda precisa ser tratado depois.
+
+## Perguntas frequentes
+
+### A conta recorrente já fica paga ou recebida automaticamente?
+
+Não. A recorrência serve para criar os lançamentos futuros. Depois disso, cada conta precisa ser tratada normalmente.
+
+### Posso usar conta recorrente em contas a receber e contas a pagar?
+
+Sim. O sistema possui essa opção nos dois módulos.
+
+### O que significa prazo indeterminado?
+
+Significa que a recorrência não tem uma data final definida.
+
+### Posso acompanhar as recorrências cadastradas?
+
+Sim. Existe a área de **Contas recorrentes** dentro dos módulos financeiros.
+
+### Qual a diferença entre “Todo dia”, “A cada X dias” e “Toda semana”?
+
+- **Todo dia**: usa um dia fixo do mês.
+- **A cada X dias**: repete pela quantidade de dias informada.
+- **Toda semana**: usa um dia da semana como base.
+
+### Quando a recorrência para de gerar contas?
+
+Quando ela tiver um prazo definido e esse prazo for atingido. Se estiver como indeterminada, a programação continua ativa até ser encerrada.
+
+### O sistema gera as contas automaticamente?
+
+Sim. A própria tela informa que as contas recorrentes são programações para lançamentos automáticos do sistema conforme a configuração salva.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da lista de **Contas recorrentes** para mostrar como acompanhar os lançamentos programados.
+:::

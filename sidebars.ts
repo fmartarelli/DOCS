@@ -23,7 +23,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Operação',
+      label: 'Operacao',
       items: ['operacao/orcamentos', 'operacao/ordens-de-servico'],
     },
     {
@@ -38,16 +38,26 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Financeiro',
-      items: ['financeiro/contas-a-receber', 'financeiro/contas-a-pagar'],
+      items: [
+        'financeiro/contas-a-receber',
+        'financeiro/contas-a-pagar',
+        'financeiro/contas-recorrentes',
+      ],
     },
     {
       type: 'category',
-      label: 'Gestão',
-      items: ['gestao/dashboard', 'gestao/relatorios'],
+      label: 'Gestao',
+      items: [
+        'gestao/dashboard',
+        'gestao/visao-gerencial',
+        'gestao/dashboard-operacional',
+        'gestao/dashboard-financeiro',
+        'gestao/relatorios',
+      ],
     },
     {
       type: 'category',
-      label: 'Configurações',
+      label: 'Configuracoes',
       items: [
         'configuracoes/configuracoes-gerais',
         'configuracoes/usuarios-e-permissoes',
@@ -55,7 +65,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Padrão editorial',
+      label: 'Padrao editorial',
       items: ['padrao/geracao-automatica-de-tutoriais', 'padrao/template-de-tutorial'],
     },
     {
