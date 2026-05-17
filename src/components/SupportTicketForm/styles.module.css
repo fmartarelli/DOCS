@@ -1,0 +1,168 @@
+.wrapper {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.infoCard,
+.formCard,
+.warningBox,
+.errorBox,
+.successBox {
+  border-radius: 1.25rem;
+}
+
+.infoCard {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid rgba(15, 39, 71, 0.08);
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 39, 71, 0.06);
+}
+
+.infoCard strong {
+  color: #0f2747;
+}
+
+.infoCard span {
+  color: #42536f;
+}
+
+.infoCard a {
+  margin-top: 0.35rem;
+  font-weight: 700;
+}
+
+.warningBox {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(215, 148, 0, 0.22);
+  background: #fff7e6;
+  color: #6c4a00;
+}
+
+.formCard {
+  padding: 1.4rem;
+  border: 1px solid rgba(15, 39, 71, 0.08);
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 39, 71, 0.08);
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  font-weight: 700;
+  color: #0f2747;
+}
+
+.field label span {
+  color: #d92d20;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #d9e3f0;
+  border-radius: 0.95rem;
+  background: #ffffff;
+  font: inherit;
+  color: #1c2430;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #1e5eff;
+  box-shadow: 0 0 0 3px rgba(30, 94, 255, 0.12);
+}
+
+.errorBox {
+  margin-top: 0.5rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(217, 45, 32, 0.16);
+  background: #fff2f1;
+  color: #7a271a;
+}
+
+.errorBox ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.successBox {
+  margin-top: 0.5rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(18, 183, 106, 0.16);
+  background: #ecfdf3;
+  color: #067647;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primaryButton {
+  border: 0;
+  background: #1e5eff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.primaryButton:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.secondaryButton {
+  border: 1px solid #1e5eff;
+  color: #1e5eff;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 996px) {
+  .infoGrid,
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .actions {
+    flex-direction: column;
+  }
+}

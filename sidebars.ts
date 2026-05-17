@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Operacao',
+      label: 'Operação',
       items: ['operacao/orcamentos', 'operacao/ordens-de-servico'],
     },
     {
@@ -34,17 +34,20 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Gestao',
+      label: 'Gestão',
       items: ['gestao/dashboard', 'gestao/relatorios'],
     },
     {
       type: 'category',
-      label: 'Configuracoes',
-      items: ['configuracoes/configuracoes-gerais', 'configuracoes/usuarios-e-permissoes'],
+      label: 'Configurações',
+      items: [
+        'configuracoes/configuracoes-gerais',
+        'configuracoes/usuarios-e-permissoes',
+      ],
     },
     {
       type: 'category',
-      label: 'Padrao editorial',
+      label: 'Padrão editorial',
       items: ['padrao/geracao-automatica-de-tutoriais', 'padrao/template-de-tutorial'],
     },
     {
@@ -55,7 +58,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Suporte',
-      items: ['suporte/contato'],
+      items: ['suporte/contato', 'suporte/chamado'],
     },
   ],
 };
