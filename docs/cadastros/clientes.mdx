@@ -1,29 +1,128 @@
 ---
-title: Clientes
+title: Pessoas
 sidebar_position: 1
 ---
 
-# Clientes
+# Cadastrar pessoas
 
-## Resumo
+## Quando utilizar
 
-O cadastro de clientes e a base para orcamentos, ordens de servico e financeiro.
+Use esta funcionalidade quando você precisar cadastrar no sistema:
 
-## Subcategorias recomendadas
+- um cliente
+- um fornecedor
+- uma transportadora
+- uma pessoa que pode ter mais de uma função ao mesmo tempo
 
-- cadastrar cliente
-- editar cliente
-- localizar cliente
-- inativar cadastro
-- corrigir dados
+Exemplos práticos:
 
-## Paginas obrigatorias
+- cadastrar um novo cliente para criar orçamentos e Ordens de Serviço
+- cadastrar um fornecedor para compras e lançamentos futuros
+- cadastrar uma transportadora para organizar entregas
+- atualizar o cadastro de uma empresa que também compra e vende para você
 
-- como cadastrar cliente pessoa fisica
-- como cadastrar cliente pessoa juridica
-- como corrigir um cadastro
-- como evitar duplicidade
+## Como acessar
 
-## URL sugerida
+1. No menu do sistema, acesse **Pessoas**.
+2. Abra a lista de cadastros.
+3. Clique em **Cadastrar** para criar um novo registro.
 
-`/docs/cadastros/clientes`
+:::info Espaço para imagem
+Adicione aqui uma captura da lista de Pessoas com o botão **Cadastrar** destacado.
+:::
+
+## Passo a passo
+
+1. Escolha se o cadastro será usado como:
+   - **Cliente**
+   - **Fornecedor**
+   - **Transportadora**
+2. Preencha o **CPF/CNPJ**.
+3. Se o cadastro for de empresa e você tiver o CNPJ, use a busca automática para tentar preencher parte dos dados.
+4. Informe o **RG/IE**, quando necessário.
+5. Escolha o **tipo de contribuinte**.
+6. Preencha o **nome**.
+7. Se quiser, informe o **apelido** ou **nome fantasia**.
+8. Informe a **data de nascimento**, quando fizer sentido para o cadastro.
+9. Preencha uma **observação**, se precisar registrar algum detalhe importante.
+10. Vá para a aba de **Endereços** e cadastre o endereço principal.
+11. Vá para a aba de **Telefones** e informe pelo menos os contatos que a equipe mais usa.
+12. Vá para a aba de **E-mails** e adicione os e-mails importantes.
+13. Se a sua empresa usar esse controle, preencha a aba de **Limites de crédito**.
+14. Se houver campos extras na sua empresa, preencha os **campos personalizados**.
+15. Revise os dados e clique em **Salvar**.
+
+Exemplo real:
+
+- Uma oficina recebe um novo cliente pessoa jurídica. O atendente informa o CNPJ, usa a busca automática para preencher parte dos dados, confirma o nome da empresa, cadastra telefone, e-mail e endereço, marca o cadastro como **Cliente** e salva para usar no orçamento.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de cadastro de Pessoas mostrando as abas de dados, endereços, telefones e e-mails.
+:::
+
+## Explicação dos campos principais
+
+- **Cliente**: indica que esse cadastro poderá ser usado em vendas, orçamentos e Ordens de Serviço.
+- **Fornecedor**: indica que esse cadastro poderá ser usado em rotinas de compra e relacionamento com fornecedores.
+- **Transportadora**: identifica que a pessoa ou empresa também poderá ser usada em entregas e transporte.
+- **CPF/CNPJ**: documento principal do cadastro. O sistema também usa esse campo para evitar duplicidade.
+- **RG/IE**: documento complementar, usado conforme o tipo de pessoa e a necessidade da empresa.
+- **Tipo de contribuinte**: define a informação fiscal básica do cadastro.
+- **Nome**: nome da pessoa ou razão social da empresa.
+- **Apelido / Nome fantasia**: nome mais curto para facilitar a identificação.
+- **Data de nascimento**: usada quando o cadastro for de pessoa física ou quando a empresa quiser manter esse controle.
+- **Observação**: espaço para anotar informações importantes sobre o cadastro.
+- **Endereços**: guarda os locais ligados à pessoa ou empresa.
+- **Telefones**: registra os números para contato.
+- **E-mails**: registra os e-mails usados no relacionamento com a pessoa ou empresa.
+- **Limites de crédito**: controla valores máximos permitidos, quando esse recurso for usado pela empresa.
+- **Campos personalizados**: servem para guardar informações extras configuradas pela própria empresa.
+
+## Situações práticas de uso
+
+- **Cadastrar um cliente novo**: quando a empresa precisa gerar orçamento, Ordem de Serviço ou lançamento financeiro para uma pessoa que ainda não existe no sistema.
+- **Cadastrar um fornecedor**: quando será necessário organizar compras, pagamentos ou histórico de relacionamento.
+- **Cadastrar uma transportadora**: quando a empresa precisa registrar quem faz entregas ou movimentação de mercadorias.
+- **Usar um único cadastro com mais de uma função**: quando a mesma empresa é cliente e também fornecedora.
+- **Completar dados após consultar o CNPJ**: quando a busca automática já traz parte das informações e a equipe só precisa revisar e complementar.
+
+## Dicas importantes
+
+- Antes de cadastrar, confira se a pessoa já não existe no sistema para evitar duplicidade.
+- Quando tiver CNPJ, vale a pena usar a busca automática para ganhar tempo.
+- Preencha corretamente o **tipo de contribuinte** para evitar problemas em rotinas fiscais.
+- Revise telefone, e-mail e endereço antes de salvar, porque esses dados são muito usados no dia a dia.
+- Se começar a cadastrar um endereço, telefone ou e-mail, conclua ou cancele antes de salvar a tela.
+- Use a observação para registrar informações úteis para a equipe, como preferência de contato ou algum detalhe comercial.
+
+## Erros comuns
+
+- **Tentar salvar sem nome**: o sistema exige o preenchimento do nome.
+- **Tentar salvar sem tipo de contribuinte**: esse campo é obrigatório.
+- **Cadastrar CPF/CNPJ já existente**: o sistema valida duplicidade e pode direcionar para alteração do cadastro já existente.
+- **Deixar um endereço, telefone ou e-mail em edição**: o sistema pede para concluir ou cancelar antes de salvar.
+- **Informar cidade inválida no endereço**: o cadastro não será concluído se a cidade não existir corretamente.
+- **Não revisar os dados puxados pelo CNPJ**: mesmo quando a busca ajuda, é importante conferir o que foi preenchido.
+
+## Perguntas frequentes
+
+### Posso cadastrar a mesma pessoa como cliente e fornecedor?
+
+Sim. O mesmo cadastro pode ter mais de uma função.
+
+### O sistema busca dados automaticamente pelo CNPJ?
+
+Sim. Quando o documento é CNPJ, a tela pode buscar informações para ajudar no preenchimento.
+
+### O que acontece se o CPF/CNPJ já estiver cadastrado?
+
+O sistema avisa que já existe um cadastro e pode direcionar para a alteração desse registro.
+
+### Posso salvar sem terminar de preencher um telefone ou endereço?
+
+Não. Se houver item em preenchimento ou alteração, é preciso concluir ou cancelar antes.
+
+### Para que serve o limite de crédito?
+
+Ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.
+

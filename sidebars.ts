@@ -15,7 +15,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Cadastros',
-      items: ['cadastros/clientes', 'cadastros/produtos-e-servicos'],
+      items: [
+        'cadastros/clientes',
+        'cadastros/produtos-e-servicos',
+        'cadastros/colaboradores',
+      ],
     },
     {
       type: 'category',

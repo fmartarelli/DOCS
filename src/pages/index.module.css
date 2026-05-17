@@ -169,6 +169,11 @@
   color: rgba(246, 249, 255, 0.82);
 }
 
+.searchMatch {
+  color: #bcd2ff;
+  font-size: 0.82rem;
+}
+
 .searchChips {
   display: flex;
   flex-wrap: wrap;
