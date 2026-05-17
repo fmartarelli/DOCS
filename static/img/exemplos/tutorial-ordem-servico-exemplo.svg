@@ -1,0 +1,33 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="32" fill="#F4F8FF"/>
+  <rect x="36" y="36" width="1128" height="648" rx="28" fill="#FFFFFF" stroke="#D9E3F0" stroke-width="2"/>
+  <rect x="72" y="72" width="1056" height="76" rx="18" fill="#0F2747"/>
+  <rect x="96" y="95" width="196" height="30" rx="8" fill="#1E5EFF"/>
+  <rect x="856" y="92" width="120" height="36" rx="18" fill="#EAF2FF"/>
+  <rect x="992" y="92" width="100" height="36" rx="18" fill="#1E5EFF"/>
+  <rect x="72" y="180" width="264" height="456" rx="20" fill="#F7FAFF" stroke="#E1EAF6" stroke-width="2"/>
+  <rect x="100" y="212" width="160" height="18" rx="9" fill="#0F2747"/>
+  <rect x="100" y="252" width="200" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="100" y="286" width="176" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="100" y="320" width="188" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="100" y="354" width="150" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="368" y="180" width="760" height="110" rx="20" fill="#F7FAFF" stroke="#E1EAF6" stroke-width="2"/>
+  <rect x="396" y="208" width="188" height="18" rx="9" fill="#0F2747"/>
+  <rect x="396" y="246" width="140" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="560" y="246" width="140" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="724" y="246" width="140" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="888" y="246" width="140" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="368" y="314" width="760" height="188" rx="20" fill="#F7FAFF" stroke="#E1EAF6" stroke-width="2"/>
+  <rect x="396" y="342" width="220" height="18" rx="9" fill="#0F2747"/>
+  <rect x="396" y="382" width="704" height="16" rx="8" fill="#D7E3F7"/>
+  <rect x="396" y="414" width="704" height="16" rx="8" fill="#D7E3F7"/>
+  <rect x="396" y="446" width="704" height="16" rx="8" fill="#D7E3F7"/>
+  <rect x="368" y="526" width="500" height="110" rx="20" fill="#F7FAFF" stroke="#E1EAF6" stroke-width="2"/>
+  <rect x="396" y="554" width="180" height="18" rx="9" fill="#0F2747"/>
+  <rect x="396" y="592" width="200" height="14" rx="7" fill="#AFC4E8"/>
+  <rect x="892" y="526" width="236" height="110" rx="20" fill="#0F2747"/>
+  <rect x="920" y="554" width="120" height="18" rx="9" fill="#FFFFFF"/>
+  <rect x="920" y="592" width="92" height="28" rx="14" fill="#1E5EFF"/>
+  <text x="96" y="560" fill="#0F2747" font-family="Arial, sans-serif" font-size="22" font-weight="700">Exemplo visual de tutorial</text>
+  <text x="96" y="592" fill="#50627F" font-family="Arial, sans-serif" font-size="18">Use este arquivo apenas para validar a estrutura de imagens no DOCS.</text>
+</svg>
