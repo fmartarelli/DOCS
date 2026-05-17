@@ -1,23 +1,90 @@
 ---
 title: Relatorios
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 # Relatorios
 
-## Resumo
+## Visao geral
 
-Os relatorios devem ser organizados pelo que o usuario quer descobrir.
+O modulo de `Relatorios` do Maxflow foi feito para ajudar a empresa a consultar dados, acompanhar resultados e gerar impressoes em PDF.
 
-## Subcategorias recomendadas
+Na pratica, o fluxo mais comum e:
 
-- relatorios financeiros
-- relatorios operacionais
-- relatorios de clientes
-- exportacao
+1. Entrar em `Relatorios`
+2. Escolher o tipo de relatorio
+3. Definir filtros como empresa, periodo e situacao
+4. Conferir os dados na tela
+5. Imprimir o resultado quando necessario
 
-## FAQ
+Os relatorios foram separados nestas paginas:
 
-### Por que os numeros podem ser diferentes?
+- [Relatorios de Ordens de Servico](/docs/gestao/relatorios-ordens-de-servico)
+- [Relatorios de Orcamentos](/docs/gestao/relatorios-orcamentos)
+- [Relatorios Financeiros](/docs/gestao/relatorios-financeiros)
+- [Relatorios de Estoques](/docs/gestao/relatorios-estoques)
+- [Relatorios de Produtividade](/docs/gestao/relatorios-produtividade)
+- [Relatorios de Comissoes](/docs/gestao/relatorios-comissoes)
+- [Relatorios de Notas Fiscais de Entrada](/docs/gestao/relatorios-notas-fiscais-de-entrada)
 
-Explique filtros, periodo e status dos registros.
+## Como a tela de relatorios funciona
+
+- A tela inicial mostra os relatorios em formato de cards.
+- Cada card leva para uma tela com filtros e resultados.
+- Em varios relatorios, os dados atualizam assim que o filtro muda.
+- Em alguns relatorios, o usuario pode ver lista, grafico ou os dois.
+- A impressao gera um arquivo em PDF.
+
+## Recursos principais do modulo
+
+- cards com os relatorios liberados para o usuario
+- bloqueio de relatorios por permissao
+- bloqueio de alguns relatorios por plano
+- filtro de empresas
+- filtro de periodo
+- ordenacao por coluna
+- paginacao
+- impressao
+- fila de relatorios gerados
+
+## Fila de relatorios
+
+O sistema tambem possui uma area de acompanhamento para relatorios gerados.
+
+Situacoes encontradas:
+
+- `Enfileirado`
+- `Em execucao`
+- `Liberado`
+- `Erro`
+
+Quando o relatorio estiver liberado, o usuario pode:
+
+- abrir o arquivo
+- baixar o arquivo
+
+## Dicas importantes
+
+- Sempre confira o periodo escolhido antes de analisar os numeros.
+- Se um relatorio mostrar poucos dados, revise filtros como empresa, situacao e tipo de data.
+- Em varios relatorios, o sistema permite clicar em linhas agrupadas para refinar o periodo.
+- Alguns relatorios mostram dados diferentes conforme a data escolhida para filtro.
+
+## Perguntas frequentes
+
+### Por que um relatorio pode nao aparecer para mim?
+
+- Porque o acesso pode depender da permissao do usuario ou do plano contratado.
+
+### O relatorio sempre atualiza sozinho?
+
+- Na maioria das telas sim, principalmente quando o usuario muda filtros.
+
+### Posso imprimir qualquer resultado?
+
+- Nos relatorios com botao de impressao ativo, sim. O sistema gera um PDF com os dados da tela.
+
+### Existe diferenca entre visao analitica e sintetica?
+
+- Sim. A visao analitica mostra mais detalhes. A visao sintetica resume os dados por cliente, fornecedor ou outro agrupamento.
+

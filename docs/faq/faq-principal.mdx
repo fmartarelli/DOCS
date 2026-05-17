@@ -5,39 +5,431 @@ sidebar_position: 1
 
 # FAQ principal
 
-## Acesso e configuracao
+## Acesso e primeiros passos
 
-- Como entrar no sistema pela primeira vez?
-- Esqueci minha senha. O que fazer?
-- Como criar um novo usuario?
-- Como alterar permissoes?
+### Como entrar no sistema pela primeira vez?
+
+- O ideal é começar pela visão geral do sistema e pelos primeiros passos.
+- Se a empresa já criou seu acesso, entre com os dados enviados pelo responsável.
+- Se quiser um guia inicial, consulte:
+- [Visão geral do Maxflow](/docs/comecar/visao-geral-do-maxflow)
+- [Primeiros passos](/docs/comecar/primeiros-passos)
+
+### Qual módulo devo aprender primeiro?
+
+- O caminho mais simples é:
+- `Cadastros`
+- `Orçamentos`
+- `Ordens de Serviço`
+- `Financeiro`
+- `Dashboard e Relatórios`
+
+### Preciso aprender financeiro antes da operação?
+
+- Não.
+- Na maioria dos casos, a empresa começa aprendendo cadastro, orçamento e ordem de serviço.
+- O financeiro pode ser aprendido logo depois.
+
+### O que fazer quando o usuário não consegue entrar?
+
+- Primeiro confirme se o acesso do usuário está ativo.
+- Depois revise e-mail, senha e permissões de acesso.
+- Se o problema continuar, peça apoio ao responsável pelo sistema ou ao suporte.
 
 ## Cadastros
 
-- Como cadastrar um cliente?
-- Como corrigir um cadastro errado?
-- Como cadastrar um servico?
-- Posso inativar um item sem apagar o historico?
+### Posso cadastrar a mesma pessoa como cliente e fornecedor?
 
-## Operacao
+- Sim.
+- O mesmo cadastro pode ser usado com mais de uma classificação.
 
-- Como criar um orcamento?
-- Como transformar um orcamento em ordem de servico?
-- Como acompanhar o status de uma ordem?
-- Como reabrir uma ordem finalizada?
+### O sistema busca dados automaticamente pelo CNPJ?
+
+- Sim, em alguns casos o sistema pode ajudar no preenchimento quando o documento é CNPJ.
+
+### O que acontece se o CPF/CNPJ já estiver cadastrado?
+
+- O sistema avisa que o documento já existe e pode direcionar para alteração do cadastro existente.
+
+### Posso salvar sem terminar de preencher um telefone ou endereço?
+
+- Não.
+- Se houver um item em preenchimento, o sistema pede para concluir ou cancelar antes de salvar.
+
+### Para que serve o limite de crédito?
+
+- Serve para controlar até quanto aquele cliente pode comprar ou utilizar em negociações da empresa.
+
+### Produto e serviço são cadastrados na mesma tela?
+
+- Sim.
+- O mesmo módulo atende produto e serviço.
+
+### Posso cadastrar um serviço sem estoque?
+
+- Sim.
+- Serviço não depende do mesmo uso de estoque de um produto.
+
+### A descrição curta é obrigatória?
+
+- Sim.
+- Esse é um dos campos principais do cadastro.
+
+### Posso adicionar imagem ao item?
+
+- Sim.
+- O cadastro permite incluir imagem.
+
+### O que acontece se eu bloquear a alteração de preço na Ordem de Serviço?
+
+- O sistema passa a tratar o preço do item como fixo dentro da O.S.
+- Se essa opção for usada sem preço informado, o sistema pode alertar.
+
+### Todo colaborador precisa acessar o sistema?
+
+- Não.
+- O acesso ao sistema é opcional no cadastro do colaborador.
+
+### Quando o e-mail e a senha se tornam obrigatórios?
+
+- Quando a opção de permitir acesso ao sistema estiver ativada.
+
+### Posso vincular um colaborador a mais de uma empresa?
+
+- Sim.
+
+### Para que serve a comissão?
+
+- Esse campo ajuda nos cálculos e controles ligados à comissão do colaborador.
+
+### Posso cadastrar um técnico sem criar usuário de acesso?
+
+- Sim.
+- O colaborador pode existir no sistema sem login liberado.
+
+## Operação
+
+### Posso criar um orçamento sem produtos ou serviços?
+
+- Sim, desde que o processo da empresa permita usar valor manual no orçamento.
+
+### Posso usar valor manual junto com produtos e serviços no orçamento?
+
+- Não.
+- O valor manual não deve ser usado junto com itens lançados.
+
+### O que acontece quando o orçamento é aprovado?
+
+- Depois da aprovação, o orçamento pode seguir para geração de Ordem de Serviço.
+
+### Posso alterar um orçamento depois que ele foi aprovado?
+
+- Não normalmente.
+- O sistema possui bloqueios para esse tipo de alteração.
+
+### Para que serve a data do próximo contato?
+
+- Serve para acompanhar quando a empresa deve voltar a falar com o cliente sobre aquele orçamento.
+
+### Posso abrir uma Ordem de Serviço sem orçamento?
+
+- Sim.
+- A O.S. pode ser aberta diretamente.
+
+### Posso gerar uma Ordem de Serviço a partir de um orçamento?
+
+- Sim.
+- Esse fluxo existe no sistema.
+
+### Posso usar valor manual junto com produtos e serviços na Ordem de Serviço?
+
+- Não.
+- Assim como no orçamento, o valor manual não deve ser misturado com itens lançados.
+
+### O pagamento é obrigatório na Ordem de Serviço?
+
+- Sim.
+- A ordem exige consistência nas informações de pagamento.
+
+### Posso parcelar o valor da Ordem de Serviço?
+
+- Sim.
+- O sistema permite trabalhar com parcelamento.
+
+### O que acontece depois que a ordem é concluída?
+
+- A O.S. passa a ter bloqueios de alteração em vários cenários.
+
+### Posso anexar arquivos na Ordem de Serviço?
+
+- Sim.
+- O sistema aceita anexos dentro dos limites configurados.
+
+### Para que serve a observação interna?
+
+- Serve para registrar informações de uso interno da equipe.
 
 ## Fiscal
 
-- Como emitir uma nota fiscal?
-- O que fazer quando a nota retorna erro?
+### Posso salvar a nota sem transmitir?
+
+- Sim.
+- A tela permite salvar primeiro e transmitir depois.
+
+### Posso transmitir depois?
+
+- Sim.
+- Depois do salvamento, a transmissão pode ser feita no momento certo.
+
+### Posso emitir uma nota a partir de uma Ordem de Serviço?
+
+- Sim.
+- Esse fluxo existe tanto em nota de produto quanto em nota de serviço.
+
+### Posso usar uma nota de entrada para gerar uma devolução?
+
+- Sim.
+- Esse recurso existe na nota fiscal de produto.
+
+### O que significa natureza da operação?
+
+- É o campo que informa a finalidade da nota.
+- Na prática, ajuda a indicar se a emissão é de venda, saída ou devolução.
+- Essa escolha pode mudar etapas e dados exigidos na tela.
+
+### O que acontece se um produto estiver sem tributação?
+
+- O sistema aponta o problema e pede correção antes de continuar.
+
+### O tomador é sempre obrigatório na NFSe?
+
+- Nem sempre.
+- A tela possui casos em que esse comportamento pode variar.
+
+### O que preciso revisar antes de transmitir uma nota?
+
+- Natureza da operação
+- destinatário ou tomador
+- itens lançados
+- tributação
+- documentos referenciados, quando houver
+- preview final
+
+### Quando posso imprimir o DANFE?
+
+- Quando a nota já estiver autorizada.
+
+### Quando posso baixar o XML?
+
+- Quando a nota estiver na situação correta, como autorizada ou cancelada, conforme o caso.
 
 ## Financeiro
 
-- Como registrar um recebimento?
-- Como lancar uma conta a pagar?
-- Como fazer baixa de um titulo?
+### Posso receber só parte da conta?
 
-## Gestao
+- Sim.
+- Em contas a receber, o sistema permite recebimento parcial.
 
-- Como ler o dashboard?
-- Como gerar um relatorio?
+### Posso alterar o vencimento depois?
+
+- Sim, em contas que ainda estejam em aberto.
+
+### Posso cancelar uma conta que já foi recebida?
+
+- Não diretamente.
+- Primeiro é necessário verificar o estorno, quando aplicável.
+
+### O sistema gera recibo?
+
+- Sim.
+- Esse recurso existe em contas a receber.
+
+### Para que serve a conta recorrente?
+
+- Serve para automatizar lançamentos que se repetem com frequência.
+
+### A conta recorrente já fica paga ou recebida automaticamente?
+
+- Não.
+- Ela gera os lançamentos, mas não quita a conta sozinha.
+
+### Posso usar conta recorrente em contas a receber e contas a pagar?
+
+- Sim.
+
+### O que significa prazo indeterminado?
+
+- Significa que a recorrência continua gerando lançamentos até que seja encerrada.
+
+### Posso acompanhar as recorrências cadastradas?
+
+- Sim.
+- O sistema possui área própria para esse acompanhamento.
+
+### Qual a diferença entre “Todo dia”, “A cada X dias” e “Toda semana”?
+
+- Cada opção muda a forma como o sistema repete os lançamentos.
+- Uma usa repetição diária.
+- Outra usa intervalo de dias.
+- Outra usa repetição semanal.
+
+### Quando a recorrência para de gerar contas?
+
+- Quando chega ao limite configurado ou quando a recorrência é encerrada.
+
+### O sistema gera as contas automaticamente?
+
+- Sim, conforme a configuração da recorrência.
+
+### Posso registrar juros e desconto no pagamento?
+
+- Sim.
+- Isso existe em contas a pagar.
+
+### Posso alterar a conta depois de salvar?
+
+- Em muitos casos sim, desde que a conta ainda esteja em aberto.
+
+### Posso cancelar uma conta já paga?
+
+- Não diretamente.
+- Contas já pagas costumam exigir estorno antes de outras ações.
+
+### Posso anexar documentos?
+
+- Sim.
+- Esse recurso existe em contas a pagar.
+
+### O sistema aceita parcelamento?
+
+- Sim.
+- Há suporte a parcelamento em contas a pagar e em outros fluxos financeiros.
+
+### Quais situações a conta pode ter?
+
+- Em geral:
+- `Aberta`
+- `Quitada`
+- `Cancelada`
+
+### Posso localizar contas vencidas com facilidade?
+
+- Sim.
+- O sistema possui filtros e relatórios que ajudam nessa consulta.
+
+## Gestão
+
+### O Dashboard abre em qual visão?
+
+- Ele abre primeiro na `Visão Gerencial`.
+
+### Posso trocar de visão sem sair da página?
+
+- Sim.
+
+### O que muda entre ano, mês e últimos 30 dias?
+
+- O sistema muda o período analisado e atualiza os indicadores.
+
+### O Dashboard serve para lançar informações?
+
+- Não.
+- Ele foi feito para acompanhamento e análise.
+
+### O que aparece na Agenda do dia?
+
+- Orçamentos vencendo
+- próximos contatos
+- ordens agendadas
+- ordens com prazo de conclusão
+
+### O que significa CMV?
+
+- É o custo dos itens usados nas ordens de serviço.
+
+### O que é conversão em valor?
+
+- É a comparação entre o valor total orçado e o valor aprovado.
+
+### Posso abrir detalhes a partir do Dashboard?
+
+- Sim.
+- Em vários blocos existem atalhos para telas relacionadas.
+
+### O tempo médio mostra ordens em aberto?
+
+- Não.
+- Ele resume o tempo médio das ordens concluídas no período.
+
+### O que é saúde financeira?
+
+- É uma nota de resumo da situação financeira da empresa.
+
+### O que significa inadimplência?
+
+- É a parte do valor a receber que já venceu e ainda não foi recebida.
+
+### Saldo em caixa é igual a valor a receber?
+
+- Não.
+- Saldo em caixa mostra o que já entrou e saiu.
+- Valor a receber mostra o que ainda falta entrar.
+
+### Posso usar a visão gerencial para acompanhar estoque?
+
+- Sim.
+
+### O que é valor em aberto no Dashboard Financeiro?
+
+- É o valor lançado que ainda não foi pago ou recebido.
+
+### O que é valor atrasado?
+
+- É o valor que já venceu e continua pendente.
+
+### Para que serve a DRE?
+
+- Serve para resumir o resultado da empresa no período.
+
+### Posso usar essa visão para orientar cobranças?
+
+- Sim.
+- Ela ajuda a localizar valores em aberto e atrasados.
+
+### Por que um relatório pode não aparecer para mim?
+
+- Porque o acesso pode depender da permissão do usuário ou do plano contratado.
+
+### O relatório sempre atualiza sozinho?
+
+- Na maioria das telas sim, principalmente ao trocar os filtros.
+
+### Posso imprimir qualquer resultado?
+
+- Nos relatórios com impressão ativa, sim.
+
+### Existe diferença entre visão analítica e sintética?
+
+- Sim.
+- A analítica mostra mais detalhes.
+- A sintética resume os dados por cliente, fornecedor, técnico ou outro agrupamento.
+
+## Suporte
+
+### Qual é o WhatsApp do suporte?
+
+- `(16) 99713-9753`
+
+### Qual é o horário de atendimento no WhatsApp?
+
+- Segunda a sexta: `08:00 às 19:00`
+- Sábado: `08:00 às 13:00`
+
+### Qual é o e-mail do suporte?
+
+- `Suporte@maxflow.com.br`
+
+### Posso abrir chamado pelo DOCS?
+
+- Sim.
+- O projeto possui uma área de chamado dentro da seção de suporte.

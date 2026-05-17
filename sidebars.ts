@@ -53,6 +53,13 @@ const sidebars: SidebarsConfig = {
         'gestao/dashboard-operacional',
         'gestao/dashboard-financeiro',
         'gestao/relatorios',
+        'gestao/relatorios-ordens-de-servico',
+        'gestao/relatorios-orcamentos',
+        'gestao/relatorios-financeiros',
+        'gestao/relatorios-estoques',
+        'gestao/relatorios-produtividade',
+        'gestao/relatorios-comissoes',
+        'gestao/relatorios-notas-fiscais-de-entrada',
       ],
     },
     {

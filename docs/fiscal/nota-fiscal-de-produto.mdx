@@ -7,166 +7,182 @@ sidebar_position: 2
 
 ## Quando utilizar
 
-Use esta funcionalidade quando a empresa precisar emitir uma nota fiscal de venda, saída ou devolução de produtos.
+Use esta funcionalidade quando a empresa precisar emitir uma nota fiscal de venda, saida ou devolucao de produtos.
 
-Exemplos práticos:
+Exemplos praticos:
 
-- vender uma peça para um cliente
-- emitir uma nota de saída de mercadoria
-- gerar uma devolução com base em uma nota de entrada
-- transformar uma Ordem de Serviço em nota fiscal de produto
+- vender uma peca para um cliente
+- emitir uma nota de saida de mercadoria
+- gerar uma devolucao com base em uma nota de entrada
+- transformar uma Ordem de Servico em nota fiscal de produto
 
 ## Como acessar
 
 1. No menu do sistema, acesse **Documentos fiscais**.
-2. Entre em **Notas fiscais de emissão**.
-3. Clique em **Lançar**.
+2. Entre em **Notas fiscais de emissao**.
+3. Clique em **Lancar**.
 
-:::info Espaço para imagem
-Adicione aqui uma captura da lista de notas fiscais com o botão **Lançar** destacado.
+:::info Espaco para imagem
+Adicione aqui uma captura da lista de notas fiscais com o botao **Lancar** destacado.
 :::
 
 ## Passo a passo
 
-1. Na etapa **Cabeçalho**, escolha a **empresa**.
-2. Selecione a **natureza da operação**.
-3. Informe o **local da operação**.
-4. Escolha o **tipo de tributação**.
-5. Confira a **data de emissão** e a **hora de emissão**.
-6. Se necessário, informe também a **data de saída** e a **hora de saída**.
-7. Clique em **Avançar**.
-8. Na etapa **Destinatário**, selecione a pessoa que vai receber a nota.
+1. Na etapa **Cabecalho**, escolha a **empresa**.
+2. Selecione a **natureza da operacao**.
+   - Esse campo define o objetivo da nota.
+   - Em geral, ele ajuda a indicar se a emissao sera de venda, saida ou devolucao.
+   - A escolha correta pode mudar as proximas etapas da tela e os dados exigidos na emissao.
+3. Informe o **local da operacao**.
+4. Escolha o **tipo de tributacao**.
+5. Confira a **data de emissao** e a **hora de emissao**.
+6. Se necessario, informe tambem a **data de saida** e a **hora de saida**.
+7. Clique em **Avancar**.
+8. Na etapa **Destinatario**, selecione a pessoa que vai receber a nota.
 9. Confira os dados principais:
    - CPF/CNPJ
-   - inscrição estadual
+   - inscricao estadual
    - tipo de contribuinte
-   - endereço
+   - endereco
    - telefone
    - e-mail
-10. Se o endereço da pessoa não estiver correto, ajuste antes de continuar.
-11. Clique em **Avançar**.
-12. Se a operação for de devolução, preencha os **documentos referenciados**.
-13. Clique em **Avançar**.
+10. Se o endereco da pessoa nao estiver correto, ajuste antes de continuar.
+11. Clique em **Avancar**.
+12. Se a operacao for de devolucao, preencha os **documentos referenciados**.
+13. Clique em **Avancar**.
 14. Na etapa **Produtos**, adicione os itens da nota.
 15. Para cada item, revise:
    - produto
    - quantidade
-   - valor unitário
-   - código fiscal
-   - tributação
-16. Preencha os totais, se necessário:
+   - valor unitario
+   - codigo fiscal
+   - tributacao
+16. Preencha os totais, se necessario:
    - frete
    - seguro
    - outras despesas
    - desconto
-17. Se o sistema apontar produto sem tributação, corrija antes de seguir.
-18. Clique em **Avançar**.
+17. Se o sistema apontar produto sem tributacao, corrija antes de seguir.
+18. Clique em **Avancar**.
 19. Na etapa **Complementos**, informe os dados de transporte se a nota exigir.
-20. Preencha as **informações adicionais**, quando precisar registrar observações para o fisco ou para o destinatário.
-21. Clique em **Avançar**.
-22. Na etapa **Preview**, revise a prévia da nota.
-23. Escolha uma das opções:
+20. Preencha as **informacoes adicionais**, quando precisar registrar observacoes para o fisco ou para o destinatario.
+21. Clique em **Avancar**.
+22. Na etapa **Preview**, revise a previa da nota.
+23. Escolha uma das opcoes:
    - **Apenas salvar**
    - **Salvar e transmitir**
-24. Depois do lançamento, acompanhe a situação da nota na lista.
+24. Depois do lancamento, acompanhe a situacao da nota na lista.
 
 Exemplo real:
 
-- Uma empresa vende uma peça de reposição para um cliente. O atendente abre a emissão, escolhe a empresa, seleciona o cliente, adiciona a peça, confere os valores, revisa o preview e usa a opção **Salvar e transmitir**.
+- Uma empresa vende uma peca de reposicao para um cliente. O atendente abre a emissao, escolhe a empresa, seleciona o cliente, adiciona a peca, confere os valores, revisa o preview e usa a opcao **Salvar e transmitir**.
 
-:::info Espaço para imagem
-Adicione aqui uma captura da tela de lançamento da NFe mostrando as etapas do assistente.
+:::info Espaco para imagem
+Adicione aqui uma captura da tela de lancamento da NFe mostrando as etapas do assistente.
 :::
 
-## Explicação dos campos principais
+## Explicacao dos campos principais
 
-- **Empresa**: define qual empresa está emitindo a nota.
-- **Natureza da operação**: informa o tipo da operação fiscal da nota.
-- **Local da operação**: indica onde a operação acontece.
-- **Tipo de tributação**: define o tipo de cálculo fiscal usado na nota.
-- **Data de emissão**: mostra o dia de emissão da nota.
-- **Hora de emissão**: mostra o horário da emissão.
-- **Data de saída**: usada quando a saída da mercadoria precisa ser informada.
-- **Hora de saída**: complementa o horário de saída.
-- **Destinatário**: pessoa ou empresa que vai receber a nota.
-- **CPF/CNPJ**: documento principal do destinatário.
-- **RG/IE**: documento complementar do destinatário.
-- **Tipo de contribuinte**: classificação fiscal do destinatário.
-- **Endereço**: local ligado ao destinatário.
+- **Empresa**: define qual empresa esta emitindo a nota.
+- **Natureza da operacao**: informa qual e o objetivo da nota fiscal. Na pratica, esse campo ajuda o sistema a entender que tipo de emissao esta sendo feita, como uma venda, uma saida de mercadoria ou uma devolucao. Essa escolha influencia o restante do preenchimento e pode exigir etapas e informacoes adicionais, como a etapa de **documentos referenciados** em operacoes de devolucao.
+- **Local da operacao**: indica onde a operacao acontece.
+- **Tipo de tributacao**: define o tipo de calculo fiscal usado na nota.
+- **Data de emissao**: mostra o dia de emissao da nota.
+- **Hora de emissao**: mostra o horario da emissao.
+- **Data de saida**: usada quando a saida da mercadoria precisa ser informada.
+- **Hora de saida**: complementa o horario de saida.
+- **Destinatario**: pessoa ou empresa que vai receber a nota.
+- **CPF/CNPJ**: documento principal do destinatario.
+- **RG/IE**: documento complementar do destinatario.
+- **Tipo de contribuinte**: classificacao fiscal do destinatario.
+- **Endereco**: local ligado ao destinatario.
 - **Telefone**: contato principal.
-- **E-mail**: contato eletrônico do destinatário.
-- **Documentos referenciados**: usados em operações como devolução.
-- **Produto**: item que será lançado na nota.
+- **E-mail**: contato eletronico do destinatario.
+- **Documentos referenciados**: usados em operacoes como devolucao.
+- **Produto**: item que sera lancado na nota.
 - **Quantidade**: quantidade do item.
-- **Valor unitário**: preço por unidade.
-- **Código fiscal**: código usado para a operação do item.
+- **Valor unitario**: preco por unidade.
+- **Codigo fiscal**: codigo usado para a operacao do item.
 - **Frete**: valor de transporte.
-- **Seguro**: valor de seguro da operação.
-- **Outras despesas acessórias**: despesas extras da nota.
+- **Seguro**: valor de seguro da operacao.
+- **Outras despesas acessorias**: despesas extras da nota.
 - **Desconto**: valor abatido do total.
-- **Informações adicionais do fisco**: observações fiscais.
-- **Informações adicionais do contribuinte**: observações que podem acompanhar a nota.
+- **Informacoes adicionais do fisco**: observacoes fiscais.
+- **Informacoes adicionais do contribuinte**: observacoes que podem acompanhar a nota.
 - **Transporte**: bloco usado quando a nota exige dados de frete, transportadora ou volumes.
 
-## Situações práticas de uso
+## Situacoes praticas de uso
 
 - **Venda de produto para cliente**: quando a empresa conclui uma venda e precisa emitir a nota fiscal da mercadoria.
-- **Nota gerada a partir de Ordem de Serviço**: quando a OS já tem produtos lançados e a empresa quer aproveitar esses dados.
-- **Devolução de compra**: quando a empresa usa uma nota de entrada como referência para devolver um produto.
-- **Reemissão com base em outra nota**: quando a empresa duplica uma nota já existente para ganhar tempo.
-- **Operação com transporte**: quando a nota precisa registrar transportadora, veículo ou volumes.
+- **Nota gerada a partir de Ordem de Servico**: quando a OS ja tem produtos lancados e a empresa quer aproveitar esses dados.
+- **Devolucao de compra**: quando a empresa usa uma nota de entrada como referencia para devolver um produto.
+- **Reemissao com base em outra nota**: quando a empresa duplica uma nota ja existente para ganhar tempo.
+- **Operacao com transporte**: quando a nota precisa registrar transportadora, veiculo ou volumes.
 
 ## Dicas importantes
 
-- Revise a **natureza da operação** com atenção, porque ela influencia o restante da emissão.
-- Confira o **destinatário** antes de avançar, principalmente endereço e documento.
-- Não deixe produto sem tributação corrigida.
-- Em devoluções, revise com cuidado os **documentos referenciados**.
+- Revise a **natureza da operacao** com atencao, porque ela influencia o restante da emissao.
+- Se houver duvida nesse campo, confirme com a configuracao fiscal usada pela empresa antes de transmitir a nota.
+- Confira o **destinatario** antes de avancar, principalmente endereco e documento.
+- Nao deixe produto sem tributacao corrigida.
+- Em devolucoes, revise com cuidado os **documentos referenciados**.
 - Antes de transmitir, use o **preview** para conferir os dados.
-- Se ainda não quiser enviar para o órgão fiscal, use **Apenas salvar**.
-- Depois da transmissão, acompanhe a situação na lista de notas.
+- Se ainda nao quiser enviar para o orgao fiscal, use **Apenas salvar**.
+- Depois da transmissao, acompanhe a situacao na lista de notas.
 
 ## Erros comuns
 
-- **Tentar emitir sem destinatário**: a nota exige o preenchimento do destinatário.
-- **Tentar emitir sem produtos**: é obrigatório ter pelo menos um item.
-- **Avançar com item sem tributação correta**: o sistema bloqueia a continuidade.
-- **Esquecer documento referenciado em devolução**: isso pode impedir a emissão correta.
-- **Tentar imprimir DANFE antes da autorização**: a impressão depende da nota já autorizada.
-- **Tentar baixar XML antes da autorização**: o arquivo só fica disponível na situação correta.
-- **Tentar transmitir uma nota já cancelada**: o sistema bloqueia essa ação.
+- **Tentar emitir sem destinatario**: a nota exige o preenchimento do destinatario.
+- **Tentar emitir sem produtos**: e obrigatorio ter pelo menos um item.
+- **Avancar com item sem tributacao correta**: o sistema bloqueia a continuidade.
+- **Escolher a natureza da operacao sem revisar a finalidade da nota**: isso pode levar a preenchimento incorreto das proximas etapas.
+- **Esquecer documento referenciado em devolucao**: isso pode impedir a emissao correta.
+- **Tentar imprimir DANFE antes da autorizacao**: a impressao depende da nota ja autorizada.
+- **Tentar baixar XML antes da autorizacao**: o arquivo so fica disponivel na situacao correta.
+- **Tentar transmitir uma nota ja cancelada**: o sistema bloqueia essa acao.
 
 ## Perguntas frequentes
 
 ### Posso salvar a nota sem transmitir?
 
-Sim. A tela oferece a opção **Apenas salvar**.
+Sim. A tela oferece a opcao **Apenas salvar**.
 
 ### Posso transmitir depois?
 
-Sim. Depois do salvamento, a transmissão pode ser feita pela lista da nota.
+Sim. Depois do salvamento, a transmissao pode ser feita pela lista da nota.
 
-### Posso emitir uma nota a partir de uma Ordem de Serviço?
+### Posso emitir uma nota a partir de uma Ordem de Servico?
 
 Sim. O sistema possui esse fluxo.
 
-### Posso usar uma nota de entrada para gerar uma devolução?
+### Posso usar uma nota de entrada para gerar uma devolucao?
 
-Sim. Esse carregamento existe no módulo.
+Sim. Esse carregamento existe no modulo.
 
-### O que acontece se um produto estiver sem tributação?
+### O que significa natureza da operacao?
 
-O sistema aponta o problema e pede correção antes de continuar.
+Ela indica qual e a finalidade da nota fiscal. Em outras palavras, mostra por que a nota esta sendo emitida.
+
+Exemplos praticos:
+
+- em uma venda de produto, a natureza da operacao deve combinar com uma emissao de venda
+- em uma saida de mercadoria, a natureza da operacao deve combinar com esse tipo de movimentacao
+- em uma devolucao, a natureza da operacao deve ser compativel com a devolucao e pode exigir documento referenciado
+
+Esse campo merece atencao porque ele pode alterar as proximas etapas da tela e os dados que precisam ser informados.
+
+### O que acontece se um produto estiver sem tributacao?
+
+O sistema aponta o problema e pede correcao antes de continuar.
 
 ### Quando posso imprimir o DANFE?
 
-Quando a nota já estiver autorizada. Em caso de cancelamento, também existe impressão do documento correspondente.
+Quando a nota ja estiver autorizada. Em caso de cancelamento, tambem existe impressao do documento correspondente.
 
 ### Quando posso baixar o XML?
 
-Quando a nota já estiver autorizada ou cancelada, conforme o tipo de arquivo disponível.
+Quando a nota ja estiver autorizada ou cancelada, conforme o tipo de arquivo disponivel.
 
-:::info Espaço para imagem
-Adicione aqui uma captura do preview final da NFe antes da transmissão.
+:::info Espaco para imagem
+Adicione aqui uma captura do preview final da NFe antes da transmissao.
 :::
-
