@@ -210,16 +210,16 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "posso filtrar os itens por nome?",
       "essa estrutura serve so para produtos?"
     ],
-    "normalizedContent": "categorias quando utilizar use esta funcionalidade quando a empresa precisar organizar produtos e servicos em grupos para facilitar cadastro, busca e filtros no sistema. no maxflow, essa tela funciona como uma arvore mercadologica . exemplos praticos: separar produtos por categoria e subcategoria organizar servicos por area de atuacao deixar os cadastros mais padronizados facilitar filtros e relatorios criar uma estrutura mais clara para a equipe como acessar 1. no menu do sistema, acesse cadastros ou a area de mercadorias. 2. entre em categorias . 3. abra a tela da arvore mercadologica . os niveis encontrados na analise sao: categoria subcategoria segmento linha tipo passo a passo como cadastrar uma categoria 1. abra a tela de categorias . 2. na primeira coluna, clique em novo . 3. informe a descricao . 4. clique em salvar . como cadastrar uma subcategoria 1. selecione uma categoria ja cadastrada. 2. na coluna de subcategorias , clique em novo . 3. informe a descricao . 4. clique em salvar . como cadastrar os proximos niveis o fluxo segue a mesma logica: 1. selecione o item do nivel anterior 2. va ate a proxima coluna 3. clique em novo 4. informe a descricao 5. salve exemplo: para cadastrar uma linha , primeiro e necessario selecionar: categoria subcategoria segmento como alterar um item 1. localize o item desejado na coluna correta. 2. clique em alterar . 3. ajuste a descricao. 4. clique em salvar . como excluir um item 1. localize o item desejado. 2. clique em excluir . 3. confirme a exclusao. como navegar na arvore 1. clique em um item da coluna atual. 2. o sistema carregara o proximo nivel automaticamente. 3. observe o bloco caminho selecionado para saber onde voce esta na estrutura. como filtrar 1. use o campo filtrar descricao . 2. digite parte do nome procurado. 3. se quiser, clique em limpar para remover o filtro. exemplo real: uma empresa pode organizar a estrutura assim: categoria : pecas subcategoria : suspensao segmento : amortecedores linha : dianteira tipo : convencional outro exemplo: para servicos, a empresa pode usar: categoria : servicos subcategoria : eletrica segmento : diagnostico explicacao dos campos principais descricao : nome do item que sera criado naquele nivel. filtrar descricao : ajuda a localizar itens pelo nome. caminho selecionado : mostra a sequencia completa dos niveis escolhidos. categoria : primeiro nivel da estrutura. subcategoria : segundo nivel, ligado a uma categoria. segmento : terceiro nivel, ligado a uma subcategoria. linha : quarto nivel, ligado a um segmento. tipo : quinto nivel, ligado a uma linha. situacoes praticas de uso organizar produtos por grupos : facilita o cadastro e a busca. separar servicos por tipo de atendimento : melhora a padronizacao do time. ajudar relatorios e filtros : a classificacao melhora a leitura das informacoes. padronizar novos cadastros : a equipe passa a seguir a mesma estrutura. montar uma base mais clara para estoque e vendas : principalmente quando ha muitos itens. dicas importantes defina uma logica simples antes de comecar a cadastrar. evite criar nomes parecidos demais no mesmo grupo. use descricoes curtas e faceis de entender. antes de criar um novo item, confira se ele ja existe. observe o caminho selecionado para nao cadastrar no lugar errado. se a empresa tiver muitos produtos, vale organizar primeiro os niveis principais. erros comuns cadastrar no nivel errado : por exemplo, criar uma linha quando ainda faltava criar o segmento. nao selecionar o nivel pai antes de cadastrar o proximo : isso impede o cadastro correto. repetir a mesma descricao no mesmo grupo : o sistema bloqueia duplicidade nesse contexto. usar nomes muito genericos : isso dificulta a organizacao futura. excluir sem revisar a estrutura : pode atrapalhar a padronizacao dos cadastros. criar muitos niveis sem necessidade : isso pode complicar o uso no dia a dia. perguntas frequentes posso cadastrar uma subcategoria sem escolher uma categoria? nao. a subcategoria depende de uma categoria pai. posso repetir a mesma descricao? nao no mesmo contexto. o sistema valida nome repetido dentro do mesmo nivel e do mesmo pai. quantos niveis a estrutura pode ter? a analise encontrou ate 5 niveis: categoria subcategoria segmento linha tipo posso alterar uma categoria depois? sim. existe a acao de alteracao. posso excluir um item da arvore? sim. existe acao de exclusao por nivel. para que serve o caminho selecionado? serve para mostrar exatamente onde voce esta dentro da estrutura. posso filtrar os itens por nome? sim. a tela possui filtro por descricao. essa estrutura serve so para produtos? nao necessariamente. ela pode ajudar a organizar produtos e servicos conforme a rotina da empresa."
+    "normalizedContent": "categorias quando utilizar use esta funcionalidade quando a empresa precisar organizar produtos e servicos em grupos para facilitar cadastro, busca e filtros no sistema. no maxflow, essa tela funciona como uma arvore mercadologica . exemplos praticos: separar produtos por categoria e subcategoria organizar servicos por area de atuacao deixar os cadastros mais padronizados facilitar filtros e relatorios criar uma estrutura mais clara para a equipe como acessar 1. no menu do sistema, acesse configuracoes ou a area de mercadorias. 2. entre em categorias . 3. abra a tela da arvore mercadologica . os niveis encontrados na analise sao: categoria subcategoria passo a passo como cadastrar uma categoria 1. abra a tela de categorias . 2. na primeira coluna, clique em novo . 3. informe a descricao . 4. clique em salvar . como cadastrar uma subcategoria 1. selecione uma categoria ja cadastrada. 2. na coluna de subcategorias , clique em novo . 3. informe a descricao . 4. clique em salvar . como cadastrar os proximos niveis o fluxo segue a mesma logica: 1. selecione o item do nivel anterior 2. va ate a proxima coluna 3. clique em novo 4. informe a descricao 5. salve exemplo: para cadastrar uma subcategoria , primeiro e necessario selecionar: categoria como alterar um item 1. localize o item desejado na coluna correta. 2. clique em alterar . 3. ajuste a descricao. 4. clique em salvar . como excluir um item 1. localize o item desejado. 2. clique em excluir . 3. confirme a exclusao. como navegar na arvore 1. clique em um item da coluna atual. 2. o sistema carregara o proximo nivel automaticamente. 3. observe o bloco caminho selecionado para saber onde voce esta na estrutura. como filtrar 1. use o campo filtrar descricao . 2. digite parte do nome procurado. 3. se quiser, clique em limpar para remover o filtro. exemplo real: uma empresa pode organizar a estrutura assim: categoria : pecas subcategoria : suspensao outro exemplo: para servicos, a empresa pode usar: categoria : servicos subcategoria : eletrica explicacao dos campos principais descricao : nome do item que sera criado naquele nivel. filtrar descricao : ajuda a localizar itens pelo nome. caminho selecionado : mostra a sequencia completa dos niveis escolhidos. categoria : primeiro nivel da estrutura. subcategoria : segundo nivel, ligado a uma categoria. situacoes praticas de uso organizar produtos por grupos : facilita o cadastro e a busca. separar servicos por tipo de atendimento : melhora a padronizacao do time. ajudar relatorios e filtros : a classificacao melhora a leitura das informacoes. padronizar novos cadastros : a equipe passa a seguir a mesma estrutura. montar uma base mais clara para estoque e vendas : principalmente quando ha muitos itens. dicas importantes defina uma logica simples antes de comecar a cadastrar. evite criar nomes parecidos demais no mesmo grupo. use descricoes curtas e faceis de entender. antes de criar um novo item, confira se ele ja existe. observe o caminho selecionado para nao cadastrar no lugar errado. se a empresa tiver muitos produtos, vale organizar primeiro os niveis principais. erros comuns cadastrar no nivel errado : por exemplo, criar uma linha quando ainda faltava criar o segmento. nao selecionar o nivel pai antes de cadastrar o proximo : isso impede o cadastro correto. repetir a mesma descricao no mesmo grupo : o sistema bloqueia duplicidade nesse contexto. usar nomes muito genericos : isso dificulta a organizacao futura. excluir sem revisar a estrutura : pode atrapalhar a padronizacao dos cadastros. criar muitos niveis sem necessidade : isso pode complicar o uso no dia a dia. perguntas frequentes posso cadastrar uma subcategoria sem escolher uma categoria? nao. a subcategoria depende de uma categoria pai. posso repetir a mesma descricao? nao no mesmo contexto. o sistema valida nome repetido dentro do mesmo nivel e do mesmo pai. quantos niveis a estrutura pode ter? a analise encontrou ate 2 niveis: categoria subcategoria posso alterar uma categoria depois? sim. existe a acao de alteracao. posso excluir um item da arvore? sim. existe acao de exclusao por nivel. para que serve o caminho selecionado? serve para mostrar exatamente onde voce esta dentro da estrutura. posso filtrar os itens por nome? sim. a tela possui filtro por descricao. essa estrutura serve so para produtos? nao necessariamente. ela pode ajudar a organizar produtos e servicos conforme a rotina da empresa."
   },
   {
-    "title": "Centro de documentacao",
+    "title": "Centro de documentação",
     "to": "/docs/intro",
     "description": "Bem-vindo a central de ajuda do **Maxflow**.",
     "headings": [
       "Estrutura principal",
       "Ordem ideal de aprendizado",
-      "Padrrao dos tutoriais",
+      "Padrão dos tutoriais",
       "Acessos rapidos"
     ],
     "faq": [],
@@ -228,7 +228,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedHeadings": [
       "estrutura principal",
       "ordem ideal de aprendizado",
-      "padrrao dos tutoriais",
+      "padrão dos tutoriais",
       "acessos rapidos"
     ],
     "normalizedFaq": [],
@@ -287,7 +287,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "cadastrar colaboradores quando utilizar use esta funcionalidade quando voce precisar cadastrar: um funcionario um tecnico um atendente um colaborador que tera acesso ao sistema exemplos praticos: cadastrar um tecnico que sera usado em ordens de servico cadastrar um atendente que fara lancamentos no sistema cadastrar um colaborador com acesso ao sistema e perfil definido organizar colaboradores por empresa quando a operacao tiver mais de uma unidade como acessar 1. no menu do sistema, acesse colaboradores . 2. abra a lista de colaboradores. 3. clique em cadastrar para criar um novo registro. passo a passo 1. escolha o perfil do colaborador. 2. selecione a empresa ou as empresas em que ele vai atuar. 3. preencha o nome completo . 4. informe a comissao , se a empresa usar esse controle. 5. defina se o colaborador pode acessar o sistema . 6. se a resposta for sim , preencha: e mail senha 7. revise os dados informados. 8. clique em salvar . exemplo real: uma empresa contrata um novo tecnico. o responsavel pelo cadastro escolhe o perfil correto, vincula a empresa em que ele vai trabalhar, informa a comissao e libera o acesso ao sistema com e mail e senha para que ele possa acompanhar as ordens de servico. explicacao dos campos principais perfil : define o tipo de acesso e as permissoes do colaborador. empresas : mostra em quais empresas ele podera atuar. nome completo : identifica o colaborador no sistema. comissao : valor ou percentual usado pela empresa para calculo em determinadas rotinas, como ordens de servico. permite acesso ao sistema : define se o colaborador tambem tera usuario para entrar no sistema. e mail : contato usado no acesso ao sistema e em comunicacoes ligadas a esse acesso. senha : senha inicial para entrada no sistema, quando o acesso estiver liberado. situacoes praticas de uso cadastrar um tecnico de campo : quando ele precisa ser escolhido nas ordens de servico. cadastrar um colaborador sem acesso ao sistema : quando a empresa quer apenas registrar a pessoa para uso interno. cadastrar um usuario novo para operacao diaria : quando o colaborador vai trabalhar diretamente no sistema. vincular o mesmo colaborador a mais de uma empresa : quando ele atende mais de uma unidade. dicas importantes escolha o perfil com atencao, porque ele influencia o que o colaborador podera fazer no sistema. se o colaborador for acessar o sistema, revise o e mail antes de salvar. confirme se a senha atende as regras informadas na tela. preencha a comissao corretamente quando ela for usada em ordens de servico. vincule o colaborador somente as empresas em que ele realmente vai atuar. erros comuns tentar salvar sem perfil : o perfil e obrigatorio. tentar salvar sem empresa vinculada : esse dado e obrigatorio. tentar salvar sem nome completo : o sistema exige esse campo. liberar acesso ao sistema sem informar e mail : o cadastro nao sera concluido corretamente. liberar acesso ao sistema sem informar senha : a senha e obrigatoria nesse caso. informar senha fora das regras minimas : o sistema pede revisao. tentar liberar acesso quando o plano nao permite mais usuarios : o sistema pode bloquear e pedir ajuste no plano. perguntas frequentes todo colaborador precisa acessar o sistema? nao. o acesso e opcional. quando o e mail e a senha se tornam obrigatorios? quando a opcao permite acesso ao sistema estiver ativada. posso vincular um colaborador a mais de uma empresa? sim. a tela permite selecionar mais de uma empresa. para que serve a comissao? ela e usada pela empresa em controles ligados ao colaborador, como calculo de comissao em ordens de servico. posso cadastrar um tecnico sem criar usuario de acesso? sim. o cadastro do colaborador pode existir mesmo sem acesso ao sistema."
   },
   {
-    "title": "Configuracao inicial",
+    "title": "Configuração inicial",
     "to": "/docs/comecar/configuracao-inicial",
     "description": "Antes de usar os modulos principais, configure os dados basicos da empresa e os acessos dos usuarios.",
     "headings": [
@@ -317,7 +317,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "configuracao inicial resumo antes de usar os modulos principais, configure os dados basicos da empresa e os acessos dos usuarios. passo a passo 1. revise os dados da empresa 2. confirme informacoes fiscais 3. cadastre usuarios principais 4. defina permissoes iniciais 5. valide preferencias operacionais dicas registre apenas os usuarios que realmente vao operar o sistema mantenha perfis de acesso simples no inicio erros comuns liberar acesso total para todos os usuarios esquecer dados obrigatorios da empresa faq posso ajustar isso depois? sim, mas o ideal e comecar com o basico correto."
   },
   {
-    "title": "Configuracoes gerais",
+    "title": "Configurações gerais",
     "to": "/docs/configuracoes/configuracoes-gerais",
     "description": "Esta area concentra ajustes que impactam o funcionamento do sistema.",
     "headings": [
@@ -531,7 +531,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
   {
     "title": "Dashboard",
     "to": "/docs/gestao/dashboard",
-    "description": "Adicionar aqui uma imagem da tela inicial do Dashboard com as 3 visoes disponiveis.",
+    "description": "![Exemplo de imagem Cadastrar](/img/exemplos/Dashboard-3Visoes.png)",
     "headings": [
       "Quando utilizar",
       "Como acessar",
@@ -553,7 +553,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "O Dashboard serve para lancar informacoes?"
     ],
     "normalizedTitle": "dashboard",
-    "normalizedDescription": "adicionar aqui uma imagem da tela inicial do dashboard com as 3 visoes disponiveis.",
+    "normalizedDescription": "![exemplo de imagem cadastrar](/img/exemplos/dashboard-3visoes.png)",
     "normalizedHeadings": [
       "quando utilizar",
       "como acessar",
@@ -683,9 +683,16 @@ export const docsSearchIndex: DocsSearchEntry[] = [
   {
     "title": "FAQ principal",
     "to": "/docs/faq/faq-principal",
-    "description": "> Esta pagina e gerada automaticamente a partir das secoes `Perguntas frequentes` e `FAQ` dos tutoriais.",
+    "description": "import FaqSearch from '@site/src/components/FaqSearch';",
     "headings": [
       "Cadastros",
+      "Posso cadastrar uma subcategoria sem escolher uma categoria?",
+      "Posso repetir a mesma descrição?",
+      "Quantos níveis a estrutura pode ter?",
+      "Posso alterar uma categoria depois?",
+      "Posso excluir um item da árvore?",
+      "Para que serve o caminho selecionado?",
+      "Posso filtrar os itens por nome?",
       "Produto e serviço são cadastrados na mesma tela?",
       "Posso cadastrar um serviço sem estoque?",
       "Operacao",
@@ -727,9 +734,23 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "O que e saude financeira?",
       "O que significa inadimplencia?",
       "Saldo em caixa e igual a valor a receber?",
-      "Posso usar essa visao para acompanhar estoque?"
+      "Posso usar essa visao para acompanhar estoque?",
+      "Configuracoes",
+      "Posso criar dois perfis com o mesmo nome?",
+      "Um perfil pode ficar sem nenhum módulo?",
+      "Posso alterar as permissões depois?",
+      "Posso excluir um perfil que já está em uso?",
+      "Posso controlar acesso por módulo?",
+      "Preciso criar um perfil para cada colaborador?"
     ],
     "faq": [
+      "Posso cadastrar uma subcategoria sem escolher uma categoria?",
+      "Posso repetir a mesma descrição?",
+      "Quantos níveis a estrutura pode ter?",
+      "Posso alterar uma categoria depois?",
+      "Posso excluir um item da árvore?",
+      "Para que serve o caminho selecionado?",
+      "Posso filtrar os itens por nome?",
       "Produto e serviço são cadastrados na mesma tela?",
       "Posso cadastrar um serviço sem estoque?",
       "Posso criar um orçamento sem produtos ou serviços?",
@@ -767,12 +788,25 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "O que e saude financeira?",
       "O que significa inadimplencia?",
       "Saldo em caixa e igual a valor a receber?",
-      "Posso usar essa visao para acompanhar estoque?"
+      "Posso usar essa visao para acompanhar estoque?",
+      "Posso criar dois perfis com o mesmo nome?",
+      "Um perfil pode ficar sem nenhum módulo?",
+      "Posso alterar as permissões depois?",
+      "Posso excluir um perfil que já está em uso?",
+      "Posso controlar acesso por módulo?",
+      "Preciso criar um perfil para cada colaborador?"
     ],
     "normalizedTitle": "faq principal",
-    "normalizedDescription": "> esta pagina e gerada automaticamente a partir das secoes `perguntas frequentes` e `faq` dos tutoriais.",
+    "normalizedDescription": "import faqsearch from '@site/src/components/faqsearch';",
     "normalizedHeadings": [
       "cadastros",
+      "posso cadastrar uma subcategoria sem escolher uma categoria?",
+      "posso repetir a mesma descricao?",
+      "quantos niveis a estrutura pode ter?",
+      "posso alterar uma categoria depois?",
+      "posso excluir um item da arvore?",
+      "para que serve o caminho selecionado?",
+      "posso filtrar os itens por nome?",
       "produto e servico sao cadastrados na mesma tela?",
       "posso cadastrar um servico sem estoque?",
       "operacao",
@@ -814,9 +848,23 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "o que e saude financeira?",
       "o que significa inadimplencia?",
       "saldo em caixa e igual a valor a receber?",
-      "posso usar essa visao para acompanhar estoque?"
+      "posso usar essa visao para acompanhar estoque?",
+      "configuracoes",
+      "posso criar dois perfis com o mesmo nome?",
+      "um perfil pode ficar sem nenhum modulo?",
+      "posso alterar as permissoes depois?",
+      "posso excluir um perfil que ja esta em uso?",
+      "posso controlar acesso por modulo?",
+      "preciso criar um perfil para cada colaborador?"
     ],
     "normalizedFaq": [
+      "posso cadastrar uma subcategoria sem escolher uma categoria?",
+      "posso repetir a mesma descricao?",
+      "quantos niveis a estrutura pode ter?",
+      "posso alterar uma categoria depois?",
+      "posso excluir um item da arvore?",
+      "para que serve o caminho selecionado?",
+      "posso filtrar os itens por nome?",
       "produto e servico sao cadastrados na mesma tela?",
       "posso cadastrar um servico sem estoque?",
       "posso criar um orcamento sem produtos ou servicos?",
@@ -854,9 +902,15 @@ export const docsSearchIndex: DocsSearchEntry[] = [
       "o que e saude financeira?",
       "o que significa inadimplencia?",
       "saldo em caixa e igual a valor a receber?",
-      "posso usar essa visao para acompanhar estoque?"
+      "posso usar essa visao para acompanhar estoque?",
+      "posso criar dois perfis com o mesmo nome?",
+      "um perfil pode ficar sem nenhum modulo?",
+      "posso alterar as permissoes depois?",
+      "posso excluir um perfil que ja esta em uso?",
+      "posso controlar acesso por modulo?",
+      "preciso criar um perfil para cada colaborador?"
     ],
-    "normalizedContent": "faq principal esta pagina e gerada automaticamente a partir das secoes e dos tutoriais. cadastros produto e servico sao cadastrados na mesma tela? sim. a mesma tela permite escolher entre produto e servico . saiba mais: posso cadastrar um servico sem estoque? sim. o controle de estoque e mais importante para produtos fisicos. saiba mais: operacao posso criar um orcamento sem produtos ou servicos? sim. nesse caso, voce pode usar o campo valor orcado manual . saiba mais: posso abrir uma ordem de servico sem orcamento? sim. a ordem de servico pode ser criada diretamente no sistema. saiba mais: posso gerar uma ordem de servico a partir de um orcamento? sim. esse fluxo existe e ajuda a aproveitar as informacoes de um orcamento ja aprovado. saiba mais: posso usar valor manual junto com produtos e servicos? nao. o valor manual deve ser usado apenas quando nao houver itens lancados. saiba mais: o pagamento e obrigatorio? sim. a ordem precisa ter os dados de pagamento preenchidos de forma correta. saiba mais: posso parcelar o valor da ordem de servico? sim. a tela permite pagamento a vista, entrada com parcelamento ou parcelamento. saiba mais: o que acontece depois que a ordem e concluida? ela passa para a situacao concluida e nao pode mais ser alterada normalmente. saiba mais: fiscal posso salvar a nota sem transmitir? sim. a tela oferece a opcao apenas salvar . saiba mais: posso transmitir depois? sim. depois do salvamento, a transmissao pode ser feita pela lista da nota. saiba mais: posso emitir uma nota a partir de uma ordem de servico? sim. o sistema possui esse fluxo. saiba mais: posso usar uma nota de entrada para gerar uma devolucao? sim. esse carregamento existe no modulo. saiba mais: posso salvar a nfse sem transmitir? sim. a tela oferece a opcao apenas salvar . saiba mais: posso transmitir depois? sim. a transmissao pode ser feita depois pela lista. saiba mais: posso emitir a nfse a partir de uma ordem de servico? sim. esse fluxo existe no sistema. saiba mais: posso emitir a nfse a partir de uma conta a receber? sim. o sistema possui esse carregamento. saiba mais: o tomador e sempre obrigatorio? a tela possui cenario para trabalhar sem tomador, dependendo do caso usado no sistema. saiba mais: o que preciso revisar antes de transmitir? revise principalmente: tomador codigo do servico codigo nbs discriminacao valor dados de tributacao saiba mais: financeiro posso receber so parte da conta? sim. o sistema permite informar um valor menor, mantendo o restante em aberto. saiba mais: posso alterar o vencimento depois? sim, desde que a conta ainda esteja em aberto. saiba mais: posso cancelar uma conta que ja foi recebida? nao diretamente. quando a conta ja esta quitada, primeiro e necessario estornar o recebimento. saiba mais: o sistema gera recibo? sim. depois do recebimento, o sistema pode perguntar se voce deseja imprimir o recibo. saiba mais: para que serve a conta recorrente? ela serve para programar contas que o sistema deve lancar automaticamente ao longo do tempo. saiba mais: quais situacoes a conta pode ter? as principais situacoes encontradas sao: aberta quitada cancelada saiba mais: a conta recorrente ja fica paga ou recebida automaticamente? nao. a recorrencia serve para criar os lancamentos futuros. depois disso, cada conta precisa ser tratada normalmente. saiba mais: posso usar conta recorrente em contas a receber e contas a pagar? sim. o sistema possui essa opcao nos dois modulos. saiba mais: gestao o dashboard abre em qual visao? a tela abre primeiro na . saiba mais: posso trocar de visao sem sair da pagina? sim. basta selecionar a visao desejada dentro do proprio dashboard. saiba mais: o que e valor em aberto? e o valor que ja foi lancado, mas ainda nao foi pago ou recebido. saiba mais: o que e valor atrasado? e o valor que ja venceu e ainda continua pendente. saiba mais: o saldo do periodo mostra tudo o que foi lancado? nao. esse bloco considera o que ja foi quitado no periodo. saiba mais: para que serve a dre? ela ajuda a resumir o resultado da empresa no periodo, mostrando entradas, saidas e resultado final. saiba mais: por que um relatorio pode nao aparecer para mim? porque o acesso pode depender da permissao do usuario ou do plano contratado. saiba mais: o que e saude financeira? e uma nota usada pelo sistema para resumir a situacao financeira da empresa. saiba mais: o que significa inadimplencia? e a parte do valor a receber que ja venceu e ainda nao foi recebida. saiba mais: saldo em caixa e igual a valor a receber? nao. o saldo em caixa mostra o que ja entrou e saiu. o valor a receber mostra o que ainda falta entrar. saiba mais: posso usar essa visao para acompanhar estoque? sim. a tela mostra giro, margem, estoque parado e valor do estoque. saiba mais:"
+    "normalizedContent": "import faqsearch from '@site/src/components/faqsearch'; faq principal esta pagina e gerada automaticamente a partir das secoes e dos tutoriais. cadastros posso cadastrar uma subcategoria sem escolher uma categoria? nao. a subcategoria depende de uma categoria pai. saiba mais: posso repetir a mesma descricao? nao no mesmo contexto. o sistema valida nome repetido dentro do mesmo nivel e do mesmo pai. saiba mais: quantos niveis a estrutura pode ter? a analise encontrou ate 2 niveis: categoria subcategoria saiba mais: posso alterar uma categoria depois? sim. existe a acao de alteracao. saiba mais: posso excluir um item da arvore? sim. existe acao de exclusao por nivel. saiba mais: para que serve o caminho selecionado? serve para mostrar exatamente onde voce esta dentro da estrutura. saiba mais: posso filtrar os itens por nome? sim. a tela possui filtro por descricao. saiba mais: produto e servico sao cadastrados na mesma tela? sim. a mesma tela permite escolher entre produto e servico . saiba mais: posso cadastrar um servico sem estoque? sim. o controle de estoque e mais importante para produtos fisicos. saiba mais: operacao posso criar um orcamento sem produtos ou servicos? sim. nesse caso, voce pode usar o campo valor orcado manual . saiba mais: posso abrir uma ordem de servico sem orcamento? sim. a ordem de servico pode ser criada diretamente no sistema. saiba mais: posso gerar uma ordem de servico a partir de um orcamento? sim. esse fluxo existe e ajuda a aproveitar as informacoes de um orcamento ja aprovado. saiba mais: posso usar valor manual junto com produtos e servicos? nao. o valor manual deve ser usado apenas quando nao houver itens lancados. saiba mais: o pagamento e obrigatorio? sim. a ordem precisa ter os dados de pagamento preenchidos de forma correta. saiba mais: posso parcelar o valor da ordem de servico? sim. a tela permite pagamento a vista, entrada com parcelamento ou parcelamento. saiba mais: o que acontece depois que a ordem e concluida? ela passa para a situacao concluida e nao pode mais ser alterada normalmente. saiba mais: fiscal posso salvar a nota sem transmitir? sim. a tela oferece a opcao apenas salvar . saiba mais: posso transmitir depois? sim. depois do salvamento, a transmissao pode ser feita pela lista da nota. saiba mais: posso emitir uma nota a partir de uma ordem de servico? sim. o sistema possui esse fluxo. saiba mais: posso usar uma nota de entrada para gerar uma devolucao? sim. esse carregamento existe no modulo. saiba mais: posso salvar a nfse sem transmitir? sim. a tela oferece a opcao apenas salvar . saiba mais: posso transmitir depois? sim. a transmissao pode ser feita depois pela lista. saiba mais: posso emitir a nfse a partir de uma ordem de servico? sim. esse fluxo existe no sistema. saiba mais: posso emitir a nfse a partir de uma conta a receber? sim. o sistema possui esse carregamento. saiba mais: o tomador e sempre obrigatorio? a tela possui cenario para trabalhar sem tomador, dependendo do caso usado no sistema. saiba mais: o que preciso revisar antes de transmitir? revise principalmente: tomador codigo do servico codigo nbs discriminacao valor dados de tributacao saiba mais: financeiro posso receber so parte da conta? sim. o sistema permite informar um valor menor, mantendo o restante em aberto. saiba mais: posso alterar o vencimento depois? sim, desde que a conta ainda esteja em aberto. saiba mais: posso cancelar uma conta que ja foi recebida? nao diretamente. quando a conta ja esta quitada, primeiro e necessario estornar o recebimento. saiba mais: o sistema gera recibo? sim. depois do recebimento, o sistema pode perguntar se voce deseja imprimir o recibo. saiba mais: para que serve a conta recorrente? ela serve para programar contas que o sistema deve lancar automaticamente ao longo do tempo. saiba mais: quais situacoes a conta pode ter? as principais situacoes encontradas sao: aberta quitada cancelada saiba mais: a conta recorrente ja fica paga ou recebida automaticamente? nao. a recorrencia serve para criar os lancamentos futuros. depois disso, cada conta precisa ser tratada normalmente. saiba mais: posso usar conta recorrente em contas a receber e contas a pagar? sim. o sistema possui essa opcao nos dois modulos. saiba mais: gestao o dashboard abre em qual visao? a tela abre primeiro na . saiba mais: posso trocar de visao sem sair da pagina? sim. basta selecionar a visao desejada dentro do proprio dashboard. saiba mais: o que e valor em aberto? e o valor que ja foi lancado, mas ainda nao foi pago ou recebido. saiba mais: o que e valor atrasado? e o valor que ja venceu e ainda continua pendente. saiba mais: o saldo do periodo mostra tudo o que foi lancado? nao. esse bloco considera o que ja foi quitado no periodo. saiba mais: para que serve a dre? ela ajuda a resumir o resultado da empresa no periodo, mostrando entradas, saidas e resultado final. saiba mais: por que um relatorio pode nao aparecer para mim? porque o acesso pode depender da permissao do usuario ou do plano contratado. saiba mais: o que e saude financeira? e uma nota usada pelo sistema para resumir a situacao financeira da empresa. saiba mais: o que significa inadimplencia? e a parte do valor a receber que ja venceu e ainda nao foi recebida. saiba mais: saldo em caixa e igual a valor a receber? nao. o saldo em caixa mostra o que ja entrou e saiu. o valor a receber mostra o que ainda falta entrar. saiba mais: posso usar essa visao para acompanhar estoque? sim. a tela mostra giro, margem, estoque parado e valor do estoque. saiba mais: configuracoes posso criar dois perfis com o mesmo nome? nao. o nome do perfil precisa ser unico. saiba mais: um perfil pode ficar sem nenhum modulo? nao. o sistema exige pelo menos um modulo liberado. saiba mais: posso alterar as permissoes depois? sim. o perfil pode ser alterado quando necessario. saiba mais: posso excluir um perfil que ja esta em uso? nao normalmente. a exclusao pode ser bloqueada quando existem colaboradores vinculados a esse perfil. saiba mais: posso controlar acesso por modulo? sim. esse e justamente o objetivo da tela de perfis. saiba mais: preciso criar um perfil para cada colaborador? nao. o ideal e criar perfis por funcao ou equipe e reaproveitar esse padrao no cadastro dos colaboradores. saiba mais:"
   },
   {
     "title": "Lançamento de Contas Recorrentes",
@@ -1409,7 +1463,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "cadastrar produtos e servicos quando utilizar use esta funcionalidade quando voce precisar cadastrar: um produto para venda um servico prestado pela empresa um item que sera usado em orcamento ou ordem de servico um item novo com preco, estoque, imagem ou classificacao exemplos praticos: cadastrar uma peca para usar em ordem de servico cadastrar um servico de instalacao ou manutencao organizar os itens por categoria para facilitar a busca preparar um item para aparecer corretamente em vendas e controles internos como acessar 1. no menu do sistema, acesse produtos e servicos . 2. abra a lista de cadastros. 3. clique em cadastrar para abrir um novo item. passo a passo 1. escolha se o cadastro sera de produto ou servico . 2. preencha a descricao do item. 3. informe a descricao curta . 7. organize o item na categoria e nas demais classificacoes disponiveis. 8. defina se o item ficara ativo para venda . 9. se a empresa nao quiser permitir mudanca de valor durante a ordem de servico, marque a opcao de bloquear alteracao de preco na os . 10. revise ou gere o sku , quando esse campo estiver sendo usado. 11. preencha o preco do item. 12. se o cadastro for de produto, informe tambem os dados de estoque , quando a empresa usar esse controle. 13. va para a aba de caracteristicas e preencha os dados adicionais, quando necessario. 14. va para a aba de dados fiscais e complete as informacoes se sua empresa ja trabalhar com esse preenchimento. 15. va para a aba de imagens e adicione fotos, se quiser melhorar a identificacao do item. 16. preencha os campos personalizados , se houver. 17. revise tudo e clique em salvar . 18. se o sistema mostrar observacoes antes do cadastro, leia com atencao e ajuste o que for necessario. exemplo real: uma empresa de assistencia tecnica cadastra um novo servico de instalacao. o usuario escolhe servico , informa a descricao, descricao curta, classifica o item na categoria correta, define o preco de venda e salva para usar no orcamento e na ordem de servico. explicacao dos campos principais produto ou servico : define se o cadastro sera tratado como item fisico ou como servico prestado. descricao : nome principal do item. descricao curta : versao resumida do nome, usada em situacoes de exibicao mais compacta. familia : ajuda na organizacao dos itens. categoria : classifica o item dentro da estrutura usada pela empresa. subcategoria, segmento, linha e tipo : niveis extras de organizacao, quando a empresa usa essa estrutura. ativo para venda : define se o item pode ser usado normalmente em vendas e lancamentos. bloquear alteracao de preco na os : impede que o valor seja alterado na ordem de servico. sku : codigo usado para identificar o item. preco : valor usado para venda ou cobranca. estoque : quantidade disponivel, quando o item for um produto com controle de estoque. ncm, cest, origem e ipi : dados fiscais do item. imagens : ajudam a identificar melhor o item no cadastro. campos personalizados : servem para guardar dados extras definidos pela empresa. situacoes praticas de uso cadastrar uma peca para atendimento : quando a empresa precisa lancar um item fisico em orcamento e ordem de servico. cadastrar um servico recorrente : quando a empresa executa o mesmo tipo de servico com frequencia e quer agilizar o lancamento. organizar itens por categoria : quando o volume de produtos e servicos cresce e a busca precisa ficar mais facil. cadastrar item com imagem : util para equipes que trabalham com muitos itens parecidos. bloquear alteracao de preco na os : indicado quando a empresa quer manter o valor padrao do cadastro sem permitir mudanca no atendimento. dicas importantes use nomes claros e faceis de entender para melhorar a busca dos itens. preencha a descricao curta com atencao, porque ela e obrigatoria. organize corretamente a categoria para facilitar a localizacao do item depois. se marcar o bloqueio de alteracao de preco na ordem de servico, confirme se o item ja tem valor informado. para produtos, revise o estoque inicial antes de salvar. mesmo quando os dados fiscais nao forem obrigatorios no momento, vale a pena completar essas informacoes quando a empresa ja tiver esse processo definido. erros comuns tentar salvar sem descricao : a descricao e obrigatoria. tentar salvar sem descricao curta : esse campo tambem e obrigatorio. cadastrar item com descricao ja usada : o sistema pode mostrar observacoes antes do cadastro. bloquear alteracao de preco na os sem informar valor : o sistema alerta para revisao. informar ncm invalido : o cadastro pode ser bloqueado. cadastrar produto sem estrutura minima de estoque quando esse controle e exigido : o sistema pode impedir o salvamento. escolher o tipo errado entre produto e servico : isso pode afetar preco, estoque e uso do item nas rotinas. perguntas frequentes produto e servico sao cadastrados na mesma tela? sim. a mesma tela permite escolher entre produto e servico . posso cadastrar um servico sem estoque? sim. o controle de estoque e mais importante para produtos fisicos. a descricao curta e obrigatoria? sim. esse campo faz parte das validacoes do cadastro. posso adicionar imagem ao item? sim. a tela possui uma area para imagens. o que acontece se eu bloquear a alteracao de preco na ordem de servico? o sistema passa a tratar esse item como um cadastro com valor fixo na os, e pode alertar se nao houver preco informado."
   },
   {
-    "title": "Relatorios",
+    "title": "Relatórios",
     "to": "/docs/gestao/relatorios",
     "description": "O modulo de `Relatorios` do Maxflow foi feito para ajudar a empresa a consultar dados, acompanhar resultados e gerar impressoes em PDF.",
     "headings": [
@@ -1453,7 +1507,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios visao geral o modulo de do maxflow foi feito para ajudar a empresa a consultar dados, acompanhar resultados e gerar impressoes em pdf. na pratica, o fluxo mais comum e: 1. entrar em 2. escolher o tipo de relatorio 3. definir filtros como empresa, periodo e situacao 4. conferir os dados na tela 5. imprimir o resultado quando necessario os relatorios foram separados nestas paginas: como a tela de relatorios funciona a tela inicial mostra os relatorios em formato de cards. cada card leva para uma tela com filtros e resultados. em varios relatorios, os dados atualizam assim que o filtro muda. em alguns relatorios, o usuario pode ver lista, grafico ou os dois. a impressao gera um arquivo em pdf. recursos principais do modulo cards com os relatorios liberados para o usuario bloqueio de relatorios por permissao bloqueio de alguns relatorios por plano filtro de empresas filtro de periodo ordenacao por coluna paginacao impressao fila de relatorios gerados fila de relatorios o sistema tambem possui uma area de acompanhamento para relatorios gerados. situacoes encontradas: quando o relatorio estiver liberado, o usuario pode: abrir o arquivo baixar o arquivo dicas importantes sempre confira o periodo escolhido antes de analisar os numeros. se um relatorio mostrar poucos dados, revise filtros como empresa, situacao e tipo de data. em varios relatorios, o sistema permite clicar em linhas agrupadas para refinar o periodo. alguns relatorios mostram dados diferentes conforme a data escolhida para filtro. perguntas frequentes por que um relatorio pode nao aparecer para mim? porque o acesso pode depender da permissao do usuario ou do plano contratado. o relatorio sempre atualiza sozinho? na maioria das telas sim, principalmente quando o usuario muda filtros. posso imprimir qualquer resultado? nos relatorios com botao de impressao ativo, sim. o sistema gera um pdf com os dados da tela. existe diferenca entre visao analitica e sintetica? sim. a visao analitica mostra mais detalhes. a visao sintetica resume os dados por cliente, fornecedor ou outro agrupamento."
   },
   {
-    "title": "Relatorios de Comissoes",
+    "title": "Relatórios de Comissões",
     "to": "/docs/gestao/relatorios-comissoes",
     "description": "Essa tela tambem possui duas abas:",
     "headings": [
@@ -1493,7 +1547,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de comissoes quando utilizar quando quiser acompanhar o valor de comissao da equipe. quando precisar ver o percentual aplicado em cada ordem. quando quiser relacionar comissao com a situacao do recebimento. como acessar 1. entre em . 2. abra . o que a tela faz essa tela tambem possui duas abas: ela cruza ordens de servico, tecnico responsavel e recebimento para mostrar os valores de comissao. filtros principais tipos de data encontrados: situacoes de recebimento encontradas: informacoes mostradas aba analitico tecnico responsavel ordem de servico situacao da o.s. situacao do recebimento valor da o.s. valor da comissao percentual aplicado aba por tecnico responsavel tecnico responsavel quantidade de o.s. total de o.s. total de comissao percentual aplicado total recebido recursos encontrados filtro por tecnico link para detalhes da ordem de servico cores para destacar situacao do recebimento impressao paginacao ordenacao por coluna mensagens encontradas dicas importantes revise a antes de usar o relatorio para conferencia financeira. a aba ajuda mais na comparacao geral da equipe. a aba ajuda mais na conferencia de casos especificos."
   },
   {
-    "title": "Relatorios de Estoques",
+    "title": "Relatórios de Estoques",
     "to": "/docs/gestao/relatorios-estoques",
     "description": "Essa tela mostra os produtos e servicos ligados ao estoque selecionado, com seus saldos e valores.",
     "headings": [
@@ -1523,7 +1577,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de estoques quando utilizar quando quiser consultar o saldo de estoque. quando precisar ver produtos com estoque positivo, zero ou negativo. quando quiser comparar valor de custo e valor de venda em estoque. como acessar 1. entre em . 2. abra . o que a tela faz essa tela mostra os produtos e servicos ligados ao estoque selecionado, com seus saldos e valores. filtros principais opcoes encontradas: situacao do estoque situacao do produto tipo do produto informacoes mostradas recursos encontrados atualizacao por filtro tabela com totais ordenacao por coluna paginacao observacao importante: o botao visual de impressao esta comentado no html atual, embora exista metodo de geracao no componente mensagens encontradas dicas importantes use o filtro para localizar possiveis problemas de saldo. use ou para separar melhor a consulta. compare valor de custo e valor de venda para entender o peso do estoque armazenado."
   },
   {
-    "title": "Relatorios de Notas Fiscais de Entrada",
+    "title": "Relatórios de Notas Fiscais de Entrada",
     "to": "/docs/gestao/relatorios-notas-fiscais-de-entrada",
     "description": "Essa tela possui duas abas:",
     "headings": [
@@ -1563,7 +1617,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de notas fiscais de entrada quando utilizar quando quiser consultar notas fiscais de entrada por documento. quando precisar resumir notas por fornecedor. quando quiser separar analise por emissao ou por entrada. como acessar 1. entre em . 2. abra . o que a tela faz essa tela possui duas abas: na aba analitica, o usuario ve os documentos individualmente. na aba por fornecedor, o usuario ve os totais agrupados. filtros principais filtros adicionais na aba analitica: tipos de data encontrados: modelos encontrados: informacoes mostradas aba analitico numero da nota serie fornecedor cpf/cnpj chave data de emissao data de entrada total bruto desconto acrescimo total liquido aba por fornecedor fornecedor cpf/cnpj quantidade de notas total bruto desconto acrescimo total liquido recursos encontrados visual adaptado para mobile e desktop ordenacao por coluna paginacao impressao mensagens encontradas dicas importantes use quando quiser acompanhar a data do documento. use quando quiser acompanhar a data em que a nota entrou no sistema. a aba ajuda bastante na conferencia consolidada de compras."
   },
   {
-    "title": "Relatorios de Orcamentos",
+    "title": "Relatórios de Orçamentos",
     "to": "/docs/gestao/relatorios-orcamentos",
     "description": "Essa tela mostra o comportamento dos orcamentos dentro do periodo escolhido.",
     "headings": [
@@ -1593,7 +1647,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de orcamentos quando utilizar quando quiser acompanhar quantos orcamentos foram lancados. quando precisar medir aprovacoes e recusas. quando quiser analisar conversao em quantidade e em valor. como acessar 1. entre em . 2. abra . o que a tela faz essa tela mostra o comportamento dos orcamentos dentro do periodo escolhido. ela ajuda a responder perguntas como: quantos orcamentos foram feitos quantos foram aprovados quantos foram recusados quanto do valor orcado virou aprovacao filtros principais agrupamentos encontrados: informacoes mostradas recursos encontrados grafico com lancadas, aprovadas e recusadas tabela com totais ordenacao por coluna paginacao clique em linha semanal ou mensal para detalhar o periodo impressao mensagens encontradas dicas importantes use esse relatorio para acompanhar conversao comercial. compare com para entender melhor o aproveitamento. se quiser identificar um periodo especifico com melhor resultado, use o agrupamento semanal ou mensal."
   },
   {
-    "title": "Relatorios de Ordens de Servico",
+    "title": "Relatórios de Ordens de Serviço",
     "to": "/docs/gestao/relatorios-ordens-de-servico",
     "description": "Essa tela mostra o resultado das ordens de servico em um periodo escolhido pelo usuario.",
     "headings": [
@@ -1623,7 +1677,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de ordens de servico quando utilizar quando quiser acompanhar faturamento das ordens de servico. quando precisar analisar quantidade de atendimentos. quando quiser acompanhar ticket medio, lucro, descontos e comissoes. como acessar 1. entre em . 2. abra . o que a tela faz essa tela mostra o resultado das ordens de servico em um periodo escolhido pelo usuario. ela combina: filtro por empresas filtro por periodo filtro por situacoes agrupamento diario, semanal ou mensal grafico tabela impressao filtros principais situacoes encontradas na tela: concluidas canceladas outras situacoes de o.s. comportamento importante: para o.s. concluidas, a tela considera a data de conclusao para o.s. canceladas, a tela considera a data de cancelamento para as demais, a tela considera a data de abertura informacoes mostradas recursos encontrados botao de atualizar botao para alternar visualizacao botao de imprimir grafico tabela com totais ordenacao por coluna paginacao clique em linha semanal ou mensal para detalhar o periodo mensagens encontradas dicas importantes se quiser uma leitura mais ampla, use agrupamento . se quiser descobrir um pico em uma semana especifica, clique na linha agrupada. revise as situacoes escolhidas antes de comparar periodos."
   },
   {
-    "title": "Relatorios de Produtividade",
+    "title": "Relatórios de Produtividade",
     "to": "/docs/gestao/relatorios-produtividade",
     "description": "A tela possui duas abas:",
     "headings": [
@@ -1663,7 +1717,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedContent": "relatorios de produtividade quando utilizar quando quiser acompanhar a produtividade da equipe. quando precisar medir desempenho por tecnico. quando quiser ver tempo medio e valor das ordens de servico. como acessar 1. entre em . 2. abra . o que a tela faz a tela possui duas abas: na aba analitica, o usuario ve os detalhes por ordem de servico. na aba por tecnico, o usuario ve um resumo por colaborador. filtros principais tipos de data encontrados: informacoes mostradas aba analitico tecnico responsavel numero da o.s. cliente situacao da o.s. servicos e produtos tempo medio valor da o.s. aba por tecnico responsavel tecnico responsavel quantidade de o.s. tempo medio por o.s. total de o.s. recursos encontrados filtro por tecnico link para detalhes da ordem de servico atalho para filtrar clicando no tecnico dentro da tabela impressao paginacao ordenacao por coluna mensagens encontradas dicas importantes use a aba quando precisar de detalhe por ordem. use a aba quando quiser comparar a equipe. revise o tipo de data antes de tirar conclusoes sobre desempenho."
   },
   {
-    "title": "Relatorios Financeiros",
+    "title": "Relatórios Financeiros",
     "to": "/docs/gestao/relatorios-financeiros",
     "description": "Em `Relatorios`, existem dois grupos financeiros principais:",
     "headings": [
@@ -1707,9 +1761,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "headings": [
       "Público principal",
       "Categorias principais",
-      "O que cada usuário precisa encontrar rápido",
-      "Exemplo de imagem no projeto",
-      "Como usar esse padrão nos próximos tutoriais"
+      "O que cada usuário precisa encontrar rápido"
     ],
     "faq": [],
     "normalizedTitle": "visao geral do maxflow",
@@ -1717,15 +1769,13 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedHeadings": [
       "publico principal",
       "categorias principais",
-      "o que cada usuario precisa encontrar rapido",
-      "exemplo de imagem no projeto",
-      "como usar esse padrao nos proximos tutoriais"
+      "o que cada usuario precisa encontrar rapido"
     ],
     "normalizedFaq": [],
-    "normalizedContent": "visao geral do maxflow o maxflow e um erp voltado para empresas prestadoras de servico. a central de ajuda deve acompanhar a jornada real de quem cadastra clientes, monta orcamentos, executa servicos e acompanha o financeiro. publico principal oficinas prestadores de servico empresas de servicos usuarios com pouca familiaridade tecnica categorias principais comece aqui cadastros operacao fiscal financeiro gestao configuracoes faq suporte o que cada usuario precisa encontrar rapido como fazer uma tarefa onde clicar o que revisar se der erro como pedir ajuda exemplo de imagem no projeto as imagens podem ficar dentro do proprio projeto e ser vinculadas nos arquivos de documentacao. estrutura usada neste exemplo: exemplo renderizado na pagina: legenda do exemplo: a imagem esta dentro do projeto o arquivo foi salvo em a documentacao acessa a imagem usando o caminho como usar esse padrao nos proximos tutoriais 1. salve a imagem em ou em outra pasta organizada dentro de . 2. no arquivo ou , use o caminho comecando com . 3. exemplo:"
+    "normalizedContent": "visao geral do maxflow o maxflow e um erp voltado para empresas prestadoras de servico. a central de ajuda deve acompanhar a jornada real de quem cadastra clientes, monta orcamentos, executa servicos e acompanha o financeiro. publico principal oficinas prestadores de servico empresas de servicos categorias principais comece aqui cadastros operacao fiscal financeiro gestao configuracoes faq suporte o que cada usuario precisa encontrar rapido como fazer uma tarefa onde clicar o que revisar se der erro como pedir ajuda"
   },
   {
-    "title": "Visao Gerencial",
+    "title": "Visão Gerencial",
     "to": "/docs/gestao/visao-gerencial",
     "description": "Adicionar aqui uma imagem da Visao Gerencial com os principais cards do topo.",
     "headings": [

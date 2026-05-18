@@ -6,6 +6,7 @@ const docsDir = path.join(projectRoot, 'docs');
 const outputDir = path.join(projectRoot, 'src', 'generated');
 const outputFile = path.join(outputDir, 'docsSearchIndex.ts');
 const faqOutputFile = path.join(docsDir, 'faq', 'faq-principal.mdx');
+const faqIndexOutputFile = path.join(outputDir, 'faqIndex.ts');
 
 const ignoredPrefixes = ['padrao/'];
 const validExtensions = new Set(['.md', '.mdx']);
@@ -244,7 +245,13 @@ function buildFaqSourceEntry(absolutePath) {
     category: getTopLevelSegment(relativePath),
     title,
     to: toDocRoute(relativePath),
-    entries: faqEntries,
+    entries: faqEntries.map((entry) => ({
+      ...entry,
+      answerText: stripMarkup(entry.answer),
+      normalizedQuestion: normalizeText(entry.question),
+      normalizedAnswer: normalizeText(stripMarkup(entry.answer)),
+      normalizedSourceTitle: normalizeText(title),
+    })),
   };
 }
 
@@ -266,7 +273,11 @@ function renderFaqPrincipal(faqSources) {
     'sidebar_position: 1',
     '---',
     '',
+    "import FaqSearch from '@site/src/components/FaqSearch';",
+    '',
     '# FAQ principal',
+    '',
+    '<FaqSearch />',
     '',
     '> Esta pagina e gerada automaticamente a partir das secoes `Perguntas frequentes` e `FAQ` dos tutoriais.',
     '',
@@ -307,6 +318,20 @@ const faqSources = walkDocs(docsDir)
   .filter(Boolean)
   .sort(sortFaqSources);
 
+const faqIndex = faqSources.flatMap((source) =>
+  source.entries.map((entry) => ({
+    category: source.category,
+    categoryLabel: faqCategoryLabels[source.category] ?? source.category,
+    sourceTitle: source.title,
+    to: source.to,
+    question: entry.question,
+    answerText: entry.answerText,
+    normalizedQuestion: entry.normalizedQuestion,
+    normalizedAnswer: entry.normalizedAnswer,
+    normalizedSourceTitle: entry.normalizedSourceTitle,
+  })),
+);
+
 const fileContents = `export type DocsSearchEntry = {
   title: string;
   to: string;
@@ -323,8 +348,24 @@ const fileContents = `export type DocsSearchEntry = {
 export const docsSearchIndex: DocsSearchEntry[] = ${JSON.stringify(docsSearchIndex, null, 2)};
 `;
 
+const faqIndexFileContents = `export type FaqIndexEntry = {
+  category: string;
+  categoryLabel: string;
+  sourceTitle: string;
+  to: string;
+  question: string;
+  answerText: string;
+  normalizedQuestion: string;
+  normalizedAnswer: string;
+  normalizedSourceTitle: string;
+};
+
+export const faqIndex: FaqIndexEntry[] = ${JSON.stringify(faqIndex, null, 2)};
+`;
+
 fs.mkdirSync(outputDir, {recursive: true});
 fs.writeFileSync(outputFile, fileContents, 'utf8');
+fs.writeFileSync(faqIndexOutputFile, faqIndexFileContents, 'utf8');
 fs.mkdirSync(path.dirname(faqOutputFile), {recursive: true});
 fs.writeFileSync(faqOutputFile, renderFaqPrincipal(faqSources), 'utf8');
 

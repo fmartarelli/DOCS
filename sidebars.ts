@@ -8,8 +8,6 @@ const sidebars: SidebarsConfig = {
       label: 'Comece aqui',
       items: [
         'comecar/visao-geral-do-maxflow',
-        'comecar/primeiros-passos',
-        'comecar/configuracao-inicial',
       ],
     },
     {
@@ -24,7 +22,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Operacao',
+      label: 'Operação',
       items: ['operacao/orcamentos', 'operacao/ordens-de-servico'],
     },
     {
@@ -47,7 +45,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Gestao',
+      label: 'Gestão',
       items: [
         'gestao/dashboard',
         'gestao/visao-gerencial',
@@ -65,17 +63,12 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Configuracoes',
+      label: 'Configurações',
       items: [
         'configuracoes/configuracoes-gerais',
         'configuracoes/usuarios-e-permissoes',
         'configuracoes/campos-personalizados',
       ],
-    },
-    {
-      type: 'category',
-      label: 'Padrao editorial',
-      items: ['padrao/geracao-automatica-de-tutoriais', 'padrao/template-de-tutorial'],
     },
     {
       type: 'category',
