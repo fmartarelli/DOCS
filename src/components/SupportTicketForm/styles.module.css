@@ -154,6 +154,58 @@
   background: #ffffff;
 }
 
+:global([data-theme='dark']) .infoCard,
+:global([data-theme='dark']) .formCard {
+  border-color: rgba(141, 177, 255, 0.14);
+  background: #132237;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+:global([data-theme='dark']) .infoCard strong,
+:global([data-theme='dark']) .field label {
+  color: #f2f6ff;
+}
+
+:global([data-theme='dark']) .infoCard span {
+  color: #bfd0e4;
+}
+
+:global([data-theme='dark']) .warningBox {
+  border-color: rgba(250, 191, 82, 0.26);
+  background: #3b2b12;
+  color: #ffd88f;
+}
+
+:global([data-theme='dark']) .field input,
+:global([data-theme='dark']) .field select,
+:global([data-theme='dark']) .field textarea,
+:global([data-theme='dark']) .secondaryButton {
+  border-color: rgba(141, 177, 255, 0.18);
+  background: #0f1b2d;
+  color: #edf3fb;
+}
+
+:global([data-theme='dark']) .field input::placeholder,
+:global([data-theme='dark']) .field textarea::placeholder {
+  color: #90a5c0;
+}
+
+:global([data-theme='dark']) .errorBox {
+  border-color: rgba(255, 110, 110, 0.28);
+  background: #3b1d21;
+  color: #ffb4b4;
+}
+
+:global([data-theme='dark']) .successBox {
+  border-color: rgba(68, 214, 140, 0.24);
+  background: #163526;
+  color: #8ae6b4;
+}
+
+:global([data-theme='dark']) .secondaryButton {
+  color: #b9ceff;
+}
+
 @media screen and (max-width: 996px) {
   .infoGrid,
   .fieldGrid {

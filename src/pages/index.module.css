@@ -36,6 +36,7 @@
   margin: 1rem 0 0.75rem;
   font-size: clamp(3rem, 7vw, 5.2rem);
   line-height: 0.95;
+  color: #f6f9ff;
 }
 
 .heroSubtitle {

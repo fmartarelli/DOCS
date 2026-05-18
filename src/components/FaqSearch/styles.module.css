@@ -174,6 +174,48 @@
   line-height: 1.7;
 }
 
+:global([data-theme='dark']) .wrapper {
+  border-color: rgba(141, 177, 255, 0.14);
+  background:
+    radial-gradient(circle at top right, rgba(141, 177, 255, 0.12), transparent 28%),
+    linear-gradient(180deg, #132237 0%, #0f1b2d 100%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+}
+
+:global([data-theme='dark']) .title,
+:global([data-theme='dark']) .searchLabel,
+:global([data-theme='dark']) .resultQuestion {
+  color: #f3f7ff;
+}
+
+:global([data-theme='dark']) .description,
+:global([data-theme='dark']) .summary,
+:global([data-theme='dark']) .resultAnswer,
+:global([data-theme='dark']) .emptyState {
+  color: #bfd0e4;
+}
+
+:global([data-theme='dark']) .searchInput {
+  border-color: rgba(141, 177, 255, 0.18);
+  background: #0e192a;
+  color: #edf3fb;
+}
+
+:global([data-theme='dark']) .searchInput::placeholder {
+  color: #8ea3bf;
+}
+
+:global([data-theme='dark']) .resultCard,
+:global([data-theme='dark']) .emptyState {
+  border-color: rgba(141, 177, 255, 0.14);
+  background: rgba(19, 34, 55, 0.96);
+}
+
+:global([data-theme='dark']) .resultMeta span {
+  background: rgba(141, 177, 255, 0.14);
+  color: #cfe0ff;
+}
+
 @media screen and (max-width: 996px) {
   .wrapper {
     padding: 1.2rem;
