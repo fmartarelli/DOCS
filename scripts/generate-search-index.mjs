@@ -92,6 +92,7 @@ function stripFrontmatter(content) {
 
 function stripMarkup(content) {
   return content
+    .replace(/^(import|export)\s+.+$/gm, ' ')
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`[^`]*`/g, ' ')
     .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
@@ -105,12 +106,28 @@ function stripMarkup(content) {
     .trim();
 }
 
+function isIgnorableContentLine(line) {
+  return (
+    line.startsWith('import ') ||
+    line.startsWith('export ') ||
+    /^<[^>]+\/?>$/.test(line) ||
+    /^<\/[^>]+>$/.test(line)
+  );
+}
+
 function extractFirstParagraph(content) {
   const lines = content.split('\n').map((line) => line.trim());
   const parts = [];
 
   for (const line of lines) {
     if (!line) {
+      if (parts.length > 0) {
+        break;
+      }
+      continue;
+    }
+
+    if (isIgnorableContentLine(line)) {
       if (parts.length > 0) {
         break;
       }

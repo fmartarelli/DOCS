@@ -20,11 +20,20 @@ type SearchResult = {
   score: number;
 };
 
+type SearchSection = {
+  label: string;
+  normalizedLabel: string;
+  weightSingle: number;
+  weightPhrase: number;
+  weightContext: number;
+};
+
 function normalizeText(value: string): string {
   return value
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLocaleLowerCase('pt-BR')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
@@ -39,16 +48,157 @@ function tokenizeQuery(value: string): string[] {
   );
 }
 
+function buildSections(item: DocsSearchEntry): SearchSection[] {
+  return [
+    {
+      label: item.title,
+      normalizedLabel: item.normalizedTitle,
+      weightSingle: 150,
+      weightPhrase: 220,
+      weightContext: 180,
+    },
+    ...item.faq.map((entry, index) => ({
+      label: entry,
+      normalizedLabel: item.normalizedFaq[index] ?? normalizeText(entry),
+      weightSingle: 110,
+      weightPhrase: 180,
+      weightContext: 145,
+    })),
+    ...item.headings.map((entry, index) => ({
+      label: entry,
+      normalizedLabel: item.normalizedHeadings[index] ?? normalizeText(entry),
+      weightSingle: 90,
+      weightPhrase: 150,
+      weightContext: 120,
+    })),
+    {
+      label: item.description,
+      normalizedLabel: item.normalizedDescription,
+      weightSingle: 70,
+      weightPhrase: 120,
+      weightContext: 100,
+    },
+  ];
+}
+
+function hasContextualMatch(normalizedText: string, tokens: string[]): boolean {
+  if (tokens.length < 2 || !normalizedText) {
+    return false;
+  }
+
+  const words = normalizedText.split(' ').filter(Boolean);
+  const maxWindowSize = Math.min(Math.max(tokens.length + 6, 8), 16);
+
+  if (words.length <= maxWindowSize) {
+    const fullWindow = words.join(' ');
+    return tokens.every((token) => fullWindow.includes(token));
+  }
+
+  for (let startIndex = 0; startIndex <= words.length - maxWindowSize; startIndex += 1) {
+    const windowText = words.slice(startIndex, startIndex + maxWindowSize).join(' ');
+
+    if (tokens.every((token) => windowText.includes(token))) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 function findBestMatch(item: DocsSearchEntry, normalizedQuery: string, tokens: string[]) {
-  const sections = [item.title, ...item.faq, ...item.headings, item.description];
+  const sections = buildSections(item);
+  const isSingleWordQuery = tokens.length === 1;
 
   return sections.find((section) => {
-    const normalizedSection = normalizeText(section);
+    if (isSingleWordQuery) {
+      return section.normalizedLabel.includes(tokens[0]);
+    }
+
     return (
-      normalizedSection.includes(normalizedQuery) ||
-      tokens.every((token) => normalizedSection.includes(token))
+      section.normalizedLabel.includes(normalizedQuery) ||
+      hasContextualMatch(section.normalizedLabel, tokens)
     );
-  });
+  })?.label;
+}
+
+function scoreSingleWordItem(item: DocsSearchEntry, token: string): SearchResult | null {
+  const sections = buildSections(item);
+  let score = 0;
+  let bestMatchLabel: string | undefined;
+
+  for (const section of sections) {
+    if (!section.normalizedLabel.includes(token)) {
+      continue;
+    }
+
+    score += section.weightSingle;
+    bestMatchLabel ??= section.label;
+  }
+
+  if (item.normalizedContent.includes(token)) {
+    score += 24;
+  }
+
+  if (!score) {
+    return null;
+  }
+
+  return {
+    item,
+    matchLabel: bestMatchLabel,
+    score,
+  };
+}
+
+function scoreContextItem(
+  item: DocsSearchEntry,
+  normalizedQuery: string,
+  tokens: string[],
+): SearchResult | null {
+  const sections = buildSections(item);
+  let score = 0;
+  let bestMatchLabel: string | undefined;
+  let hasPhraseMatch = false;
+  let hasContextMatch = false;
+
+  for (const section of sections) {
+    if (section.normalizedLabel.includes(normalizedQuery)) {
+      score += section.weightPhrase;
+      hasPhraseMatch = true;
+      bestMatchLabel ??= section.label;
+      continue;
+    }
+
+    if (hasContextualMatch(section.normalizedLabel, tokens)) {
+      score += section.weightContext;
+      hasContextMatch = true;
+      bestMatchLabel ??= section.label;
+    }
+  }
+
+  if (item.normalizedContent.includes(normalizedQuery)) {
+    score += 48;
+    hasPhraseMatch = true;
+  } else if (hasContextualMatch(item.normalizedContent, tokens)) {
+    score += 26;
+    hasContextMatch = true;
+  }
+
+  if (!hasPhraseMatch && !hasContextMatch) {
+    return null;
+  }
+
+  if (hasPhraseMatch) {
+    score += 40;
+  } else if (hasContextMatch) {
+    score += 18;
+  }
+
+  return {
+    item,
+    matchLabel: bestMatchLabel ?? findBestMatch(item, normalizedQuery, tokens),
+    score,
+  };
 }
 
 function scoreItem(item: DocsSearchEntry, query: string): SearchResult | null {
@@ -59,77 +209,11 @@ function scoreItem(item: DocsSearchEntry, query: string): SearchResult | null {
     return {item, score: 0};
   }
 
-  let score = 0;
-  let matchedTokens = 0;
-
-  if (item.normalizedTitle.includes(normalizedQuery)) {
-    score += 160;
+  if (tokens.length === 1) {
+    return scoreSingleWordItem(item, tokens[0]);
   }
 
-  if (item.normalizedFaq.some((entry) => entry.includes(normalizedQuery))) {
-    score += 120;
-  }
-
-  if (item.normalizedHeadings.some((entry) => entry.includes(normalizedQuery))) {
-    score += 90;
-  }
-
-  if (item.normalizedDescription.includes(normalizedQuery)) {
-    score += 80;
-  }
-
-  if (item.normalizedContent.includes(normalizedQuery)) {
-    score += 50;
-  }
-
-  for (const token of tokens) {
-    let tokenMatched = false;
-
-    if (item.normalizedTitle.includes(token)) {
-      score += 50;
-      tokenMatched = true;
-    }
-
-    if (item.normalizedFaq.some((entry) => entry.includes(token))) {
-      score += 36;
-      tokenMatched = true;
-    }
-
-    if (item.normalizedHeadings.some((entry) => entry.includes(token))) {
-      score += 28;
-      tokenMatched = true;
-    }
-
-    if (item.normalizedDescription.includes(token)) {
-      score += 18;
-      tokenMatched = true;
-    }
-
-    if (item.normalizedContent.includes(token)) {
-      score += 8;
-      tokenMatched = true;
-    }
-
-    if (tokenMatched) {
-      matchedTokens += 1;
-    }
-  }
-
-  if (matchedTokens === tokens.length) {
-    score += 60;
-  } else if (matchedTokens > 0) {
-    score += matchedTokens * 10;
-  }
-
-  if (!score) {
-    return null;
-  }
-
-  return {
-    item,
-    matchLabel: findBestMatch(item, normalizedQuery, tokens),
-    score,
-  };
+  return scoreContextItem(item, normalizedQuery, tokens);
 }
 
 function HomepageHeader() {

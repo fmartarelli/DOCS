@@ -54,8 +54,6 @@ Exemplo real:
 
 - Uma oficina recebe um novo cliente pessoa jurídica. O atendente informa o CNPJ, usa a busca automática para preencher parte dos dados, confirma o nome da empresa, cadastra telefone, e-mail e endereço, marca o cadastro como **Cliente** e salva para usar no orçamento.
 
-
-
 ![Exemplo de imagem Cadastrar](/img/exemplos/Pessoas-Cadastro2.png)
 
 ## Explicação dos campos principais
@@ -66,6 +64,27 @@ Exemplo real:
 - **CPF/CNPJ**: documento principal do cadastro. O sistema também usa esse campo para evitar duplicidade.
 - **RG/IE**: documento complementar, usado conforme o tipo de pessoa e a necessidade da empresa.
 - **Tipo de contribuinte**: define a informação fiscal básica do cadastro.
+
+  Esse campo ajuda o sistema a entender como a pessoa ou empresa deve ser tratada nas rotinas fiscais. Na prática, ele faz diferença principalmente quando o cadastro for usado na emissão de notas fiscais.
+
+  O que esse campo impacta na geração de notas:
+
+  - ajuda a montar os dados fiscais do destinatário ou do tomador
+  - influencia a conferência de CPF/CNPJ e RG/IE
+  - interfere na forma como o cadastro é tratado nas rotinas de emissão
+  - reduz o risco de inconsistência no preenchimento da nota
+  - evita retrabalho na revisão do cadastro antes da transmissão
+
+  Exemplo prático:
+
+  - se um cliente estiver com o tipo de contribuinte preenchido de forma inadequada, a empresa pode perceber isso somente ao emitir a nota e precisar corrigir o cadastro de **Pessoas** antes de seguir
+
+  Em linguagem simples:
+
+  - esse campo ajuda a dizer ao sistema “como essa pessoa ou empresa deve aparecer na parte fiscal da nota”
+  - se ele estiver coerente com os documentos do cadastro, a emissão tende a fluir melhor
+  - se ele estiver incoerente, a equipe fiscal ou administrativa pode precisar interromper a emissão para ajustar o cadastro
+
 - **Nome**: nome da pessoa ou razão social da empresa.
 - **Apelido / Nome fantasia**: nome mais curto para facilitar a identificação.
 - **Data de nascimento**: usada quando o cadastro for de pessoa física ou quando a empresa quiser manter esse controle.
@@ -83,12 +102,15 @@ Exemplo real:
 - **Cadastrar uma transportadora**: quando a empresa precisa registrar quem faz entregas ou movimentação de mercadorias.
 - **Usar um único cadastro com mais de uma função**: quando a mesma empresa é cliente e também fornecedora.
 - **Completar dados após consultar o CNPJ**: quando a busca automática já traz parte das informações e a equipe só precisa revisar e complementar.
+- **Preparar o cadastro para emissão de nota fiscal**: quando a empresa quer deixar cliente, fornecedor ou tomador pronto para uso em notas, com revisão de documento, endereço e principalmente do **tipo de contribuinte**.
 
 ## Dicas importantes
 
 - Antes de cadastrar, confira se a pessoa já não existe no sistema para evitar duplicidade.
 - Quando tiver CNPJ, vale a pena usar a busca automática para ganhar tempo.
 - Preencha corretamente o **tipo de contribuinte** para evitar problemas em rotinas fiscais.
+- Se o cadastro vai ser usado em nota fiscal, revise o **tipo de contribuinte** junto com CPF/CNPJ e RG/IE antes de salvar.
+- Quando houver dúvida sobre esse campo, confirme com a pessoa responsável pelo fiscal da empresa antes de emitir a nota.
 - Revise telefone, e-mail e endereço antes de salvar, porque esses dados são muito usados no dia a dia.
 - Se começar a cadastrar um endereço, telefone ou e-mail, conclua ou cancele antes de salvar a tela.
 - Use a observação para registrar informações úteis para a equipe, como preferência de contato ou algum detalhe comercial.
@@ -124,3 +146,16 @@ Não. Se houver item em preenchimento ou alteração, é preciso concluir ou can
 
 Ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.
 
+### O que o tipo de contribuinte muda na nota fiscal?
+
+Ele ajuda a definir como o cadastro será tratado nas rotinas fiscais. Esse dado faz parte da identificação da pessoa ou empresa na nota e precisa estar coerente com os documentos informados no cadastro.
+
+Na prática, quando esse campo está correto:
+
+- a conferência fiscal fica mais simples
+- o preenchimento do destinatário ou tomador fica mais confiável
+- diminui a chance de a equipe precisar interromper a emissão para corrigir o cadastro
+
+### O que pode acontecer se o tipo de contribuinte estiver errado?
+
+O mais comum é a equipe precisar voltar ao cadastro de **Pessoas** para revisar a informação antes de seguir com a nota. Mesmo quando o erro só aparece na hora da emissão, a correção normalmente acontece ajustando esse dado no cadastro.

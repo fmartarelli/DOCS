@@ -91,6 +91,61 @@ export const faqIndex: FaqIndexEntry[] = [
   {
     "category": "cadastros",
     "categoryLabel": "Cadastros",
+    "sourceTitle": "Pessoas",
+    "to": "/docs/cadastros/clientes",
+    "question": "Posso cadastrar a mesma pessoa como cliente e fornecedor?",
+    "answerText": "Sim. O mesmo cadastro pode ter mais de uma função.",
+    "normalizedQuestion": "posso cadastrar a mesma pessoa como cliente e fornecedor?",
+    "normalizedAnswer": "sim. o mesmo cadastro pode ter mais de uma funcao.",
+    "normalizedSourceTitle": "pessoas"
+  },
+  {
+    "category": "cadastros",
+    "categoryLabel": "Cadastros",
+    "sourceTitle": "Pessoas",
+    "to": "/docs/cadastros/clientes",
+    "question": "O sistema busca dados automaticamente pelo CNPJ?",
+    "answerText": "Sim. Quando o documento é CNPJ, a tela pode buscar informações para ajudar no preenchimento.",
+    "normalizedQuestion": "o sistema busca dados automaticamente pelo cnpj?",
+    "normalizedAnswer": "sim. quando o documento e cnpj, a tela pode buscar informacoes para ajudar no preenchimento.",
+    "normalizedSourceTitle": "pessoas"
+  },
+  {
+    "category": "cadastros",
+    "categoryLabel": "Cadastros",
+    "sourceTitle": "Pessoas",
+    "to": "/docs/cadastros/clientes",
+    "question": "O que acontece se o CPF/CNPJ já estiver cadastrado?",
+    "answerText": "O sistema avisa que já existe um cadastro e pode direcionar para a alteração desse registro.",
+    "normalizedQuestion": "o que acontece se o cpf/cnpj ja estiver cadastrado?",
+    "normalizedAnswer": "o sistema avisa que ja existe um cadastro e pode direcionar para a alteracao desse registro.",
+    "normalizedSourceTitle": "pessoas"
+  },
+  {
+    "category": "cadastros",
+    "categoryLabel": "Cadastros",
+    "sourceTitle": "Pessoas",
+    "to": "/docs/cadastros/clientes",
+    "question": "Posso salvar sem terminar de preencher um telefone ou endereço?",
+    "answerText": "Não. Se houver item em preenchimento ou alteração, é preciso concluir ou cancelar antes.",
+    "normalizedQuestion": "posso salvar sem terminar de preencher um telefone ou endereco?",
+    "normalizedAnswer": "nao. se houver item em preenchimento ou alteracao, e preciso concluir ou cancelar antes.",
+    "normalizedSourceTitle": "pessoas"
+  },
+  {
+    "category": "cadastros",
+    "categoryLabel": "Cadastros",
+    "sourceTitle": "Pessoas",
+    "to": "/docs/cadastros/clientes",
+    "question": "Para que serve o limite de crédito?",
+    "answerText": "Ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.",
+    "normalizedQuestion": "para que serve o limite de credito?",
+    "normalizedAnswer": "ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.",
+    "normalizedSourceTitle": "pessoas"
+  },
+  {
+    "category": "cadastros",
+    "categoryLabel": "Cadastros",
     "sourceTitle": "Produtos e serviços",
     "to": "/docs/cadastros/produtos-e-servicos",
     "question": "Produto e serviço são cadastrados na mesma tela?",
