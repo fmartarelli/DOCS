@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
         'cadastros/clientes',
         'cadastros/produtos-e-servicos',
         'cadastros/colaboradores',
+        'cadastros/categorias',
       ],
     },
     {
@@ -68,6 +69,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'configuracoes/configuracoes-gerais',
         'configuracoes/usuarios-e-permissoes',
+        'configuracoes/campos-personalizados',
       ],
     },
     {

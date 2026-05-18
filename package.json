@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "generate:search-index": "node scripts/generate-search-index.mjs",
+    "prestart": "npm run generate:search-index",
+    "prebuild": "npm run generate:search-index",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

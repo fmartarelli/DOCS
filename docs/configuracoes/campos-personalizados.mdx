@@ -1,0 +1,215 @@
+---
+title: Campos Personalizados
+sidebar_position: 3
+---
+
+# Campos Personalizados
+
+## Quando utilizar
+
+Use esta funcionalidade quando a empresa precisar guardar informações extras que não existem no cadastro padrão do Maxflow.
+
+Exemplos práticos:
+
+- registrar uma informação adicional no cadastro de cliente
+- incluir um campo específico em produtos e serviços
+- pedir dados extras no orçamento
+- registrar informações complementares na Ordem de Serviço
+- adaptar o sistema à rotina da empresa sem mudar a estrutura principal
+
+## Como acessar
+
+1. No menu do sistema, acesse **Configurações**.
+2. Clique em **Campos Personalizados**.
+3. Escolha o módulo em que deseja criar o campo.
+
+Os módulos encontrados na análise são:
+
+- **Pessoas**
+- **Orçamentos**
+- **Ordens de Serviços**
+- **Produtos e Serviços**
+
+:::info Local para imagem
+Adicione aqui uma captura da tela inicial de **Campos Personalizados** mostrando a lista de módulos.
+:::
+
+## Passo a passo
+
+1. Entre em **Campos Personalizados**.
+2. Clique no módulo que deseja configurar.
+3. Revise a lista dos campos já cadastrados para esse módulo.
+4. Clique em **Adicionar**.
+5. No painel lateral, preencha a **descrição do campo**.
+6. Escolha o **tipo do campo**.
+
+Tipos encontrados:
+
+- **Texto**
+- **Número**
+- **Data**
+- **Sim / Não**
+- **Lista**
+- **Checklist**
+
+7. Se o tipo for **Número**, escolha o formato:
+   - inteiro
+   - 1 casa decimal
+   - 2 casas decimais
+   - 3 casas decimais
+8. Se o tipo for **Lista** ou **Checklist**, adicione os itens que poderão ser escolhidos.
+9. Se necessário, marque a opção **Campo obrigatório**.
+10. Revise a pré-visualização do campo.
+11. Clique em **Adicionar** para salvar.
+
+Depois de salvar:
+
+- o campo passa a ficar disponível naquele módulo
+- ele aparece nas telas de cadastro ou lançamento relacionadas
+- se houver mais de um campo, a ordem pode ser alterada arrastando os itens na lista
+
+### Como alterar um campo já criado
+
+1. Acesse o módulo desejado dentro de **Campos Personalizados**.
+2. Localize o campo.
+3. Clique no menu de ações do campo.
+4. Escolha **Alterar**.
+5. Ajuste as informações necessárias.
+6. Clique em **Salvar**.
+
+### Como excluir um campo
+
+1. Acesse o módulo desejado.
+2. Localize o campo.
+3. Clique no menu de ações.
+4. Escolha **Excluir**.
+
+### Como mudar a ordem dos campos
+
+1. Acesse o módulo desejado.
+2. Segure o ícone de arrastar do campo.
+3. Mova o item para a posição desejada.
+
+Exemplo real:
+
+- Uma oficina deseja registrar a **Placa** e a **Cor** do veículo na Ordem de Serviço. O responsável acessa **Campos Personalizados**, entra em **Ordens de Serviços**, cria os campos e depois eles passam a aparecer no lançamento da O.S.
+
+Outro exemplo:
+
+- Uma empresa quer guardar o **Nome do contato financeiro** no cadastro de cliente. Para isso, cria um campo personalizado no módulo **Pessoas** com tipo **Texto**.
+
+:::info Local para imagem
+Adicione aqui uma captura do painel lateral de cadastro de campo personalizado mostrando descrição, tipo e pré-visualização.
+:::
+
+## Explicação dos campos principais
+
+- **Módulo**: define em qual parte do sistema o campo será usado.
+- **Descrição do campo**: é o nome que aparecerá para o usuário nas telas do sistema.
+- **Tipo do campo**: define como o campo será preenchido.
+- **Campo obrigatório**: exige que o usuário preencha esse campo antes de concluir a tela do módulo.
+- **Formato do número**: usado apenas em campos numéricos para definir a quantidade de casas decimais.
+- **Itens da lista**: opções disponíveis quando o tipo escolhido for **Lista**.
+- **Itens do checklist**: opções disponíveis quando o tipo escolhido for **Checklist**.
+- **Pré-visualização**: mostra como o campo deve aparecer antes de salvar.
+- **Ordem**: define a sequência em que os campos aparecem dentro do módulo.
+
+### Como cada tipo funciona
+
+- **Texto**: usado para digitação livre, como observação curta, nome, código ou referência.
+- **Número**: usado para quantidade, medida, peso, valor ou qualquer informação numérica.
+- **Data**: usado para registrar uma data específica.
+- **Sim / Não**: usado quando a resposta precisa ser apenas ligada ou desligada.
+- **Lista**: permite escolher uma única opção.
+- **Checklist**: permite marcar mais de uma opção.
+
+## Situações práticas de uso
+
+- **No cadastro de pessoas**: criar um campo como `Responsável financeiro` ou `Segmento do cliente`.
+- **No cadastro de produtos e serviços**: criar um campo como `Medida`, `Aplicação` ou `Modelo compatível`.
+- **No orçamento**: criar um campo como `Número interno do cliente` ou `Local de atendimento`.
+- **Na Ordem de Serviço**: criar um campo como `Placa`, `Cor`, `Chassi` ou `Combustível`.
+- **Em empresas com processos próprios**: usar campos extras para adaptar o preenchimento sem depender de alteração no cadastro padrão.
+
+## Dicas importantes
+
+- Use nomes curtos e claros para facilitar o entendimento da equipe.
+- Evite criar dois campos com significados muito parecidos.
+- Antes de marcar como obrigatório, confirme se essa informação realmente precisa ser preenchida sempre.
+- Em **Lista** e **Checklist**, cadastre opções fáceis de entender.
+- Revise a ordem dos campos para deixar o preenchimento mais organizado.
+- Se a empresa trabalha com veículos, vale revisar os campos ligados ao setor automotivo.
+- Quando existir um campo com o nome **Placa** em alguns fluxos de O.S. e orçamento, o sistema pode aproveitar esse dado em recursos específicos do produto.
+
+## Erros comuns
+
+- **Criar o campo no módulo errado**: por exemplo, cadastrar no módulo de produtos quando a informação deveria aparecer em clientes.
+- **Usar uma descrição confusa**: isso dificulta o preenchimento depois.
+- **Repetir a mesma descrição no mesmo módulo**: o sistema bloqueia esse cadastro.
+- **Criar lista sem itens**: campos do tipo **Lista** e **Checklist** precisam ter pelo menos um item.
+- **Adicionar opções demais sem necessidade**: isso pode deixar a tela mais confusa.
+- **Marcar muitos campos como obrigatórios**: isso pode atrapalhar o preenchimento no dia a dia.
+- **Esquecer de revisar a ordem dos campos**: a disposição na tela também interfere na usabilidade.
+
+## Perguntas frequentes
+
+### Posso criar campos personalizados para qualquer tela do sistema?
+
+Pelos arquivos analisados, a funcionalidade está disponível para:
+
+- **Pessoas**
+- **Orçamentos**
+- **Ordens de Serviços**
+- **Produtos e Serviços**
+
+### Posso repetir o mesmo nome de campo no mesmo módulo?
+
+Não. O sistema valida a descrição e bloqueia nomes repetidos dentro do mesmo módulo.
+
+### Posso criar um campo de lista sem opções?
+
+Não. Campos do tipo **Lista** e **Checklist** precisam ter pelo menos 1 item.
+
+### Existe limite de opções em lista e checklist?
+
+Sim. A análise encontrou limite de até **20 itens**.
+
+### Posso alterar um campo depois de criar?
+
+Sim. Existe a ação **Alterar** no menu de ações de cada campo.
+
+### Posso excluir um campo personalizado?
+
+Sim. Existe a ação **Excluir**.
+
+### Posso mudar a ordem em que os campos aparecem?
+
+Sim. A tela permite arrastar os campos para reorganizar a sequência.
+
+### Existe limite de quantidade de campos personalizados?
+
+Sim. O sistema possui controle por plano.
+
+### O que acontece quando o plano não permite mais campos?
+
+O sistema pode bloquear novos cadastros e exibir a mensagem informando que o limite foi atingido.
+
+### O sistema cria campos automáticos para o setor automotivo?
+
+Sim. A análise mostrou um fluxo que pode criar campos padrão como:
+
+- **Placa**
+- **Marca**
+- **Modelo**
+- **Ano Modelo**
+- **Cor**
+- **Chassi**
+- **Combustível**
+
+### Esses campos aparecem automaticamente nas telas do sistema?
+
+Sim. Depois de criados, eles passam a aparecer no módulo correspondente.
+
+:::info Local para imagem
+Adicione aqui uma captura de uma tela do sistema mostrando os campos personalizados já aparecendo para preenchimento.
+:::

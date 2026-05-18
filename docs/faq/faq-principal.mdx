@@ -5,431 +5,339 @@ sidebar_position: 1
 
 # FAQ principal
 
-## Acesso e primeiros passos
-
-### Como entrar no sistema pela primeira vez?
-
-- O ideal é começar pela visão geral do sistema e pelos primeiros passos.
-- Se a empresa já criou seu acesso, entre com os dados enviados pelo responsável.
-- Se quiser um guia inicial, consulte:
-- [Visão geral do Maxflow](/docs/comecar/visao-geral-do-maxflow)
-- [Primeiros passos](/docs/comecar/primeiros-passos)
-
-### Qual módulo devo aprender primeiro?
-
-- O caminho mais simples é:
-- `Cadastros`
-- `Orçamentos`
-- `Ordens de Serviço`
-- `Financeiro`
-- `Dashboard e Relatórios`
-
-### Preciso aprender financeiro antes da operação?
-
-- Não.
-- Na maioria dos casos, a empresa começa aprendendo cadastro, orçamento e ordem de serviço.
-- O financeiro pode ser aprendido logo depois.
-
-### O que fazer quando o usuário não consegue entrar?
-
-- Primeiro confirme se o acesso do usuário está ativo.
-- Depois revise e-mail, senha e permissões de acesso.
-- Se o problema continuar, peça apoio ao responsável pelo sistema ou ao suporte.
+> Esta pagina e gerada automaticamente a partir das secoes `Perguntas frequentes` e `FAQ` dos tutoriais.
 
 ## Cadastros
 
-### Posso cadastrar a mesma pessoa como cliente e fornecedor?
+### Posso cadastrar uma subcategoria sem escolher uma categoria?
 
-- Sim.
-- O mesmo cadastro pode ser usado com mais de uma classificação.
+Não. A subcategoria depende de uma categoria pai.
 
-### O sistema busca dados automaticamente pelo CNPJ?
+Saiba mais: [Categorias](/docs/cadastros/categorias)
 
-- Sim, em alguns casos o sistema pode ajudar no preenchimento quando o documento é CNPJ.
+### Posso repetir a mesma descrição?
 
-### O que acontece se o CPF/CNPJ já estiver cadastrado?
+Não no mesmo contexto. O sistema valida nome repetido dentro do mesmo nível e do mesmo pai.
 
-- O sistema avisa que o documento já existe e pode direcionar para alteração do cadastro existente.
+Saiba mais: [Categorias](/docs/cadastros/categorias)
 
-### Posso salvar sem terminar de preencher um telefone ou endereço?
+### Quantos níveis a estrutura pode ter?
 
-- Não.
-- Se houver um item em preenchimento, o sistema pede para concluir ou cancelar antes de salvar.
+A análise encontrou até 5 níveis:
 
-### Para que serve o limite de crédito?
+- categoria
+- subcategoria
+- segmento
+- linha
+- tipo
 
-- Serve para controlar até quanto aquele cliente pode comprar ou utilizar em negociações da empresa.
+Saiba mais: [Categorias](/docs/cadastros/categorias)
+
+### Posso alterar uma categoria depois?
+
+Sim. Existe a ação de alteração.
+
+Saiba mais: [Categorias](/docs/cadastros/categorias)
+
+### Posso excluir um item da árvore?
+
+Sim. Existe ação de exclusão por nível.
+
+Saiba mais: [Categorias](/docs/cadastros/categorias)
+
+### Para que serve o caminho selecionado?
+
+Serve para mostrar exatamente onde você está dentro da estrutura.
+
+Saiba mais: [Categorias](/docs/cadastros/categorias)
+
+### Posso filtrar os itens por nome?
+
+Sim. A tela possui filtro por descrição.
+
+Saiba mais: [Categorias](/docs/cadastros/categorias)
 
 ### Produto e serviço são cadastrados na mesma tela?
 
-- Sim.
-- O mesmo módulo atende produto e serviço.
+Sim. A mesma tela permite escolher entre **Produto** e **Serviço**.
+
+Saiba mais: [Produtos e serviços](/docs/cadastros/produtos-e-servicos)
 
 ### Posso cadastrar um serviço sem estoque?
 
-- Sim.
-- Serviço não depende do mesmo uso de estoque de um produto.
+Sim. O controle de estoque é mais importante para produtos físicos.
 
-### A descrição curta é obrigatória?
+Saiba mais: [Produtos e serviços](/docs/cadastros/produtos-e-servicos)
 
-- Sim.
-- Esse é um dos campos principais do cadastro.
-
-### Posso adicionar imagem ao item?
-
-- Sim.
-- O cadastro permite incluir imagem.
-
-### O que acontece se eu bloquear a alteração de preço na Ordem de Serviço?
-
-- O sistema passa a tratar o preço do item como fixo dentro da O.S.
-- Se essa opção for usada sem preço informado, o sistema pode alertar.
-
-### Todo colaborador precisa acessar o sistema?
-
-- Não.
-- O acesso ao sistema é opcional no cadastro do colaborador.
-
-### Quando o e-mail e a senha se tornam obrigatórios?
-
-- Quando a opção de permitir acesso ao sistema estiver ativada.
-
-### Posso vincular um colaborador a mais de uma empresa?
-
-- Sim.
-
-### Para que serve a comissão?
-
-- Esse campo ajuda nos cálculos e controles ligados à comissão do colaborador.
-
-### Posso cadastrar um técnico sem criar usuário de acesso?
-
-- Sim.
-- O colaborador pode existir no sistema sem login liberado.
-
-## Operação
+## Operacao
 
 ### Posso criar um orçamento sem produtos ou serviços?
 
-- Sim, desde que o processo da empresa permita usar valor manual no orçamento.
+Sim. Nesse caso, você pode usar o campo **valor orçado manual**.
 
-### Posso usar valor manual junto com produtos e serviços no orçamento?
-
-- Não.
-- O valor manual não deve ser usado junto com itens lançados.
-
-### O que acontece quando o orçamento é aprovado?
-
-- Depois da aprovação, o orçamento pode seguir para geração de Ordem de Serviço.
-
-### Posso alterar um orçamento depois que ele foi aprovado?
-
-- Não normalmente.
-- O sistema possui bloqueios para esse tipo de alteração.
-
-### Para que serve a data do próximo contato?
-
-- Serve para acompanhar quando a empresa deve voltar a falar com o cliente sobre aquele orçamento.
+Saiba mais: [Orçamentos](/docs/operacao/orcamentos)
 
 ### Posso abrir uma Ordem de Serviço sem orçamento?
 
-- Sim.
-- A O.S. pode ser aberta diretamente.
+Sim. A Ordem de Serviço pode ser criada diretamente no sistema.
+
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
 
 ### Posso gerar uma Ordem de Serviço a partir de um orçamento?
 
-- Sim.
-- Esse fluxo existe no sistema.
+Sim. Esse fluxo existe e ajuda a aproveitar as informações de um orçamento já aprovado.
 
-### Posso usar valor manual junto com produtos e serviços na Ordem de Serviço?
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
 
-- Não.
-- Assim como no orçamento, o valor manual não deve ser misturado com itens lançados.
+### Posso usar valor manual junto com produtos e serviços?
 
-### O pagamento é obrigatório na Ordem de Serviço?
+Não. O valor manual deve ser usado apenas quando não houver itens lançados.
 
-- Sim.
-- A ordem exige consistência nas informações de pagamento.
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
+
+### O pagamento é obrigatório?
+
+Sim. A ordem precisa ter os dados de pagamento preenchidos de forma correta.
+
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
 
 ### Posso parcelar o valor da Ordem de Serviço?
 
-- Sim.
-- O sistema permite trabalhar com parcelamento.
+Sim. A tela permite pagamento à vista, entrada com parcelamento ou parcelamento.
+
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
 
 ### O que acontece depois que a ordem é concluída?
 
-- A O.S. passa a ter bloqueios de alteração em vários cenários.
+Ela passa para a situação **Concluída** e não pode mais ser alterada normalmente.
 
-### Posso anexar arquivos na Ordem de Serviço?
-
-- Sim.
-- O sistema aceita anexos dentro dos limites configurados.
-
-### Para que serve a observação interna?
-
-- Serve para registrar informações de uso interno da equipe.
+Saiba mais: [Ordens de serviço](/docs/operacao/ordens-de-servico)
 
 ## Fiscal
 
 ### Posso salvar a nota sem transmitir?
 
-- Sim.
-- A tela permite salvar primeiro e transmitir depois.
+Sim. A tela oferece a opcao **Apenas salvar**.
+
+Saiba mais: [Nota Fiscal de Produto](/docs/fiscal/nota-fiscal-de-produto)
 
 ### Posso transmitir depois?
 
-- Sim.
-- Depois do salvamento, a transmissão pode ser feita no momento certo.
+Sim. Depois do salvamento, a transmissao pode ser feita pela lista da nota.
 
-### Posso emitir uma nota a partir de uma Ordem de Serviço?
+Saiba mais: [Nota Fiscal de Produto](/docs/fiscal/nota-fiscal-de-produto)
 
-- Sim.
-- Esse fluxo existe tanto em nota de produto quanto em nota de serviço.
+### Posso emitir uma nota a partir de uma Ordem de Servico?
 
-### Posso usar uma nota de entrada para gerar uma devolução?
+Sim. O sistema possui esse fluxo.
 
-- Sim.
-- Esse recurso existe na nota fiscal de produto.
+Saiba mais: [Nota Fiscal de Produto](/docs/fiscal/nota-fiscal-de-produto)
 
-### O que significa natureza da operação?
+### Posso usar uma nota de entrada para gerar uma devolucao?
 
-- É o campo que informa a finalidade da nota.
-- Na prática, ajuda a indicar se a emissão é de venda, saída ou devolução.
-- Essa escolha pode mudar etapas e dados exigidos na tela.
+Sim. Esse carregamento existe no modulo.
 
-### O que acontece se um produto estiver sem tributação?
+Saiba mais: [Nota Fiscal de Produto](/docs/fiscal/nota-fiscal-de-produto)
 
-- O sistema aponta o problema e pede correção antes de continuar.
+### Posso salvar a NFSe sem transmitir?
 
-### O tomador é sempre obrigatório na NFSe?
+Sim. A tela oferece a opção **Apenas salvar**.
 
-- Nem sempre.
-- A tela possui casos em que esse comportamento pode variar.
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
 
-### O que preciso revisar antes de transmitir uma nota?
+### Posso transmitir depois?
 
-- Natureza da operação
-- destinatário ou tomador
-- itens lançados
-- tributação
-- documentos referenciados, quando houver
-- preview final
+Sim. A transmissão pode ser feita depois pela lista.
 
-### Quando posso imprimir o DANFE?
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
 
-- Quando a nota já estiver autorizada.
+### Posso emitir a NFSe a partir de uma Ordem de Serviço?
 
-### Quando posso baixar o XML?
+Sim. Esse fluxo existe no sistema.
 
-- Quando a nota estiver na situação correta, como autorizada ou cancelada, conforme o caso.
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
+
+### Posso emitir a NFSe a partir de uma Conta a Receber?
+
+Sim. O sistema possui esse carregamento.
+
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
+
+### O tomador é sempre obrigatório?
+
+A tela possui cenário para trabalhar sem tomador, dependendo do caso usado no sistema.
+
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
+
+### O que preciso revisar antes de transmitir?
+
+Revise principalmente:
+
+- tomador
+- código do serviço
+- código NBS
+- discriminação
+- valor
+- dados de tributação
+
+Saiba mais: [Nota Fiscal de Serviço](/docs/fiscal/nota-fiscal-de-servico)
 
 ## Financeiro
 
 ### Posso receber só parte da conta?
 
-- Sim.
-- Em contas a receber, o sistema permite recebimento parcial.
+Sim. O sistema permite informar um valor menor, mantendo o restante em aberto.
+
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
 ### Posso alterar o vencimento depois?
 
-- Sim, em contas que ainda estejam em aberto.
+Sim, desde que a conta ainda esteja em aberto.
+
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
 ### Posso cancelar uma conta que já foi recebida?
 
-- Não diretamente.
-- Primeiro é necessário verificar o estorno, quando aplicável.
+Não diretamente. Quando a conta já está quitada, primeiro é necessário estornar o recebimento.
+
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
 ### O sistema gera recibo?
 
-- Sim.
-- Esse recurso existe em contas a receber.
+Sim. Depois do recebimento, o sistema pode perguntar se você deseja imprimir o recibo.
+
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
 ### Para que serve a conta recorrente?
 
-- Serve para automatizar lançamentos que se repetem com frequência.
+Ela serve para programar contas que o sistema deve lançar automaticamente ao longo do tempo.
 
-### A conta recorrente já fica paga ou recebida automaticamente?
-
-- Não.
-- Ela gera os lançamentos, mas não quita a conta sozinha.
-
-### Posso usar conta recorrente em contas a receber e contas a pagar?
-
-- Sim.
-
-### O que significa prazo indeterminado?
-
-- Significa que a recorrência continua gerando lançamentos até que seja encerrada.
-
-### Posso acompanhar as recorrências cadastradas?
-
-- Sim.
-- O sistema possui área própria para esse acompanhamento.
-
-### Qual a diferença entre “Todo dia”, “A cada X dias” e “Toda semana”?
-
-- Cada opção muda a forma como o sistema repete os lançamentos.
-- Uma usa repetição diária.
-- Outra usa intervalo de dias.
-- Outra usa repetição semanal.
-
-### Quando a recorrência para de gerar contas?
-
-- Quando chega ao limite configurado ou quando a recorrência é encerrada.
-
-### O sistema gera as contas automaticamente?
-
-- Sim, conforme a configuração da recorrência.
-
-### Posso registrar juros e desconto no pagamento?
-
-- Sim.
-- Isso existe em contas a pagar.
-
-### Posso alterar a conta depois de salvar?
-
-- Em muitos casos sim, desde que a conta ainda esteja em aberto.
-
-### Posso cancelar uma conta já paga?
-
-- Não diretamente.
-- Contas já pagas costumam exigir estorno antes de outras ações.
-
-### Posso anexar documentos?
-
-- Sim.
-- Esse recurso existe em contas a pagar.
-
-### O sistema aceita parcelamento?
-
-- Sim.
-- Há suporte a parcelamento em contas a pagar e em outros fluxos financeiros.
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
 ### Quais situações a conta pode ter?
 
-- Em geral:
-- `Aberta`
-- `Quitada`
-- `Cancelada`
+As principais situações encontradas são:
 
-### Posso localizar contas vencidas com facilidade?
+- **Aberta**
+- **Quitada**
+- **Cancelada**
 
-- Sim.
-- O sistema possui filtros e relatórios que ajudam nessa consulta.
+Saiba mais: [Contas a Receber](/docs/financeiro/contas-a-receber)
 
-## Gestão
+### A conta recorrente já fica paga ou recebida automaticamente?
 
-### O Dashboard abre em qual visão?
+Não. A recorrência serve para criar os lançamentos futuros. Depois disso, cada conta precisa ser tratada normalmente.
 
-- Ele abre primeiro na `Visão Gerencial`.
+Saiba mais: [Lançamento de Contas Recorrentes](/docs/financeiro/contas-recorrentes)
 
-### Posso trocar de visão sem sair da página?
+### Posso usar conta recorrente em contas a receber e contas a pagar?
 
-- Sim.
+Sim. O sistema possui essa opção nos dois módulos.
 
-### O que muda entre ano, mês e últimos 30 dias?
+Saiba mais: [Lançamento de Contas Recorrentes](/docs/financeiro/contas-recorrentes)
 
-- O sistema muda o período analisado e atualiza os indicadores.
+## Gestao
 
-### O Dashboard serve para lançar informações?
+### O Dashboard abre em qual visao?
 
-- Não.
-- Ele foi feito para acompanhamento e análise.
+- A tela abre primeiro na `Visao Gerencial`.
 
-### O que aparece na Agenda do dia?
+Saiba mais: [Dashboard](/docs/gestao/dashboard)
 
-- Orçamentos vencendo
-- próximos contatos
-- ordens agendadas
-- ordens com prazo de conclusão
+### Posso trocar de visao sem sair da pagina?
 
-### O que significa CMV?
+- Sim. Basta selecionar a visao desejada dentro do proprio Dashboard.
 
-- É o custo dos itens usados nas ordens de serviço.
+Saiba mais: [Dashboard](/docs/gestao/dashboard)
 
-### O que é conversão em valor?
+### O que e valor em aberto?
 
-- É a comparação entre o valor total orçado e o valor aprovado.
+- E o valor que ja foi lancado, mas ainda nao foi pago ou recebido.
 
-### Posso abrir detalhes a partir do Dashboard?
+Saiba mais: [Dashboard Financeiro](/docs/gestao/dashboard-financeiro)
 
-- Sim.
-- Em vários blocos existem atalhos para telas relacionadas.
+### O que e valor atrasado?
 
-### O tempo médio mostra ordens em aberto?
+- E o valor que ja venceu e ainda continua pendente.
 
-- Não.
-- Ele resume o tempo médio das ordens concluídas no período.
+Saiba mais: [Dashboard Financeiro](/docs/gestao/dashboard-financeiro)
 
-### O que é saúde financeira?
+### O saldo do periodo mostra tudo o que foi lancado?
 
-- É uma nota de resumo da situação financeira da empresa.
+- Nao. Esse bloco considera o que ja foi quitado no periodo.
 
-### O que significa inadimplência?
-
-- É a parte do valor a receber que já venceu e ainda não foi recebida.
-
-### Saldo em caixa é igual a valor a receber?
-
-- Não.
-- Saldo em caixa mostra o que já entrou e saiu.
-- Valor a receber mostra o que ainda falta entrar.
-
-### Posso usar a visão gerencial para acompanhar estoque?
-
-- Sim.
-
-### O que é valor em aberto no Dashboard Financeiro?
-
-- É o valor lançado que ainda não foi pago ou recebido.
-
-### O que é valor atrasado?
-
-- É o valor que já venceu e continua pendente.
+Saiba mais: [Dashboard Financeiro](/docs/gestao/dashboard-financeiro)
 
 ### Para que serve a DRE?
 
-- Serve para resumir o resultado da empresa no período.
+- Ela ajuda a resumir o resultado da empresa no periodo, mostrando entradas, saidas e resultado final.
 
-### Posso usar essa visão para orientar cobranças?
+Saiba mais: [Dashboard Financeiro](/docs/gestao/dashboard-financeiro)
 
-- Sim.
-- Ela ajuda a localizar valores em aberto e atrasados.
+### Por que um relatorio pode nao aparecer para mim?
 
-### Por que um relatório pode não aparecer para mim?
+- Porque o acesso pode depender da permissao do usuario ou do plano contratado.
 
-- Porque o acesso pode depender da permissão do usuário ou do plano contratado.
+Saiba mais: [Relatorios](/docs/gestao/relatorios)
 
-### O relatório sempre atualiza sozinho?
+### O que e saude financeira?
 
-- Na maioria das telas sim, principalmente ao trocar os filtros.
+- E uma nota usada pelo sistema para resumir a situacao financeira da empresa.
 
-### Posso imprimir qualquer resultado?
+Saiba mais: [Visao Gerencial](/docs/gestao/visao-gerencial)
 
-- Nos relatórios com impressão ativa, sim.
+### O que significa inadimplencia?
 
-### Existe diferença entre visão analítica e sintética?
+- E a parte do valor a receber que ja venceu e ainda nao foi recebida.
 
-- Sim.
-- A analítica mostra mais detalhes.
-- A sintética resume os dados por cliente, fornecedor, técnico ou outro agrupamento.
+Saiba mais: [Visao Gerencial](/docs/gestao/visao-gerencial)
 
-## Suporte
+### Saldo em caixa e igual a valor a receber?
 
-### Qual é o WhatsApp do suporte?
+- Nao. O saldo em caixa mostra o que ja entrou e saiu. O valor a receber mostra o que ainda falta entrar.
 
-- `(16) 99713-9753`
+Saiba mais: [Visao Gerencial](/docs/gestao/visao-gerencial)
 
-### Qual é o horário de atendimento no WhatsApp?
+### Posso usar essa visao para acompanhar estoque?
 
-- Segunda a sexta: `08:00 às 19:00`
-- Sábado: `08:00 às 13:00`
+- Sim. A tela mostra giro, margem, estoque parado e valor do estoque.
 
-### Qual é o e-mail do suporte?
+Saiba mais: [Visao Gerencial](/docs/gestao/visao-gerencial)
 
-- `Suporte@maxflow.com.br`
+## Configuracoes
 
-### Posso abrir chamado pelo DOCS?
+### Posso criar dois perfis com o mesmo nome?
 
-- Sim.
-- O projeto possui uma área de chamado dentro da seção de suporte.
+Não. O nome do perfil precisa ser único.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
+
+### Um perfil pode ficar sem nenhum módulo?
+
+Não. O sistema exige pelo menos um módulo liberado.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
+
+### Posso alterar as permissões depois?
+
+Sim. O perfil pode ser alterado quando necessário.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
+
+### Posso excluir um perfil que já está em uso?
+
+Não normalmente. A exclusão pode ser bloqueada quando existem colaboradores vinculados a esse perfil.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
+
+### Posso controlar acesso por módulo?
+
+Sim. Esse é justamente o objetivo da tela de perfis.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
+
+### Preciso criar um perfil para cada colaborador?
+
+Não. O ideal é criar perfis por função ou equipe e reaproveitar esse padrão no cadastro dos colaboradores.
+
+Saiba mais: [Perfis de Usuários](/docs/configuracoes/usuarios-e-permissoes)
