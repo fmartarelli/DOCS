@@ -23,7 +23,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Operação',
-      items: ['operacao/orcamentos', 'operacao/ordens-de-servico'],
+      items: [
+        'operacao/orcamentos',
+        'operacao/listagem-de-orcamentos',
+        'operacao/ordens-de-servico',
+        'operacao/listagem-de-ordens-de-servico',
+        'operacao/agenda-do-dia',
+      ],
     },
     {
       type: 'category',
