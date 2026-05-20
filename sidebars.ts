@@ -38,6 +38,7 @@ const sidebars: SidebarsConfig = {
         'fiscal/notas-fiscais',
         'fiscal/nota-fiscal-de-produto',
         'fiscal/nota-fiscal-de-servico',
+        'fiscal/entrada-de-notas-fiscais',
       ],
     },
     {

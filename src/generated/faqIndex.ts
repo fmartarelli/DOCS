@@ -344,6 +344,83 @@ export const faqIndex: FaqIndexEntry[] = [
   {
     "category": "fiscal",
     "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Posso lançar a nota sem digitar tudo manualmente?",
+    "answerText": "Sim. O sistema permite importar os dados usando a chave eletrônica ou o arquivo XML .",
+    "normalizedQuestion": "posso lancar a nota sem digitar tudo manualmente?",
+    "normalizedAnswer": "sim. o sistema permite importar os dados usando a chave eletronica ou o arquivo xml .",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Posso enviar qualquer arquivo para importar?",
+    "answerText": "Não. A importação aceita apenas arquivo XML .",
+    "normalizedQuestion": "posso enviar qualquer arquivo para importar?",
+    "normalizedAnswer": "nao. a importacao aceita apenas arquivo xml .",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Existe limite para o arquivo XML?",
+    "answerText": "Sim. O limite encontrado é de 2 MB .",
+    "normalizedQuestion": "existe limite para o arquivo xml?",
+    "normalizedAnswer": "sim. o limite encontrado e de 2 mb .",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "O que acontece se a nota já tiver sido lançada?",
+    "answerText": "O sistema verifica duplicidade pela chave eletrônica e também pela combinação de número, série e fornecedor .",
+    "normalizedQuestion": "o que acontece se a nota ja tiver sido lancada?",
+    "normalizedAnswer": "o sistema verifica duplicidade pela chave eletronica e tambem pela combinacao de numero, serie e fornecedor .",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Posso continuar se a nota estiver em nome de outra empresa?",
+    "answerText": "O sistema avisa quando identifica outro destinatário e pede confirmação antes de continuar.",
+    "normalizedQuestion": "posso continuar se a nota estiver em nome de outra empresa?",
+    "normalizedAnswer": "o sistema avisa quando identifica outro destinatario e pede confirmacao antes de continuar.",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Posso cadastrar o fornecedor durante a entrada da nota?",
+    "answerText": "Sim. Se o fornecedor ainda não existir, o sistema permite seguir com o cadastro clicando no ícone de +.",
+    "normalizedQuestion": "posso cadastrar o fornecedor durante a entrada da nota?",
+    "normalizedAnswer": "sim. se o fornecedor ainda nao existir, o sistema permite seguir com o cadastro clicando no icone de +.",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
+    "sourceTitle": "Entrada de Notas Fiscais",
+    "to": "/docs/fiscal/entrada-de-notas-fiscais",
+    "question": "Posso lançar a nota sem pagamento?",
+    "answerText": "Sim. Existe a opção de registrar a nota sem pagamento .",
+    "normalizedQuestion": "posso lancar a nota sem pagamento?",
+    "normalizedAnswer": "sim. existe a opcao de registrar a nota sem pagamento .",
+    "normalizedSourceTitle": "entrada de notas fiscais"
+  },
+  {
+    "category": "fiscal",
+    "categoryLabel": "Fiscal",
     "sourceTitle": "Nota Fiscal de Produto",
     "to": "/docs/fiscal/nota-fiscal-de-produto",
     "question": "Posso salvar a nota sem transmitir?",

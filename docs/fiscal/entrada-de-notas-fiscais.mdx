@@ -1,0 +1,214 @@
+---
+title: Entrada de Notas Fiscais
+sidebar_position: 4
+---
+
+# Entrada de Notas Fiscais
+
+## Quando utilizar
+
+Use esta funcionalidade quando a empresa precisar registrar no sistema uma nota fiscal de compra ou entrada de mercadorias.
+
+Exemplos práticos:
+
+- dar entrada em uma nota de compra de peças
+- registrar produtos recebidos de um fornecedor
+- importar uma nota usando a chave eletrônica
+- importar uma nota usando o arquivo XML
+- lançar a entrada e já organizar o financeiro da compra
+
+## Como acessar
+
+1. No menu do sistema, acesse **Compras**.
+2. Entre em **Entrada de Notas Fiscais**.
+3. Para consultar notas já lançadas, use a listagem.
+4. Para registrar uma nova nota, clique em **Lançar**.
+
+![Exemplo de imagem entrada de nota](/img/exemplos/entrada-de-nota1.png)
+
+## Passo a passo
+
+1. Abra a tela de **Entrada de Notas Fiscais**.
+2. Clique em **Lançar**.
+3. Na etapa **Cabeçalho**, escolha a **empresa**.
+4. Informe ou confira:
+   - **data de emissão**
+   - **hora de emissão**
+   - **data de entrada**
+   - **hora de entrada**
+   - **número**
+   - **série**
+5. Se a nota tiver **chave eletrônica**, informe a chave.
+6. Se preferir importar por arquivo, envie o **XML** da nota.
+7. Se a nota for importada, revise os dados carregados automaticamente.
+8. Na etapa do **Fornecedor**, selecione o fornecedor da nota.
+9. Se o fornecedor ainda não estiver cadastrado, faça o cadastro antes de continuar.
+10. Clique em **Avançar**.
+11. Na etapa **Produtos**, confira os itens da nota.
+12. Para cada item, revise:
+   - produto vinculado
+   - descrição
+   - quantidade
+   - unidade
+   - valor unitário
+   - custo
+   - frete
+   - seguro
+   - outras despesas
+   - desconto
+   - NCM
+   - CEST
+13. Se algum item ainda não estiver vinculado a um produto do sistema, faça esse vínculo antes de concluir, escolhendo um produto já cadastrado ou cadastrando um novo produto.
+14. Revise também as preços de custo e de venda.
+15. Clique em **Avançar**.
+16. Na etapa **Financeiro**, informe:
+   - forma de pagamento
+   - plano de conta
+   - identificação
+   - data de vencimento
+   - observação
+17. Escolha se o pagamento será:
+   - **à vista**
+   - **à prazo**
+18. Se for parcelado, informe a quantidade de parcelas e gere os vencimentos.
+19. Se a nota não tiver pagamento para controlar no momento, marque a opção de seguir **sem pagamento**.
+20. Clique em **Lançar**.
+21. Depois do lançamento, volte para a listagem para consultar, alterar, excluir ou abrir os detalhes da nota.
+
+Exemplo real:
+
+- Uma oficina recebe uma nota de compra de peças do fornecedor. O usuário abre a entrada de notas, importa o XML, confere o fornecedor, revisa os produtos, ajusta os preços, define o pagamento em 3 parcelas e conclui o lançamento.
+
+Tela de escolha do fornecedor e dados das da nota fiscal/pedido de compra:
+![Exemplo de imagem entrada de nota](/img/exemplos/entrada-de-nota.png)
+
+Tela de revisão dos produtos comprados:
+![Exemplo de imagem entrada de nota](/img/exemplos/entrada-de-nota2.png)
+
+Caso o produto não tenha cadastro ou vínculo, ele ficará sinalizado em vermelho, devendo assim clicar em cadastrar/vincular agora:
+![Exemplo de imagem entrada de nota](/img/exemplos/entrada-de-nota4.png)
+
+Caso clique em cima de algum produto, abre uma aba com maiores detalhes sobre custos:
+![Exemplo de imagem entrada de nota](/img/exemplos/entrada-de-nota3.png)
+
+:::info Espaço para imagem
+Adicione aqui uma captura da etapa **Financeiro** com o parcelamento preenchido.
+:::
+
+## Explicação dos campos principais
+
+- **Empresa**: define em qual empresa a entrada da nota será registrada.
+- **Data de emissão**: mostra o dia em que a nota foi emitida pelo fornecedor.
+- **Hora de emissão**: registra o horário da emissão.
+- **Data de entrada**: mostra o dia em que a nota entrou no sistema ou na empresa.
+- **Hora de entrada**: registra o horário da entrada.
+- **Chave eletrônica**: código da nota fiscal usado para identificar e, em muitos casos, importar os dados automaticamente.
+- **Número**: número da nota fiscal.
+- **Série**: série do documento fiscal.
+- **Fornecedor**: pessoa ou empresa que emitiu a nota para a sua empresa.
+- **Produto vinculado**: produto do seu cadastro que será ligado ao item da nota.
+- **Descrição**: nome do item que veio na nota.
+- **Quantidade**: quantidade comprada.
+- **Unidade**: unidade usada no item.
+- **Valor unitário**: valor de cada unidade do item.
+- **Valor de custo unitário**: custo unitário considerado no sistema.
+- **Frete**: valor de frete ligado ao item.
+- **Seguro**: valor de seguro ligado ao item.
+- **Outras despesas acessórias**: outros custos ligados à compra.
+- **Desconto**: desconto aplicado no item.
+- **NCM**: classificação fiscal do produto.
+- **CEST**: código complementar usado em alguns cenários fiscais.
+- **Tabelas de preço**: permitem revisar preços de venda a partir da entrada.
+- **Forma de pagamento**: forma usada para pagar a compra.
+- **Plano de conta**: classificação financeira da despesa.
+- **Identificação**: campo usado para registrar uma referência de pagamento.
+- **Data de vencimento**: dia previsto para pagar.
+- **Observação**: anotações importantes sobre o pagamento.
+- **Pagamento à vista**: usado quando a compra será paga em uma única vez.
+- **Pagamento à prazo**: usado quando a compra será dividida em parcelas.
+- **Sem pagamento**: usado quando a empresa quer registrar a nota sem controlar o financeiro naquele momento.
+
+## Situações práticas de uso
+
+- **Importar nota por XML**: útil quando o fornecedor já enviou o arquivo e a empresa quer ganhar tempo no lançamento.
+- **Importar por chave eletrônica**: útil quando a empresa não tem o XML em mãos, mas tem a chave da nota.
+- **Cadastrar fornecedor durante a entrada**: útil quando a nota chegou antes do cadastro do fornecedor.
+- **Vincular produtos na primeira compra**: útil quando um item novo ainda não existe no cadastro interno.
+- **Gerar contas a pagar da compra**: útil quando a empresa quer deixar o financeiro da nota organizado logo no lançamento.
+- **Revisar custo e preço de venda**: útil quando a entrada da nota muda o custo do item comprado.
+- **Consultar DANFE depois do lançamento**: útil quando a equipe precisa imprimir ou revisar o documento.
+
+## Dicas importantes
+
+- Se tiver o XML, prefira importar por arquivo para economizar tempo.
+- Se for um pedido de compra, e o fornecedor não ter enviado a nota fiscal, é possível dar entrada informando somente os dados do fornecedor, o número do documento (algo que identifique a compra), e a Data hora de emissão e entrada.
+- Revise o fornecedor com atenção antes de seguir para os produtos.
+- Se a nota for de outra empresa, confirme com cuidado antes de continuar o lançamento.
+- Confira se todos os itens foram vinculados corretamente aos produtos do seu cadastro.
+- Use atenção ao revisar custos, porque eles podem impactar estoque, preço e resultado financeiro.
+- Se a empresa trabalhar com tabelas de preço, revise os novos valores antes de concluir.
+- No financeiro, confirme se o pagamento será à vista, parcelado ou sem pagamento.
+- Depois do lançamento, abra o preview da nota para revisar rapidamente os dados e as contas geradas.
+
+## Erros comuns
+
+- **Tentar lançar sem empresa**: a empresa é obrigatória.
+- **Esquecer a data de emissão ou a data de entrada**: a tela exige essas informações.
+- **Informar chave eletrônica incompleta**: a chave precisa estar correta para o sistema tentar importar os dados.
+- **Enviar arquivo que não é XML**: a importação aceita apenas arquivo XML.
+- **Tentar importar arquivo muito grande**: o limite encontrado é de 2 MB.
+- **Prosseguir sem fornecedor**: o fornecedor é obrigatório.
+- **Deixar item sem vínculo correto**: isso pode gerar cadastro errado ou informação incompleta na compra.
+- **Tentar concluir sem itens**: a nota precisa ter pelo menos um item.
+- **Esquecer de revisar o financeiro**: isso pode deixar a nota sem o controle esperado de vencimento e pagamento.
+- **Lançar nota duplicada**: o sistema verifica chave eletrônica e também número, série e fornecedor.
+
+## Perguntas frequentes
+
+### Posso lançar a nota sem digitar tudo manualmente?
+
+Sim. O sistema permite importar os dados usando a **chave eletrônica** ou o **arquivo XML**.
+
+### Posso enviar qualquer arquivo para importar?
+
+Não. A importação aceita apenas arquivo **XML**.
+
+### Existe limite para o arquivo XML?
+
+Sim. O limite encontrado é de **2 MB**.
+
+### O que acontece se a nota já tiver sido lançada?
+
+O sistema verifica duplicidade pela **chave eletrônica** e também pela combinação de **número, série e fornecedor**.
+
+### Posso continuar se a nota estiver em nome de outra empresa?
+
+O sistema avisa quando identifica outro destinatário e pede confirmação antes de continuar.
+
+### Posso cadastrar o fornecedor durante a entrada da nota?
+
+Sim. Se o fornecedor ainda não existir, o sistema permite seguir com o cadastro clicando no ícone de +.
+
+### Posso lançar a nota sem pagamento?
+
+Sim. Existe a opção de registrar a nota **sem pagamento**.
+
+### Posso parcelar o valor da nota?
+
+Sim. O financeiro permite trabalhar com **pagamento à prazo** e gerar parcelas.
+
+### Posso imprimir a DANFE depois?
+
+Sim, quando a nota tiver DANFE vinculada.
+
+### Posso entrar produtos somente com pedido, sem nota fiscal emitida pelo fornecedor?
+
+Sim, quando o fornecedor não emitir a nota, pode ser lançado os produtos de forma manual pela entrada de nota fiscal... Não é obrigatório informar a chave eletrônica e nem a série do documento.
+
+### A entrada da nota gera contas a pagar?
+
+Sim. O preview da nota mostra as contas a pagar vinculadas e permite manutenção delas.
+
+:::info Espaço para imagem
+Adicione aqui uma captura do preview lateral da nota com as ações rápidas e as contas a pagar vinculadas.
+:::
