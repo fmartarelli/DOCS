@@ -17,12 +17,14 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/suporte/chamado",
     "description": "Use este formulário para registrar uma solicitação de suporte e direcionar o atendimento ao setor responsável.",
     "headings": [
+      "Abrir chamado",
       "Antes de enviar"
     ],
     "faq": [],
     "normalizedTitle": "abrir chamado",
     "normalizedDescription": "use este formulario para registrar uma solicitacao de suporte e direcionar o atendimento ao setor responsavel.",
     "normalizedHeadings": [
+      "abrir chamado",
       "antes de enviar"
     ],
     "normalizedFaq": [],
@@ -33,6 +35,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/operacao/agenda-do-dia",
     "description": "Use esta tela quando você quiser acompanhar, no mesmo lugar, tudo o que precisa de atenção em uma data específica.",
     "headings": [
+      "Agenda do Dia",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -67,6 +70,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "agenda do dia",
     "normalizedDescription": "use esta tela quando voce quiser acompanhar, no mesmo lugar, tudo o que precisa de atencao em uma data especifica.",
     "normalizedHeadings": [
+      "agenda do dia",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -105,6 +109,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/configuracoes/campos-personalizados",
     "description": "Use esta funcionalidade quando a empresa precisar guardar informações extras que não existem no cadastro padrão do Maxflow.",
     "headings": [
+      "Campos Personalizados",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -149,6 +154,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "campos personalizados",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar guardar informacoes extras que nao existem no cadastro padrao do maxflow.",
     "normalizedHeadings": [
+      "campos personalizados",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -197,6 +203,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/cadastros/categorias",
     "description": "Use esta funcionalidade quando a empresa precisar organizar produtos e serviços em grupos para facilitar cadastro, busca e filtros no sistema.",
     "headings": [
+      "Categorias",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -241,6 +248,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "categorias",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar organizar produtos e servicos em grupos para facilitar cadastro, busca e filtros no sistema.",
     "normalizedHeadings": [
+      "categorias",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -289,6 +297,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/intro",
     "description": "Bem-vindo a central de ajuda do **Maxflow**.",
     "headings": [
+      "Centro de documentacao",
       "Estrutura principal",
       "Ordem ideal de aprendizado",
       "Padrão dos tutoriais",
@@ -298,6 +307,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "centro de documentacao",
     "normalizedDescription": "bem-vindo a central de ajuda do **maxflow**.",
     "normalizedHeadings": [
+      "centro de documentacao",
       "estrutura principal",
       "ordem ideal de aprendizado",
       "padrao dos tutoriais",
@@ -311,6 +321,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/cadastros/colaboradores",
     "description": "Use esta funcionalidade quando você precisar cadastrar:",
     "headings": [
+      "Cadastrar colaboradores",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -335,6 +346,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "colaboradores",
     "normalizedDescription": "use esta funcionalidade quando voce precisar cadastrar:",
     "normalizedHeadings": [
+      "cadastrar colaboradores",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -363,6 +375,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/comecar/configuracao-inicial",
     "description": "Antes de usar os modulos principais, configure os dados basicos da empresa e os acessos dos usuarios.",
     "headings": [
+      "Configuracao inicial",
       "Resumo",
       "Passo a passo",
       "Dicas",
@@ -376,6 +389,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "configuracao inicial",
     "normalizedDescription": "antes de usar os modulos principais, configure os dados basicos da empresa e os acessos dos usuarios.",
     "normalizedHeadings": [
+      "configuracao inicial",
       "resumo",
       "passo a passo",
       "dicas",
@@ -393,6 +407,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/configuracoes/configuracoes-gerais",
     "description": "Esta area concentra ajustes que impactam o funcionamento do sistema.",
     "headings": [
+      "Configuracoes gerais",
       "Resumo",
       "Subcategorias recomendadas"
     ],
@@ -400,6 +415,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "configuracoes gerais",
     "normalizedDescription": "esta area concentra ajustes que impactam o funcionamento do sistema.",
     "normalizedHeadings": [
+      "configuracoes gerais",
       "resumo",
       "subcategorias recomendadas"
     ],
@@ -411,6 +427,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/financeiro/contas-a-pagar",
     "description": "Use esta funcionalidade quando a empresa precisar registrar despesas, compromissos financeiros ou pagamentos para fornecedores.",
     "headings": [
+      "Contas a Pagar",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -451,6 +468,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "contas a pagar",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar registrar despesas, compromissos financeiros ou pagamentos para fornecedores.",
     "normalizedHeadings": [
+      "contas a pagar",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -495,6 +513,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/financeiro/contas-a-receber",
     "description": "Use esta funcionalidade quando a sua empresa precisar registrar valores que ainda vai receber de clientes.",
     "headings": [
+      "Contas a Receber",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -531,6 +550,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "contas a receber",
     "normalizedDescription": "use esta funcionalidade quando a sua empresa precisar registrar valores que ainda vai receber de clientes.",
     "normalizedHeadings": [
+      "contas a receber",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -571,6 +591,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/suporte/contato",
     "description": "Se você precisar de ajuda, fale com a nossa equipe pelos canais abaixo.",
     "headings": [
+      "Contato com suporte",
       "Canais de atendimento",
       "WhatsApp",
       "E-mail",
@@ -586,6 +607,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "contato com suporte",
     "normalizedDescription": "se voce precisar de ajuda, fale com a nossa equipe pelos canais abaixo.",
     "normalizedHeadings": [
+      "contato com suporte",
       "canais de atendimento",
       "whatsapp",
       "e-mail",
@@ -605,6 +627,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/dashboard",
     "description": "![Exemplo de imagem Cadastrar](/img/exemplos/Dashboard-3Visoes.png)",
     "headings": [
+      "Dashboard",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -627,6 +650,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "dashboard",
     "normalizedDescription": "![exemplo de imagem cadastrar](/img/exemplos/dashboard-3visoes.png)",
     "normalizedHeadings": [
+      "dashboard",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -653,6 +677,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/dashboard-financeiro",
     "description": "Adicionar aqui uma imagem do Dashboard Financeiro com os principais graficos.",
     "headings": [
+      "Dashboard Financeiro",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -677,6 +702,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "dashboard financeiro",
     "normalizedDescription": "adicionar aqui uma imagem do dashboard financeiro com os principais graficos.",
     "normalizedHeadings": [
+      "dashboard financeiro",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -705,6 +731,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/dashboard-operacional",
     "description": "Adicionar aqui uma imagem do Dashboard Operacional com os cards principais.",
     "headings": [
+      "Dashboard Operacional",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -729,6 +756,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "dashboard operacional",
     "normalizedDescription": "adicionar aqui uma imagem do dashboard operacional com os cards principais.",
     "normalizedHeadings": [
+      "dashboard operacional",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -757,6 +785,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/fiscal/entrada-de-notas-fiscais",
     "description": "Use esta funcionalidade quando a empresa precisar registrar no sistema uma nota fiscal de compra ou entrada de mercadorias.",
     "headings": [
+      "Entrada de Notas Fiscais",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -793,6 +822,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "entrada de notas fiscais",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar registrar no sistema uma nota fiscal de compra ou entrada de mercadorias.",
     "normalizedHeadings": [
+      "entrada de notas fiscais",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -833,6 +863,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/faq/faq-principal",
     "description": "> Esta pagina e gerada automaticamente a partir das secoes `Perguntas frequentes` e `FAQ` dos tutoriais.",
     "headings": [
+      "FAQ principal",
       "Cadastros",
       "Posso cadastrar uma subcategoria sem escolher uma categoria?",
       "Posso repetir a mesma descrição?",
@@ -989,6 +1020,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "faq principal",
     "normalizedDescription": "> esta pagina e gerada automaticamente a partir das secoes `perguntas frequentes` e `faq` dos tutoriais.",
     "normalizedHeadings": [
+      "faq principal",
       "cadastros",
       "posso cadastrar uma subcategoria sem escolher uma categoria?",
       "posso repetir a mesma descricao?",
@@ -1149,6 +1181,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/financeiro/contas-recorrentes",
     "description": "Use esta funcionalidade quando a empresa precisa criar contas que se repetem com frequência, sem precisar lançar tudo manualmente todos os meses.",
     "headings": [
+      "Lançamento de Contas Recorrentes",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1179,6 +1212,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "lancamento de contas recorrentes",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisa criar contas que se repetem com frequencia, sem precisar lancar tudo manualmente todos os meses.",
     "normalizedHeadings": [
+      "lancamento de contas recorrentes",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1213,6 +1247,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/operacao/listagem-de-orcamentos",
     "description": "Use esta tela quando você precisar consultar, acompanhar ou agir sobre orçamentos já lançados no sistema.",
     "headings": [
+      "Listagem de Orçamentos",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1241,6 +1276,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "listagem de orcamentos",
     "normalizedDescription": "use esta tela quando voce precisar consultar, acompanhar ou agir sobre orcamentos ja lancados no sistema.",
     "normalizedHeadings": [
+      "listagem de orcamentos",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1273,6 +1309,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/operacao/listagem-de-ordens-de-servico",
     "description": "Use esta tela quando você precisar consultar, acompanhar ou agir sobre Ordens de Serviço já lançadas no sistema.",
     "headings": [
+      "Listagem de Ordens de Serviço",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1301,6 +1338,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "listagem de ordens de servico",
     "normalizedDescription": "use esta tela quando voce precisar consultar, acompanhar ou agir sobre ordens de servico ja lancadas no sistema.",
     "normalizedHeadings": [
+      "listagem de ordens de servico",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1333,6 +1371,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/fiscal/nota-fiscal-de-produto",
     "description": "Use esta funcionalidade quando a empresa precisar emitir uma nota fiscal de venda, saida ou devolucao de produtos.",
     "headings": [
+      "Emitir uma Nota Fiscal de Produto",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1363,6 +1402,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "nota fiscal de produto",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar emitir uma nota fiscal de venda, saida ou devolucao de produtos.",
     "normalizedHeadings": [
+      "emitir uma nota fiscal de produto",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1397,6 +1437,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/fiscal/nota-fiscal-de-servico",
     "description": "Use esta funcionalidade quando a empresa precisar emitir uma nota fiscal referente a um serviço prestado.",
     "headings": [
+      "Emitir uma Nota Fiscal de Serviço",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1427,6 +1468,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "nota fiscal de servico",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar emitir uma nota fiscal referente a um servico prestado.",
     "normalizedHeadings": [
+      "emitir uma nota fiscal de servico",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1460,11 +1502,15 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "title": "Notas fiscais",
     "to": "/docs/fiscal/notas-fiscais",
     "description": "Nesta área você encontra os tutoriais de emissão fiscal do Maxflow.",
-    "headings": [],
+    "headings": [
+      "Notas fiscais"
+    ],
     "faq": [],
     "normalizedTitle": "notas fiscais",
     "normalizedDescription": "nesta area voce encontra os tutoriais de emissao fiscal do maxflow.",
-    "normalizedHeadings": [],
+    "normalizedHeadings": [
+      "notas fiscais"
+    ],
     "normalizedFaq": [],
     "normalizedContent": "notas fiscais nesta area voce encontra os tutoriais de emissao fiscal do maxflow. os conteudos principais sao: emissao de nota fiscal de produto emissao de nota fiscal de servico revisao de dados antes da transmissao acompanhamento de situacao da nota use os links abaixo para acessar o tutorial certo:"
   },
@@ -1473,6 +1519,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/operacao/orcamentos",
     "description": "Use esta funcionalidade quando você precisar montar uma proposta para o cliente antes de executar o serviço.",
     "headings": [
+      "Criar e acompanhar orçamentos",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1497,6 +1544,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "orcamentos",
     "normalizedDescription": "use esta funcionalidade quando voce precisar montar uma proposta para o cliente antes de executar o servico.",
     "normalizedHeadings": [
+      "criar e acompanhar orcamentos",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1525,6 +1573,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/operacao/ordens-de-servico",
     "description": "Use esta funcionalidade quando o serviço já precisa ser executado, acompanhado ou finalizado no sistema.",
     "headings": [
+      "Abrir e acompanhar ordens de serviço",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1555,6 +1604,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "ordens de servico",
     "normalizedDescription": "use esta funcionalidade quando o servico ja precisa ser executado, acompanhado ou finalizado no sistema.",
     "normalizedHeadings": [
+      "abrir e acompanhar ordens de servico",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1589,6 +1639,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/configuracoes/usuarios-e-permissoes",
     "description": "Use esta funcionalidade quando a empresa precisar organizar o acesso dos colaboradores ao sistema.",
     "headings": [
+      "Perfis de Usuários",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1629,6 +1680,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "perfis de usuarios",
     "normalizedDescription": "use esta funcionalidade quando a empresa precisar organizar o acesso dos colaboradores ao sistema.",
     "normalizedHeadings": [
+      "perfis de usuarios",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1673,6 +1725,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/cadastros/clientes",
     "description": "Use esta funcionalidade quando você precisar cadastrar no sistema:",
     "headings": [
+      "Cadastrar pessoas",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1701,6 +1754,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "pessoas",
     "normalizedDescription": "use esta funcionalidade quando voce precisar cadastrar no sistema:",
     "normalizedHeadings": [
+      "cadastrar pessoas",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1733,6 +1787,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/comecar/primeiros-passos",
     "description": "Esta e a melhor ordem de aprendizado para novos usuarios.",
     "headings": [
+      "Primeiros passos",
       "Resumo",
       "Passo a passo",
       "Dicas",
@@ -1748,6 +1803,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "primeiros passos",
     "normalizedDescription": "esta e a melhor ordem de aprendizado para novos usuarios.",
     "normalizedHeadings": [
+      "primeiros passos",
       "resumo",
       "passo a passo",
       "dicas",
@@ -1767,6 +1823,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/cadastros/produtos-e-servicos",
     "description": "Use esta funcionalidade quando você precisar cadastrar:",
     "headings": [
+      "Cadastrar produtos e serviços",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -1791,6 +1848,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "produtos e servicos",
     "normalizedDescription": "use esta funcionalidade quando voce precisar cadastrar:",
     "normalizedHeadings": [
+      "cadastrar produtos e servicos",
       "quando utilizar",
       "como acessar",
       "passo a passo",
@@ -1819,6 +1877,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios",
     "description": "O modulo de `Relatorios` do Maxflow foi feito para ajudar a empresa a consultar dados, acompanhar resultados e gerar impressoes em PDF.",
     "headings": [
+      "Relatorios",
       "Visao geral",
       "Como a tela de relatorios funciona",
       "Recursos principais do modulo",
@@ -1839,6 +1898,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios",
     "normalizedDescription": "o modulo de `relatorios` do maxflow foi feito para ajudar a empresa a consultar dados, acompanhar resultados e gerar impressoes em pdf.",
     "normalizedHeadings": [
+      "relatorios",
       "visao geral",
       "como a tela de relatorios funciona",
       "recursos principais do modulo",
@@ -1863,6 +1923,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-comissoes",
     "description": "Essa tela tambem possui duas abas:",
     "headings": [
+      "Relatorios de Comissoes",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -1881,6 +1942,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de comissoes",
     "normalizedDescription": "essa tela tambem possui duas abas:",
     "normalizedHeadings": [
+      "relatorios de comissoes",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -1903,6 +1965,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-estoques",
     "description": "Essa tela mostra os produtos e servicos ligados ao estoque selecionado, com seus saldos e valores.",
     "headings": [
+      "Relatorios de Estoques",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -1916,6 +1979,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de estoques",
     "normalizedDescription": "essa tela mostra os produtos e servicos ligados ao estoque selecionado, com seus saldos e valores.",
     "normalizedHeadings": [
+      "relatorios de estoques",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -1933,6 +1997,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-notas-fiscais-de-entrada",
     "description": "Essa tela possui duas abas:",
     "headings": [
+      "Relatorios de Notas Fiscais de Entrada",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -1951,6 +2016,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de notas fiscais de entrada",
     "normalizedDescription": "essa tela possui duas abas:",
     "normalizedHeadings": [
+      "relatorios de notas fiscais de entrada",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -1973,6 +2039,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-orcamentos",
     "description": "Essa tela mostra o comportamento dos orcamentos dentro do periodo escolhido.",
     "headings": [
+      "Relatorios de Orcamentos",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -1986,6 +2053,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de orcamentos",
     "normalizedDescription": "essa tela mostra o comportamento dos orcamentos dentro do periodo escolhido.",
     "normalizedHeadings": [
+      "relatorios de orcamentos",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -2003,6 +2071,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-ordens-de-servico",
     "description": "Essa tela mostra o resultado das ordens de servico em um periodo escolhido pelo usuario.",
     "headings": [
+      "Relatorios de Ordens de Servico",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -2016,6 +2085,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de ordens de servico",
     "normalizedDescription": "essa tela mostra o resultado das ordens de servico em um periodo escolhido pelo usuario.",
     "normalizedHeadings": [
+      "relatorios de ordens de servico",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -2033,6 +2103,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-produtividade",
     "description": "A tela possui duas abas:",
     "headings": [
+      "Relatorios de Produtividade",
       "Quando utilizar",
       "Como acessar",
       "O que a tela faz",
@@ -2051,6 +2122,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios de produtividade",
     "normalizedDescription": "a tela possui duas abas:",
     "normalizedHeadings": [
+      "relatorios de produtividade",
       "quando utilizar",
       "como acessar",
       "o que a tela faz",
@@ -2073,6 +2145,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/relatorios-financeiros",
     "description": "Em `Relatorios`, existem dois grupos financeiros principais:",
     "headings": [
+      "Relatorios Financeiros",
       "Quando utilizar",
       "Como acessar",
       "O que as telas fazem",
@@ -2090,6 +2163,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "relatorios financeiros",
     "normalizedDescription": "em `relatorios`, existem dois grupos financeiros principais:",
     "normalizedHeadings": [
+      "relatorios financeiros",
       "quando utilizar",
       "como acessar",
       "o que as telas fazem",
@@ -2111,6 +2185,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/comecar/visao-geral-do-maxflow",
     "description": "O Maxflow é um ERP voltado para empresas prestadoras de serviço. A central de ajuda deve acompanhar a jornada real de quem cadastra clientes, monta orçamentos, executa serviços e acompanha o financeiro.",
     "headings": [
+      "Visão geral do Maxflow",
       "Público principal",
       "Categorias principais",
       "O que cada usuário precisa encontrar rápido"
@@ -2119,6 +2194,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "visao geral do maxflow",
     "normalizedDescription": "o maxflow e um erp voltado para empresas prestadoras de servico. a central de ajuda deve acompanhar a jornada real de quem cadastra clientes, monta orcamentos, executa servicos e acompanha o financeiro.",
     "normalizedHeadings": [
+      "visao geral do maxflow",
       "publico principal",
       "categorias principais",
       "o que cada usuario precisa encontrar rapido"
@@ -2131,6 +2207,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "to": "/docs/gestao/visao-gerencial",
     "description": "Adicionar aqui uma imagem da Visao Gerencial com os principais cards do topo.",
     "headings": [
+      "Visao Gerencial",
       "Quando utilizar",
       "Como acessar",
       "Passo a passo",
@@ -2155,6 +2232,7 @@ export const docsSearchIndex: DocsSearchEntry[] = [
     "normalizedTitle": "visao gerencial",
     "normalizedDescription": "adicionar aqui uma imagem da visao gerencial com os principais cards do topo.",
     "normalizedHeadings": [
+      "visao gerencial",
       "quando utilizar",
       "como acessar",
       "passo a passo",

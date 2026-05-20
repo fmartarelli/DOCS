@@ -213,7 +213,7 @@ function buildSearchEntry(absolutePath) {
     relativePath.replace(/\.(md|mdx)$/i, '').split('/').pop()?.replace(/-/g, ' ') ||
     '';
 
-  const headings = [...content.matchAll(/^#{2,3}\s+(.+)$/gm)].map((match) => match[1].trim());
+  const headings = [...content.matchAll(/^#{1,3}\s+(.+)$/gm)].map((match) => match[1].trim());
   const faq = [...content.matchAll(/^###\s+(.+)$/gm)].map((match) => match[1].trim());
   const description = extractFirstParagraph(content) || headings[0] || title;
   const normalizedContent = normalizeText(stripMarkup(content));

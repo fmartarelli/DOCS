@@ -28,6 +28,36 @@ type SearchSection = {
   weightContext: number;
 };
 
+const searchStopWords = new Set([
+  'a',
+  'as',
+  'como',
+  'com',
+  'da',
+  'das',
+  'de',
+  'do',
+  'dos',
+  'e',
+  'em',
+  'na',
+  'nas',
+  'no',
+  'nos',
+  'o',
+  'os',
+  'para',
+  'por',
+  'pra',
+  'qual',
+  'quais',
+  'que',
+  'um',
+  'uma',
+]);
+
+const homeSearchEntries = docsSearchIndex.filter((item) => item.to !== '/docs/intro');
+
 function normalizeText(value: string): string {
   return value
     .normalize('NFD')
@@ -37,8 +67,8 @@ function normalizeText(value: string): string {
     .trim();
 }
 
-function tokenizeQuery(value: string): string[] {
-  return Array.from(
+function tokenizeQuery(value: string, removeStopWords = false): string[] {
+  const tokens = Array.from(
     new Set(
       normalizeText(value)
         .split(/[^a-z0-9]+/i)
@@ -46,6 +76,14 @@ function tokenizeQuery(value: string): string[] {
         .filter((token) => token.length >= 2),
     ),
   );
+
+  if (!removeStopWords) {
+    return tokens;
+  }
+
+  const filteredTokens = tokens.filter((token) => !searchStopWords.has(token));
+
+  return filteredTokens.length > 0 ? filteredTokens : tokens;
 }
 
 function buildSections(item: DocsSearchEntry): SearchSection[] {
@@ -203,7 +241,7 @@ function scoreContextItem(
 
 function scoreItem(item: DocsSearchEntry, query: string): SearchResult | null {
   const normalizedQuery = normalizeText(query);
-  const tokens = tokenizeQuery(query);
+  const tokens = tokenizeQuery(query, true);
 
   if (!normalizedQuery || tokens.length === 0) {
     return {item, score: 0};
@@ -225,10 +263,12 @@ function HomepageHeader() {
     const normalizedQuery = query.trim();
 
     if (!normalizedQuery) {
-      return docsSearchIndex.slice(0, 8).map((item) => ({item, score: 0}));
+      return homeSearchEntries
+        .slice(0, 8)
+        .map((item): SearchResult => ({item, score: 0}));
     }
 
-    return docsSearchIndex
+    return homeSearchEntries
       .map((item) => scoreItem(item, normalizedQuery))
       .filter((item): item is SearchResult => item !== null)
       .sort((first, second) => {
