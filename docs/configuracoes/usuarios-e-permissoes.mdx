@@ -7,131 +7,142 @@ sidebar_position: 2
 
 ## Quando utilizar
 
-Use esta funcionalidade quando a empresa precisar organizar o acesso dos colaboradores ao sistema.
+Use esta funcionalidade quando a empresa precisar organizar o que cada colaborador pode acessar dentro do Maxflow.
 
-Exemplos práticos:
+Exemplos reais:
 
-- criar um perfil para atendimento
-- criar um perfil para financeiro
-- limitar o que cada equipe pode visualizar ou alterar
-- padronizar permissões para vários colaboradores
-- separar acessos administrativos dos acessos operacionais
+- criar um perfil para a equipe de atendimento
+- montar um perfil para o financeiro
+- deixar a gerência com acesso mais amplo
+- criar um perfil apenas para consulta
+- padronizar o acesso de várias pessoas que fazem o mesmo trabalho
 
 ## Como acessar
 
 1. No menu do sistema, acesse **Configurações**.
-2. Clique em **Perfis**.
-3. Na lista de perfis, escolha se deseja:
-   - criar um novo perfil
-   - alterar um perfil já existente
-   - visualizar os módulos liberados
+2. Entre em **Perfis de Usuários**.
+3. Na listagem, escolha a ação desejada:
+   - **Cadastrar**
+   - **Alterar**
+   - **Detalhes**
+   - **Excluir**
+   - **Módulos** para visualizar o que o perfil já possui
 
-:::info Local para imagem
-Adicione aqui uma captura da lista de perfis com o botão de cadastro destacado.
+:::info Espaço para imagem
+Adicione aqui uma captura da listagem de perfis com o botão **Cadastrar** destacado.
 :::
 
 ## Passo a passo
 
 ### Como criar um perfil
 
-1. Acesse a tela de **Perfis**.
+1. Acesse a tela de **Perfis de Usuários**.
 2. Clique em **Cadastrar**.
 3. Preencha o campo **Nome**.
 4. Vá para a área de **Módulos**.
-5. Escolha os módulos que esse perfil poderá usar.
-6. Para cada módulo selecionado, marque as permissões desejadas.
-7. Revise o perfil.
-8. Clique em **Salvar**.
+5. Se quiser, use o campo **Menu** para filtrar os módulos por grupo.
+6. Deixe marcados apenas os módulos que esse perfil deve acessar.
+7. Em cada módulo, marque as ações que esse perfil poderá fazer.
+8. Revise com atenção.
+9. Clique em **Salvar**.
 
 Exemplo real:
 
-- Uma empresa quer criar um perfil para a equipe de atendimento. Nesse perfil, libera acesso a **Clientes**, **Orçamentos** e **Ordens de Serviço**, mas não libera acesso ao financeiro.
+- uma empresa cria o perfil **Atendimento** e libera acesso a **Pessoas**, **Orçamentos** e **Ordens de Serviço**, sem liberar acesso ao financeiro.
 
 ### Como alterar um perfil
 
-1. Na lista de perfis, clique em **Alterar**.
-2. Ajuste o nome, os módulos ou as permissões.
-3. Clique em **Salvar**.
+1. Na listagem, localize o perfil.
+2. Clique em **Alterar**.
+3. Ajuste o **Nome**, os **Módulos** ou as **Permissões**.
+4. Revise as alterações.
+5. Clique em **Salvar**.
 
-### Como visualizar os módulos e permissões de um perfil
+Exemplo real:
 
-1. Na lista de perfis, localize o perfil.
-2. Clique no botão de **Módulos**.
-3. Revise os módulos e permissões vinculados.
+- a equipe financeira passou a cuidar também do contas a pagar. O usuário abre o perfil **Financeiro**, libera esse módulo e salva novamente.
+
+### Como visualizar os módulos de um perfil
+
+1. Na listagem, localize o perfil desejado.
+2. Clique no botão que mostra a quantidade de módulos.
+3. Revise os módulos e as permissões exibidas no modal.
+
+Exemplo real:
+
+- antes de vincular um perfil a um novo colaborador, o gestor abre a visualização rápida para conferir se o perfil está correto.
+
+### Como ver os detalhes do perfil
+
+1. Na listagem, clique em **Detalhes**.
+2. Confira as informações do perfil:
+   - identificador
+   - nome
+   - data de cadastro
+   - data da última alteração
+   - módulos liberados
+   - permissões
 
 ### Como excluir um perfil
 
-1. Na lista de perfis, clique em **Excluir**.
+1. Na listagem, clique em **Excluir**.
 2. Confirme a exclusão.
+3. Aguarde a resposta do sistema.
 
 Importante:
 
-- o sistema pode bloquear a exclusão se esse perfil estiver vinculado a colaboradores
+- se o perfil já estiver vinculado a colaboradores, a exclusão pode ser bloqueada
 
-### Como ajustar módulos e permissões com mais detalhe
-
-Além da alteração normal do perfil, existe um fluxo específico para gerenciar módulos e permissões:
-
-1. Abra o perfil desejado.
-2. Revise os **módulos disponíveis**.
-3. Adicione os módulos que faltam.
-4. Remova os módulos que não devem mais ser usados.
-5. Marque ou desmarque permissões dentro de cada módulo.
-
-:::info Local para imagem
-Adicione aqui uma captura da tela de cadastro ou alteração de perfil mostrando o nome, os módulos e as permissões.
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de cadastro ou alteração mostrando o nome do perfil, os módulos e as permissões.
 :::
 
 ## Explicação dos campos principais
 
 - **Nome**: identifica o perfil que será usado no cadastro dos colaboradores.
-- **Módulos**: mostram quais partes do sistema o perfil poderá acessar.
-- **Permissões**: definem o que o perfil pode fazer em cada módulo.
-- **Menu**: ajuda a filtrar os módulos por grupo, deixando a seleção mais organizada.
-- **Selecionado**: indica se aquele módulo faz parte do perfil.
+- **Menu**: ajuda a filtrar os módulos por grupo, deixando a escolha mais organizada.
+- **Módulo**: representa uma área do sistema que poderá ser liberada para o perfil.
+- **Permissões**: mostram o que esse perfil poderá fazer dentro de cada módulo.
+- **Identificador**: código interno do perfil, exibido na tela de detalhes.
+- **Data de cadastro**: mostra quando o perfil foi criado.
+- **Data da última alteração**: mostra a última vez em que o perfil foi alterado.
+- **Funções**: lista de funções vinculadas ao perfil na tela de detalhes.
 
-### Como entender módulos e permissões
+Exemplos simples de permissões:
 
-- **Módulo** é a área do sistema.
-  Exemplos:
-  - clientes
-  - orçamentos
-  - ordens de serviço
-  - financeiro
-
-- **Permissão** é a ação liberada dentro do módulo.
-  Exemplos:
-  - listar
-  - cadastrar
-  - alterar
-  - excluir
-  - detalhar
+- **Listar**: ver a tela
+- **Cadastrar**: criar novos registros
+- **Alterar**: editar registros existentes
+- **Excluir**: remover registros
+- **Detalhar**: abrir a visualização completa
 
 ## Situações práticas de uso
 
-- **Perfil de atendimento**: acesso a clientes, orçamentos e ordens de serviço.
-- **Perfil financeiro**: acesso a contas a receber, contas a pagar e relatórios financeiros.
-- **Perfil de consulta**: acesso apenas para visualizar informações, sem alterar dados.
-- **Perfil administrativo**: acesso mais amplo para gestão da empresa.
-- **Perfil técnico**: acesso focado em execução e acompanhamento de ordens de serviço.
+- **Perfil de atendimento**: para quem precisa trabalhar com clientes, orçamentos e ordens de serviço.
+- **Perfil financeiro**: para quem precisa cuidar de contas a pagar, contas a receber e relatórios financeiros.
+- **Perfil da gerência**: para quem precisa enxergar mais áreas do sistema.
+- **Perfil de consulta**: para quem só precisa visualizar informações, sem alterar dados.
+- **Perfil operacional**: para quem trabalha no dia a dia da operação e precisa de acesso só às rotinas da equipe.
 
 ## Dicas importantes
 
-- Use nomes claros para os perfis, como `Atendimento`, `Financeiro` ou `Gerência`.
-- Antes de salvar, revise se os módulos marcados fazem sentido para aquela equipe.
-- Evite liberar acessos desnecessários.
-- Se vários colaboradores fazem o mesmo tipo de trabalho, use o mesmo perfil para manter o padrão.
-- Quando necessário, revise os perfis periodicamente.
-- Se o sistema transformar todas as permissões de um módulo em `Todas`, isso significa que o perfil ficou com acesso completo naquele módulo.
+- Use nomes claros, como `Atendimento`, `Financeiro`, `Gerência` ou `Consulta`.
+- Revise todos os módulos antes de salvar.
+- Na criação, a tela pode trazer módulos e permissões já marcados. Por isso, vale revisar com atenção antes de confirmar.
+- Libere apenas o que a equipe realmente precisa usar.
+- Se várias pessoas fazem a mesma função, use o mesmo perfil para manter o padrão.
+- Antes de vincular um perfil a um colaborador, abra a visualização de **Módulos** para conferir o acesso.
+- Se o sistema mostrar uma mensagem para evoluir o plano ao tentar mexer nas permissões, isso indica limitação do plano contratado para esse recurso.
 
 ## Erros comuns
 
-- **Criar dois perfis com nomes muito parecidos**: isso confunde a equipe.
-- **Liberar módulos demais**: o colaborador pode acabar vendo áreas que não precisa usar.
-- **Esquecer de revisar permissões**: o módulo pode estar selecionado, mas com acesso além do necessário.
-- **Tentar excluir um perfil que ainda está em uso**: o sistema pode bloquear a ação.
-- **Salvar um perfil sem módulos**: isso não é permitido.
-- **Usar um nome genérico demais**: depois fica difícil saber qual perfil usar.
+- **Salvar sem informar o nome**: o nome do perfil é obrigatório.
+- **Criar dois perfis com o mesmo nome**: o sistema não permite nome repetido.
+- **Deixar o perfil sem módulos**: o perfil precisa ter pelo menos um módulo liberado.
+- **Liberar módulos demais**: isso pode dar acesso a áreas que o colaborador não precisa usar.
+- **Não revisar as permissões**: um módulo pode ficar com acesso maior do que o necessário.
+- **Tentar excluir um perfil em uso**: o sistema pode bloquear quando existem colaboradores vinculados.
+- **Usar nomes genéricos demais**: depois fica difícil saber qual perfil escolher.
 
 ## Perguntas frequentes
 
@@ -143,26 +154,34 @@ Não. O nome do perfil precisa ser único.
 
 Não. O sistema exige pelo menos um módulo liberado.
 
-### Posso alterar as permissões depois?
+### Posso alterar um perfil depois de criado?
 
-Sim. O perfil pode ser alterado quando necessário.
+Sim. O perfil pode ser alterado sempre que necessário.
+
+### Posso ver o que um perfil faz antes de usar?
+
+Sim. Você pode usar o botão de **Módulos** na listagem ou abrir a tela de **Detalhes**.
 
 ### Posso excluir um perfil que já está em uso?
 
-Não normalmente. A exclusão pode ser bloqueada quando existem colaboradores vinculados a esse perfil.
+Normalmente não. Se houver colaboradores vinculados a esse perfil, o sistema pode bloquear a exclusão.
 
-### Posso controlar acesso por módulo?
+### O sistema mostra status do perfil, como ativo ou inativo?
 
-Sim. Esse é justamente o objetivo da tela de perfis.
+Na análise feita, não foi encontrado um status de ativo ou inativo para perfis de usuários.
 
-### Preciso criar um perfil para cada colaborador?
+### O que acontece quando todas as permissões de um módulo são liberadas?
 
-Não. O ideal é criar perfis por função ou equipe e reaproveitar esse padrão no cadastro dos colaboradores.
+Na prática, o perfil fica com acesso completo àquele módulo.
 
-### Todo plano permite controlar permissões?
+### Por que apareceu uma mensagem para evoluir o plano?
 
-Não. A análise mostrou que existe controle por recurso do plano para essa parte de acesso.
+Porque o controle mais detalhado de permissões depende do recurso de controle de acesso disponível no plano da empresa.
 
-:::info Local para imagem
-Adicione aqui uma captura do modal de visualização de módulos e permissões de um perfil.
+### O botão Histórico aparece para todos os usuários?
+
+Não necessariamente. Na análise do sistema, esse botão aparece em condição especial de acesso.
+
+:::info Espaço para imagem
+Adicione aqui uma captura do modal de visualização dos módulos e permissões de um perfil.
 :::

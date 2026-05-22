@@ -1,0 +1,228 @@
+---
+title: Devolução de Produtos ao Fornecedor
+sidebar_position: 3
+---
+
+# Devolução de Produtos ao Fornecedor
+
+## Quando utilizar
+
+Use esta funcionalidade quando a empresa precisar devolver produtos para o fornecedor e emitir a nota fiscal dessa devolução.
+
+Exemplos reais:
+
+- devolver uma peça que chegou com defeito
+- devolver um item recebido por engano
+- devolver parte de uma compra, sem devolver a nota inteira
+- registrar a devolução fiscal de um produto que voltou para o fornecedor
+
+## Como acessar
+
+Você pode gerar a devolução de 3 formas diferentes no Maxflow:
+
+1. Pela **nota fiscal de entrada inteira**:
+   Acesse **Compras** > **Entrada de Notas Fiscais**, abra a nota e use a opção **Devolver NF**.
+2. Por **um produto específico da nota de entrada**:
+   Acesse **Compras** > **Entrada de Notas Fiscais**, abra os detalhes da nota e clique em **Devolver** no item desejado.
+3. Pelo **lançamento manual da nota fiscal**:
+   Acesse **Documentos fiscais** > **Notas fiscais de emissão** e clique em **Lançar**.
+
+:::info Espaço para imagem
+Adicione aqui uma captura mostrando:
+
+- a lista de entrada de notas fiscais
+- a opção **Devolver NF**
+- o botão **Devolver** dentro do item
+:::
+
+## Passo a passo
+
+### Forma 1: devolver a nota de entrada inteira
+
+1. Acesse **Compras** > **Entrada de Notas Fiscais**.
+2. Localize a nota do fornecedor que será usada como base.
+3. Abra a nota e clique em **Devolver NF**.
+4. O sistema abre a tela de emissão da nota fiscal de produto.
+5. Confira os dados carregados automaticamente:
+   empresa, natureza da operação, fornecedor, chave da nota original e produtos.
+6. Na etapa **Cabeçalho**, revise:
+   empresa, natureza da operação, local da operação, tipo de tributação, data e hora.
+7. Na etapa **Destinatário**, confirme os dados do fornecedor que vai receber a devolução.
+8. Na etapa **Devolução**, confira a chave eletrônica da nota original.
+9. Na etapa **Produtos**, revise os itens que serão devolvidos.
+10. Ajuste frete, seguro, outras despesas e desconto apenas se necessário.
+11. Na etapa **Complementos**, preencha observações e transporte, quando fizer sentido.
+12. Na etapa **Preview**, revise tudo com calma.
+13. Escolha uma das opções:
+    **Apenas salvar** para deixar a nota pendente.
+14. Ou escolha:
+    **Salvar e transmitir** para enviar a nota.
+
+Exemplo real:
+
+- a empresa recebeu 10 peças, mas todas vieram erradas. O usuário abre a nota de entrada, clica em **Devolver NF**, confere os dados e transmite a devolução completa.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da tela de emissão aberta a partir de **Devolver NF**.
+:::
+
+### Forma 2: devolver somente um item da nota de entrada
+
+1. Acesse **Compras** > **Entrada de Notas Fiscais**.
+2. Abra a nota do fornecedor.
+3. Entre nos detalhes da nota.
+4. No item desejado, clique em **Devolver**.
+5. O sistema abre a emissão da devolução trazendo a nota de entrada como base.
+6. Confira se o produto carregado é o item que realmente será devolvido.
+7. Revise a quantidade e o valor do item.
+8. Confira a chave eletrônica da nota original.
+9. Revise os demais campos do cabeçalho e do destinatário.
+10. Abra o **Preview**.
+11. Se estiver tudo certo, escolha **Apenas salvar** ou **Salvar e transmitir**.
+
+Exemplo real:
+
+- a empresa comprou 5 peças do fornecedor, mas apenas 1 veio com defeito. O usuário abre a nota de entrada, clica em **Devolver** no produto com problema, revisa a quantidade e gera a devolução parcial.
+
+:::info Espaço para imagem
+Adicione aqui uma captura do detalhe da nota de entrada com o botão **Devolver** destacado no item.
+:::
+
+### Forma 3: montar a devolução manualmente
+
+1. Acesse **Documentos fiscais** > **Notas fiscais de emissão**.
+2. Clique em **Lançar**.
+3. Na etapa **Cabeçalho**, escolha:
+   empresa, natureza da operação, local da operação, tipo de tributação, data e hora.
+4. Use uma natureza da operação compatível com devolução.
+5. Clique em **Avançar**.
+6. Na etapa **Destinatário**, selecione o fornecedor que vai receber a devolução.
+7. Confira CPF/CNPJ, inscrição estadual, endereço, telefone e e-mail.
+8. Clique em **Avançar**.
+9. Na etapa **Devolução**, informe a chave eletrônica da nota original.
+10. Adicione o documento referenciado.
+11. Clique em **Avançar**.
+12. Na etapa **Produtos**, adicione os itens da devolução.
+13. Para cada item, revise:
+    produto, embalagem, quantidade, valor unitário e código fiscal.
+14. Se o sistema avisar que existe produto sem tributação, corrija antes de continuar.
+15. Revise os totais.
+16. Na etapa **Complementos**, preencha observações e transporte, se precisar.
+17. Abra o **Preview**.
+18. Finalize com **Apenas salvar** ou **Salvar e transmitir**.
+
+Exemplo real:
+
+- o usuário precisa emitir uma devolução, mas não iniciou o processo pela nota de entrada. Nesse caso, ele abre a emissão manualmente, informa o fornecedor, adiciona a chave da nota original e monta os itens da devolução.
+
+:::info Espaço para imagem
+Adicione aqui uma captura da etapa **Devolução** com o campo de chave eletrônica preenchido.
+:::
+
+## Explicação dos campos principais
+
+- **Empresa**: define qual empresa está emitindo a devolução.
+- **Natureza da operação**: informa que tipo de nota está sendo emitida. Na devolução, esse campo precisa combinar com a finalidade da operação.
+- **Local da operação**: indica onde a operação está sendo registrada.
+- **Tipo de tributação**: define como a nota será tratada no cálculo fiscal.
+- **Data de emissão**: mostra o dia da emissão da devolução.
+- **Hora de emissão**: mostra o horário da emissão.
+- **Data de saída**: usada quando a saída da mercadoria precisa ser informada.
+- **Hora de saída**: complementa a informação da saída.
+- **Destinatário**: neste caso, é o fornecedor que vai receber a devolução.
+- **CPF/CNPJ**: documento principal do fornecedor.
+- **RG/IE**: documento complementar do fornecedor.
+- **Tipo de contribuinte**: classificação fiscal do destinatário.
+- **Endereço**: local para onde a devolução está sendo emitida.
+- **Telefone**: contato do destinatário.
+- **E-mail**: contato eletrônico do destinatário.
+- **Chave eletrônica**: código da nota original usada como referência da devolução.
+- **Produto**: item que está sendo devolvido.
+- **Embalagem**: forma de apresentação do item.
+- **Quantidade**: quantidade que será devolvida.
+- **Valor unitário**: valor de cada unidade do item.
+- **Código fiscal**: código usado para a operação do item.
+- **Frete**: valor de transporte ligado à nota.
+- **Seguro**: valor de seguro ligado à nota.
+- **Outras despesas**: custos extras da operação.
+- **Desconto**: abatimento aplicado no valor total.
+- **Informações adicionais**: observações que precisam acompanhar a nota.
+
+## Situações práticas de uso
+
+- **Devolução total de uma compra**:
+  quando toda a nota do fornecedor precisa ser devolvida.
+- **Devolução parcial de uma compra**:
+  quando apenas um ou alguns produtos apresentam problema.
+- **Produto com defeito**:
+  quando a empresa recebe a mercadoria, identifica o problema e devolve ao fornecedor.
+- **Produto entregue errado**:
+  quando o fornecedor mandou um item diferente do pedido.
+- **Montagem manual da devolução**:
+  quando a equipe prefere abrir a emissão diretamente e preencher a devolução passo a passo.
+
+## Dicas importantes
+
+- Sempre revise a **natureza da operação** antes de avançar.
+- Quando a devolução for aberta pela nota de entrada, aproveite os dados carregados automaticamente, mas confira tudo antes de transmitir.
+- Se a devolução for de apenas um item, confira a **quantidade** com atenção.
+- Revise a **chave eletrônica** da nota original, porque ela é uma referência importante na devolução.
+- Se o sistema avisar sobre produto sem tributação, ajuste isso antes de seguir.
+- Use **Apenas salvar** quando ainda quiser revisar a nota depois.
+- Use **Salvar e transmitir** somente quando a devolução estiver pronta.
+- Depois do lançamento, acompanhe a situação na lista de notas:
+  `Pendente`, `Autorizada`, `Cancelada` ou `Rejeitada`.
+- Se a emissão estiver bloqueada por configuração pendente, revise primeiro as configurações fiscais da empresa.
+
+## Erros comuns
+
+- **Escolher a nota errada para devolver**: sempre confirme o fornecedor e os itens antes de continuar.
+- **Devolver a nota inteira quando o correto era devolver um item**: nesse caso, use o botão **Devolver** dentro do produto.
+- **Informar a chave eletrônica errada**: a devolução pode ficar incompleta ou incorreta.
+- **Tentar seguir sem documento referenciado**: em devolução, esse dado pode ser exigido.
+- **Alterar quantidade sem revisar o item**: isso pode gerar devolução maior ou menor que o necessário.
+- **Prosseguir com produto sem tributação**: o sistema aponta esse problema e pede correção.
+- **Transmitir sem revisar o preview**: isso aumenta a chance de erro na nota.
+- **Tentar gerar a devolução sem configuração fiscal pronta**: a emissão pode ficar bloqueada.
+
+## Perguntas frequentes
+
+### Posso gerar a devolução direto da nota de entrada?
+
+Sim. O sistema possui a opção **Devolver NF** para usar a nota inteira como base.
+
+### Posso devolver somente um produto da nota?
+
+Sim. Nos detalhes da nota de entrada existe o botão **Devolver** no item.
+
+### O fornecedor vira o destinatário da devolução?
+
+Sim. No fluxo encontrado no sistema, o fornecedor da nota de entrada é usado como destinatário da devolução.
+
+### Preciso informar a chave da nota original?
+
+Em operações de devolução, a tela possui a etapa de documento referenciado. Quando a devolução parte da nota de entrada, a chave pode vir carregada automaticamente.
+
+### Posso salvar sem transmitir?
+
+Sim. A tela oferece a opção **Apenas salvar**.
+
+### Posso transmitir depois?
+
+Sim. Depois do salvamento, a nota pode ser acompanhada e transmitida pela lista de notas fiscais.
+
+### O que fazer se aparecer aviso de produto sem tributação?
+
+Corrija a tributação do item antes de continuar. O sistema usa essa informação para permitir o andamento da emissão.
+
+### Como sei se a nota foi enviada com sucesso?
+
+Depois da transmissão, acompanhe a situação na lista. Os status visíveis no sistema incluem **Pendente**, **Autorizada**, **Cancelada** e **Rejeitada**.
+
+### Quando usar a devolução manual?
+
+Use quando a equipe precisar montar a devolução direto na emissão da nota, em vez de iniciar pela nota de entrada.
+
+:::info Espaço para imagem
+Adicione aqui uma captura do **Preview** final da devolução e outra da lista com os status da nota.
+:::

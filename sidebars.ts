@@ -37,6 +37,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'fiscal/notas-fiscais',
         'fiscal/nota-fiscal-de-produto',
+        'fiscal/devolucao-de-produtos-ao-fornecedor',
         'fiscal/nota-fiscal-de-servico',
         'fiscal/entrada-de-notas-fiscais',
       ],
@@ -73,6 +74,9 @@ const sidebars: SidebarsConfig = {
       label: 'Configurações',
       items: [
         'configuracoes/configuracoes-gerais',
+        'configuracoes/minhas-empresas',
+        'configuracoes/meu-perfil',
+        'configuracoes/meu-plano',
         'configuracoes/usuarios-e-permissoes',
         'configuracoes/campos-personalizados',
       ],
