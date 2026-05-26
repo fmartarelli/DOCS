@@ -135,17 +135,6 @@ export const faqIndex: FaqIndexEntry[] = [
   {
     "category": "cadastros",
     "categoryLabel": "Cadastros",
-    "sourceTitle": "Pessoas",
-    "to": "/docs/cadastros/clientes",
-    "question": "Para que serve o limite de crédito?",
-    "answerText": "Ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.",
-    "normalizedQuestion": "para que serve o limite de credito?",
-    "normalizedAnswer": "ele ajuda a controlar valores permitidos para aquele cadastro, quando a empresa usa esse recurso.",
-    "normalizedSourceTitle": "pessoas"
-  },
-  {
-    "category": "cadastros",
-    "categoryLabel": "Cadastros",
     "sourceTitle": "Produtos e serviços",
     "to": "/docs/cadastros/produtos-e-servicos",
     "question": "Produto e serviço são cadastrados na mesma tela?",
